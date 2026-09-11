@@ -1,0 +1,390 @@
+{
+  "01_Taxa": {
+    "primary_key": [
+      "taxon_id"
+    ],
+    "required": [
+      "taxon_id",
+      "scientific_name",
+      "taxon_rank"
+    ],
+    "columns": {
+      "taxon_id": {
+        "type": "id"
+      },
+      "order": {
+        "type": "string"
+      },
+      "family": {
+        "type": "string"
+      },
+      "genus": {
+        "type": "string"
+      },
+      "scientific_name": {
+        "type": "string"
+      },
+      "taxon_rank": {
+        "type": "string"
+      },
+      "korean_name": {
+        "type": "string"
+      },
+      "gbif_status": {
+        "type": "string"
+      },
+      "gbif_taxon_key": {
+        "type": "external_key"
+      },
+      "accepted_scientific_name": {
+        "type": "string"
+      },
+      "accepted_taxon_id": {
+        "type": "id",
+        "references": "01_Taxa.taxon_id"
+      }
+    }
+  },
+  "02_Cytotypes": {
+    "primary_key": [
+      "cytotype_id"
+    ],
+    "required": [
+      "cytotype_id",
+      "taxon_id"
+    ],
+    "columns": {
+      "cytotype_id": {
+        "type": "id"
+      },
+      "taxon_id": {
+        "type": "id",
+        "references": "01_Taxa.taxon_id"
+      },
+      "ploidy": {
+        "type": "string"
+      },
+      "chromosome_number": {
+        "type": "string"
+      },
+      "genome_size_pg": {
+        "type": "positive_number"
+      },
+      "reproductive_mode": {
+        "type": "string"
+      },
+      "note": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "active",
+          "inactive"
+        ]
+      }
+    }
+  },
+  "03_Morphology_Terms": {
+    "primary_key": [
+      "term_id"
+    ],
+    "required": [
+      "term_id",
+      "english",
+      "category"
+    ],
+    "columns": {
+      "term_id": {
+        "type": "id"
+      },
+      "english": {
+        "type": "string"
+      },
+      "korean": {
+        "type": "string"
+      },
+      "definition": {
+        "type": "string"
+      },
+      "category": {
+        "type": "string",
+        "enum": [
+          "general",
+          "vegetative",
+          "indumentum",
+          "reproductive"
+        ]
+      }
+    }
+  },
+  "04_Morphology_Tree": {
+    "primary_key": [
+      "morphology_id"
+    ],
+    "required": [
+      "morphology_id",
+      "term_id",
+      "display_order"
+    ],
+    "columns": {
+      "morphology_id": {
+        "type": "id"
+      },
+      "parent_id": {
+        "type": "id",
+        "references": "04_Morphology_Tree.morphology_id"
+      },
+      "term_id": {
+        "type": "id",
+        "references": "03_Morphology_Terms.term_id"
+      },
+      "display_order": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "context_label": {
+        "type": "string"
+      }
+    }
+  },
+  "05_Taxon_Morphology": {
+    "primary_key": [
+      "taxon_id",
+      "morphology_id"
+    ],
+    "required": [
+      "taxon_id",
+      "morphology_id",
+      "presence_status",
+      "documentation_status"
+    ],
+    "columns": {
+      "taxon_id": {
+        "type": "id",
+        "references": "01_Taxa.taxon_id"
+      },
+      "morphology_id": {
+        "type": "id",
+        "references": "04_Morphology_Tree.morphology_id"
+      },
+      "presence_status": {
+        "type": "string",
+        "enum": [
+          "present",
+          "absent",
+          "unknown",
+          "variable"
+        ]
+      },
+      "documentation_status": {
+        "type": "string",
+        "enum": [
+          "documented",
+          "missing",
+          "not_examined",
+          "not_applicable"
+        ]
+      },
+      "note": {
+        "type": "string"
+      }
+    }
+  },
+  "06_Images": {
+    "primary_key": [
+      "image_id"
+    ],
+    "required": [
+      "image_id",
+      "taxon_id",
+      "original_filename",
+      "status"
+    ],
+    "columns": {
+      "image_id": {
+        "type": "id"
+      },
+      "taxon_id": {
+        "type": "id",
+        "references": "01_Taxa.taxon_id"
+      },
+      "cytotype_id": {
+        "type": "id",
+        "references": "02_Cytotypes.cytotype_id"
+      },
+      "original_filename": {
+        "type": "string"
+      },
+      "photographer": {
+        "type": "string"
+      },
+      "locality": {
+        "type": "string"
+      },
+      "collection_date": {
+        "type": "date"
+      },
+      "copyright": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "active",
+          "hidden",
+          "inactive"
+        ]
+      },
+      "note": {
+        "type": "string"
+      }
+    }
+  },
+  "07_Image_Morphology": {
+    "primary_key": [
+      "image_id",
+      "morphology_id"
+    ],
+    "required": [
+      "image_id",
+      "morphology_id",
+      "role",
+      "representative",
+      "display_order"
+    ],
+    "columns": {
+      "image_id": {
+        "type": "id",
+        "references": "06_Images.image_id"
+      },
+      "morphology_id": {
+        "type": "id",
+        "references": "04_Morphology_Tree.morphology_id"
+      },
+      "role": {
+        "type": "string",
+        "enum": [
+          "primary",
+          "secondary"
+        ]
+      },
+      "representative": {
+        "type": "boolean"
+      },
+      "display_order": {
+        "type": "integer",
+        "minimum": 0
+      }
+    }
+  },
+  "08_Synonyms": {
+    "primary_key": [
+      "name_id"
+    ],
+    "required": [
+      "name_id",
+      "taxon_id",
+      "name",
+      "name_type"
+    ],
+    "columns": {
+      "name_id": {
+        "type": "id"
+      },
+      "taxon_id": {
+        "type": "id",
+        "references": "01_Taxa.taxon_id"
+      },
+      "name": {
+        "type": "string"
+      },
+      "name_type": {
+        "type": "string",
+        "enum": [
+          "scientific_synonym",
+          "korean_synonym"
+        ]
+      },
+      "status": {
+        "type": "string"
+      },
+      "note": {
+        "type": "string"
+      }
+    }
+  },
+  "09_Contributors": {
+    "primary_key": [
+      "contributor_id"
+    ],
+    "required": [
+      "contributor_id",
+      "name",
+      "status"
+    ],
+    "columns": {
+      "contributor_id": {
+        "type": "id"
+      },
+      "affiliation": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string"
+      },
+      "taxon_scope": {
+        "type": "string"
+      },
+      "role": {
+        "type": "string"
+      },
+      "email_public": {
+        "type": "boolean"
+      },
+      "display_order": {
+        "type": "integer"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "active",
+          "inactive"
+        ]
+      },
+      "researcher_type": {
+        "type": "string",
+        "enum": [
+          "lead",
+          "researcher"
+        ]
+      }
+    }
+  },
+  "10_Site_Text": {
+    "primary_key": [
+      "key"
+    ],
+    "required": [
+      "key",
+      "text"
+    ],
+    "columns": {
+      "key": {
+        "type": "id"
+      },
+      "text": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "text_ko": {
+        "type": "string"
+      }
+    }
+  }
+}

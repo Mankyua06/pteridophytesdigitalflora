@@ -1,0 +1,2806 @@
+{
+  "entries": [
+    {
+      "names": [
+        "Lycopodium cernuum L.",
+        "물석송"
+      ],
+      "taxon_id": "TX000001"
+    },
+    {
+      "names": [
+        "Lycopodium dendroideum Michx.",
+        "만년석송"
+      ],
+      "taxon_id": "TX000002"
+    },
+    {
+      "names": [
+        "Lycopodium nikoense Franch. & Sav.",
+        "뫼석송"
+      ],
+      "taxon_id": "TX000003"
+    },
+    {
+      "names": [
+        "Lycopodium complanatum L.",
+        "비늘석송"
+      ],
+      "taxon_id": "TX000004"
+    },
+    {
+      "names": [
+        "Lycopodium alpinum L.",
+        "산석송"
+      ],
+      "taxon_id": "TX000005"
+    },
+    {
+      "names": [
+        "Lycopodium clavatum var. asiaticum Ching",
+        "두메석송"
+      ],
+      "taxon_id": "TX000006"
+    },
+    {
+      "names": [
+        "Lycopodium clavatum var. nipponicum Nakai",
+        "석송"
+      ],
+      "taxon_id": "TX000007"
+    },
+    {
+      "names": [
+        "Lycopodium annotinum L.",
+        "개석송"
+      ],
+      "taxon_id": "TX000008"
+    },
+    {
+      "names": [
+        "Huperzia jejuensis B.Y.Sun & J.Lim",
+        "긴다람쥐꼬리"
+      ],
+      "taxon_id": "TX000009"
+    },
+    {
+      "names": [
+        "Huperzia miyoshiana (Makino) Ching",
+        "다람쥐꼬리"
+      ],
+      "taxon_id": "TX000010"
+    },
+    {
+      "names": [
+        "Huperzia asiatica (Ching) N.Shrestha & X.C.Zhang",
+        "백두다람쥐꼬리"
+      ],
+      "taxon_id": "TX000011"
+    },
+    {
+      "names": [
+        "Huperzia serrata (Thunb.) Trevis.",
+        "뱀톱"
+      ],
+      "taxon_id": "TX000012"
+    },
+    {
+      "names": [
+        "Huperzia selago (L.) Bernh. ex Schrank & Mart.",
+        "좀다람쥐꼬리"
+      ],
+      "taxon_id": "TX000013"
+    },
+    {
+      "names": [
+        "Huperzia javanica (Sw.) C.Y.Yang",
+        "큰뱀톱"
+      ],
+      "taxon_id": "TX000014"
+    },
+    {
+      "names": [
+        "Huperzia cryptomerina (Maxim.) R.D.Dixit",
+        "왕다람쥐꼬리"
+      ],
+      "taxon_id": "TX000015"
+    },
+    {
+      "names": [
+        "Huperzia sieboldii (Miq.) Holub",
+        "줄석송"
+      ],
+      "taxon_id": "TX000016"
+    },
+    {
+      "names": [
+        "Selaginella heterostachys Baker",
+        "각시비늘이끼"
+      ],
+      "taxon_id": "TX000017"
+    },
+    {
+      "names": [
+        "Selaginella stauntoniana Spring",
+        "개부처손"
+      ],
+      "taxon_id": "TX000018"
+    },
+    {
+      "names": [
+        "Selaginella shakotanensis (Franch. ex Takeda) Miyabe & Kudô",
+        "개실사리"
+      ],
+      "taxon_id": "TX000019"
+    },
+    {
+      "names": [
+        "Selaginella rossii (Baker) Warb.",
+        "구실사리"
+      ],
+      "taxon_id": "TX000020"
+    },
+    {
+      "names": [
+        "Selaginella tamariscina (P.Beauv.) Spring",
+        "바위손"
+      ],
+      "taxon_id": "TX000021"
+    },
+    {
+      "names": [
+        "Selaginella involvens (Sw.) Spring",
+        "부처손"
+      ],
+      "taxon_id": "TX000022"
+    },
+    {
+      "names": [
+        "Selaginella remotifolia Spring",
+        "비늘이끼"
+      ],
+      "taxon_id": "TX000023"
+    },
+    {
+      "names": [
+        "Selaginella nipponica Franch. & Sav.",
+        "선비늘이끼"
+      ],
+      "taxon_id": "TX000024"
+    },
+    {
+      "names": [
+        "Selaginella sibirica (Milde) Hieron.",
+        "실사리"
+      ],
+      "taxon_id": "TX000025"
+    },
+    {
+      "names": [
+        "Selaginella helvetica (L.) Spring",
+        "왜구실사리"
+      ],
+      "taxon_id": "TX000026"
+    },
+    {
+      "names": [
+        "Equisetum ramosissimum Desf.",
+        "개속새"
+      ],
+      "taxon_id": "TX000027"
+    },
+    {
+      "names": [
+        "Equisetum palustre L.",
+        "개쇠뜨기"
+      ],
+      "taxon_id": "TX000028"
+    },
+    {
+      "names": [
+        "Equisetum sylvaticum L.",
+        "능수쇠뜨기"
+      ],
+      "taxon_id": "TX000029"
+    },
+    {
+      "names": [
+        "Equisetum fluviatile L.",
+        "물속새"
+      ],
+      "taxon_id": "TX000030"
+    },
+    {
+      "names": [
+        "Equisetum pratense Ehrh.",
+        "물쇠뜨기"
+      ],
+      "taxon_id": "TX000031"
+    },
+    {
+      "names": [
+        "Equisetum hyemale L.",
+        "속새"
+      ],
+      "taxon_id": "TX000032"
+    },
+    {
+      "names": [
+        "Equisetum arvense L.",
+        "쇠뜨기"
+      ],
+      "taxon_id": "TX000033"
+    },
+    {
+      "names": [
+        "Equisetum scirpoides Michx.",
+        "좀속새"
+      ],
+      "taxon_id": "TX000034"
+    },
+    {
+      "names": [
+        "Psilotum nudum (L.) P.Beauv.",
+        "솔잎란"
+      ],
+      "taxon_id": "TX000035"
+    },
+    {
+      "names": [
+        "Mankyua chejuensis B.Y.Sun, M.H.Kim & C.H.Kim",
+        "제주고사리삼"
+      ],
+      "taxon_id": "TX000036"
+    },
+    {
+      "names": [
+        "Ophioglossum pendulum L.",
+        "다시마고사리삼"
+      ],
+      "taxon_id": "TX000037"
+    },
+    {
+      "names": [
+        "Ophioglossum vulgatum L.",
+        "나도고사리삼"
+      ],
+      "taxon_id": "TX000038"
+    },
+    {
+      "names": [
+        "Ophioglossum reticulatum L.",
+        "섬나도고사리삼"
+      ],
+      "taxon_id": "TX000039"
+    },
+    {
+      "names": [
+        "Ophioglossum petiolatum Hook.",
+        "자루나도고사리삼"
+      ],
+      "taxon_id": "TX000040"
+    },
+    {
+      "names": [
+        "Ophioglossum nipponicum Miyabe & Kudô",
+        "자루좀나도고사리삼"
+      ],
+      "taxon_id": "TX000041"
+    },
+    {
+      "names": [
+        "Ophioglossum thermale Kom.",
+        "좀나도고사리삼"
+      ],
+      "taxon_id": "TX000042"
+    },
+    {
+      "names": [
+        "Botrychium lanceolatum (S.G.Gmel.) Ångstr.",
+        "난장이고사리삼"
+      ],
+      "taxon_id": "TX000043"
+    },
+    {
+      "names": [
+        "Botrychium boreale Milde",
+        "메고사리삼"
+      ],
+      "taxon_id": "TX000044"
+    },
+    {
+      "names": [
+        "Botrychium lunaria (L.) Sw.",
+        "백두산고사리삼"
+      ],
+      "taxon_id": "TX000045"
+    },
+    {
+      "names": [
+        "Botrychium simplex E.Hitchc.",
+        "좀고사리삼"
+      ],
+      "taxon_id": "TX000046"
+    },
+    {
+      "names": [
+        "Botrychium virginianum (L.) Sw.",
+        "늦고사리삼"
+      ],
+      "taxon_id": "TX000047"
+    },
+    {
+      "names": [
+        "Botrychium ternatum (Thunb.) Sw.",
+        "고사리삼"
+      ],
+      "taxon_id": "TX000048"
+    },
+    {
+      "names": [
+        "Botrychium triangularifolium (Sahashi) M.Kato",
+        "나주고사리삼"
+      ],
+      "taxon_id": "TX000049"
+    },
+    {
+      "names": [
+        "Botrychium nipponicum Makino",
+        "단풍고사리삼"
+      ],
+      "taxon_id": "TX000050"
+    },
+    {
+      "names": [
+        "Botrychium robustum (Rupr. ex Milde) Underw.",
+        "산고사리삼"
+      ],
+      "taxon_id": "TX000051"
+    },
+    {
+      "names": [
+        "Botrychium japonicum (Prantl) Underw.",
+        "산꽃고사리삼"
+      ],
+      "taxon_id": "TX000052"
+    },
+    {
+      "names": [
+        "Botrychium atrovirens (Sahashi) M.Kato",
+        "숲고사리삼"
+      ],
+      "taxon_id": "TX000053"
+    },
+    {
+      "names": [
+        "Botrychium microphyllum (Sahashi) M.Kato",
+        "애기고사리삼"
+      ],
+      "taxon_id": "TX000054"
+    },
+    {
+      "names": [
+        "Osmunda claytoniana L.",
+        "음양고비"
+      ],
+      "taxon_id": "TX000055"
+    },
+    {
+      "names": [
+        "Osmunda japonica Thunb.",
+        "고비"
+      ],
+      "taxon_id": "TX000056"
+    },
+    {
+      "names": [
+        "Osmunda cinnamomea L.",
+        "꿩고비"
+      ],
+      "taxon_id": "TX000057"
+    },
+    {
+      "names": [
+        "Crepidomanes latealatum (Bosch) Copel.",
+        "괴불이끼"
+      ],
+      "taxon_id": "TX000058"
+    },
+    {
+      "names": [
+        "Crepidomanes schmidianum (Zenker ex Taschner) K.Iwats.",
+        "두메괴불이끼"
+      ],
+      "taxon_id": "TX000059"
+    },
+    {
+      "names": [
+        "Crepidomanes minutum (Blume) K.Iwats.",
+        "부채괴불이끼"
+      ],
+      "taxon_id": "TX000060"
+    },
+    {
+      "names": [
+        "Vandenboschia nipponica (Nakai) Ebihara",
+        "난장이이끼"
+      ],
+      "taxon_id": "TX000061"
+    },
+    {
+      "names": [
+        "Vandenboschia birmanica (Bedd.) Ching",
+        "누운괴불이끼"
+      ],
+      "taxon_id": "TX000062"
+    },
+    {
+      "names": [
+        "Vandenboschia × stenosiphon (Christ) Copel.",
+        "제주괴불이끼"
+      ],
+      "taxon_id": "TX000063"
+    },
+    {
+      "names": [
+        "Vandenboschia × quelpaertensis (Nakai) Ebihara",
+        "큰괴불이끼"
+      ],
+      "taxon_id": "TX000064"
+    },
+    {
+      "names": [
+        "Hymenophyllum wrightii f. serratum C.S.Lee & Kanghyup Lee",
+        "구름처녀이끼"
+      ],
+      "taxon_id": "TX000065"
+    },
+    {
+      "names": [
+        "Hymenophyllum oligosorum Makino",
+        "금강처녀이끼"
+      ],
+      "taxon_id": "TX000066"
+    },
+    {
+      "names": [
+        "Hymenophyllum barbatum (Bosch) Baker",
+        "수염이끼"
+      ],
+      "taxon_id": "TX000067"
+    },
+    {
+      "names": [
+        "Hymenophyllum coreanum Nakai",
+        "애기수염이끼"
+      ],
+      "taxon_id": "TX000068"
+    },
+    {
+      "names": [
+        "Hymenophyllum polyanthos (Sw.) Sw.",
+        "좀처녀이끼"
+      ],
+      "taxon_id": "TX000069"
+    },
+    {
+      "names": [
+        "Hymenophyllum wrightii Bosch",
+        "처녀이끼"
+      ],
+      "taxon_id": "TX000070"
+    },
+    {
+      "names": [
+        "Dicranopteris pedata (Houtt.) Nakaike",
+        "발풀고사리"
+      ],
+      "taxon_id": "TX000071"
+    },
+    {
+      "names": [
+        "Diplopterygium laevissimum (Christ) Nakai",
+        "암풀고사리"
+      ],
+      "taxon_id": "TX000072"
+    },
+    {
+      "names": [
+        "Diplopterygium glaucum (Thunb. ex Houtt.) Nakai",
+        "풀고사리"
+      ],
+      "taxon_id": "TX000073"
+    },
+    {
+      "names": [
+        "Lygodium japonicum (Thunb.) Sw.",
+        "실고사리"
+      ],
+      "taxon_id": "TX000074"
+    },
+    {
+      "names": [
+        "Azolla imbricata (Roxb. ex Griff.) Nakai",
+        "물개구리밥"
+      ],
+      "taxon_id": "TX000075"
+    },
+    {
+      "names": [
+        "Azolla japonica Franch. & Sav.",
+        "큰물개구리밥"
+      ],
+      "taxon_id": "TX000076"
+    },
+    {
+      "names": [
+        "Salvinia natans (L.) All.",
+        "생이가래"
+      ],
+      "taxon_id": "TX000077"
+    },
+    {
+      "names": [
+        "Marsilea quadrifolia L.",
+        "네가래"
+      ],
+      "taxon_id": "TX000078"
+    },
+    {
+      "names": [
+        "Plagiogyria euphlebia (Kunze) Mett.",
+        "꿩고사리"
+      ],
+      "taxon_id": "TX000079"
+    },
+    {
+      "names": [
+        "Plagiogyria japonica Nakai",
+        "섬꿩고사리"
+      ],
+      "taxon_id": "TX000080"
+    },
+    {
+      "names": [
+        "Odontosoria biflora (Kaulf.) C.Chr.",
+        "갯바위고사리"
+      ],
+      "taxon_id": "TX000081"
+    },
+    {
+      "names": [
+        "Odontosoria chinensis (L.) J.Sm.",
+        "바위고사리"
+      ],
+      "taxon_id": "TX000082"
+    },
+    {
+      "names": [
+        "Osmolindsaea odorata (Roxb.) Lehtonen & Christenh.",
+        "새깃고사리"
+      ],
+      "taxon_id": "TX000083"
+    },
+    {
+      "names": [
+        "Osmolindsaea japonica (Baker) Lehtonen & Christenh.",
+        "좀새깃고사리"
+      ],
+      "taxon_id": "TX000084"
+    },
+    {
+      "names": [
+        "Ceratopteris gaudichaudii var. vulgaris Masuyama & Watano",
+        "물고사리"
+      ],
+      "taxon_id": "TX000085"
+    },
+    {
+      "names": [
+        "Coniogramme japonica (Thunb.) Diels",
+        "가지고비고사리"
+      ],
+      "taxon_id": "TX000086"
+    },
+    {
+      "names": [
+        "Coniogramme × fauriei Hieron.",
+        "개가지고비고사리"
+      ],
+      "taxon_id": "TX000087"
+    },
+    {
+      "names": [
+        "Coniogramme intermedia Hieron.",
+        "고비고사리"
+      ],
+      "taxon_id": "TX000088"
+    },
+    {
+      "names": [
+        "Coniogramme wilsonii Hieron.",
+        "넓은고비고사리"
+      ],
+      "taxon_id": "TX000089"
+    },
+    {
+      "names": [
+        "Coniogramme affinis (Wall. ex C.Presl) Hieron.",
+        "산고비고사리"
+      ],
+      "taxon_id": "TX000090"
+    },
+    {
+      "names": [
+        "Cryptogramma crispa (L.) R.Br.",
+        "북바위고사리"
+      ],
+      "taxon_id": "TX000091"
+    },
+    {
+      "names": [
+        "Onychium japonicum (Thunb.) Kunze",
+        "선바위고사리"
+      ],
+      "taxon_id": "TX000092"
+    },
+    {
+      "names": [
+        "Pteris terminalis Wall. ex J.Agardh",
+        "깃반쪽고사리"
+      ],
+      "taxon_id": "TX000093"
+    },
+    {
+      "names": [
+        "Pteris × pseudosefuricola Ebihara, Nakato & S.Matsumoto",
+        "너도봉의꼬리"
+      ],
+      "taxon_id": "TX000094"
+    },
+    {
+      "names": [
+        "Pteris dispar Kunze",
+        "반쪽고사리"
+      ],
+      "taxon_id": "TX000095"
+    },
+    {
+      "names": [
+        "Pteris multifida Poir.",
+        "봉의꼬리"
+      ],
+      "taxon_id": "TX000096"
+    },
+    {
+      "names": [
+        "Pteris excelsa var. simplicior (Tagawa) W.C.Shieh",
+        "섬깃반쪽고사리"
+      ],
+      "taxon_id": "TX000097"
+    },
+    {
+      "names": [
+        "Pteris nipponica W.C.Shieh",
+        "알록큰봉의꼬리"
+      ],
+      "taxon_id": "TX000098"
+    },
+    {
+      "names": [
+        "Pteris fauriei Hieron.",
+        "오름깃고사리"
+      ],
+      "taxon_id": "TX000099"
+    },
+    {
+      "names": [
+        "Pteris semipinnata L.",
+        "큰반쪽고사리"
+      ],
+      "taxon_id": "TX000100"
+    },
+    {
+      "names": [
+        "Pteris cretica L.",
+        "큰봉의꼬리"
+      ],
+      "taxon_id": "TX000101"
+    },
+    {
+      "names": [
+        "Pteris excelsa var. fauriei (Christ) W.C.Shieh",
+        "탐라반쪽고사리"
+      ],
+      "taxon_id": "TX000102"
+    },
+    {
+      "names": [
+        "Adiantum coreanum Tagawa",
+        "고려공작고사리"
+      ],
+      "taxon_id": "TX000103"
+    },
+    {
+      "names": [
+        "Adiantum pedatum L.",
+        "공작고사리"
+      ],
+      "taxon_id": "TX000104"
+    },
+    {
+      "names": [
+        "Adiantum monochlamys D.C.Eaton",
+        "섬공작고사리"
+      ],
+      "taxon_id": "TX000105"
+    },
+    {
+      "names": [
+        "Adiantum capillus-junonis Rupr.",
+        "암공작고사리"
+      ],
+      "taxon_id": "TX000106"
+    },
+    {
+      "names": [
+        "Antrophyum obovatum Baker",
+        "긴주걱고사리"
+      ],
+      "taxon_id": "TX000107"
+    },
+    {
+      "names": [
+        "Haplopteris zosterifolia (Willd.) E.H.Crane",
+        "섬일엽아재비"
+      ],
+      "taxon_id": "TX000108"
+    },
+    {
+      "names": [
+        "Haplopteris flexuosa (Fée) E.H.Crane",
+        "일엽아재비"
+      ],
+      "taxon_id": "TX000109"
+    },
+    {
+      "names": [
+        "Cheilanthes argentea (S.G.Gmel.) Kunze",
+        "부싯깃고사리"
+      ],
+      "taxon_id": "TX000110"
+    },
+    {
+      "names": [
+        "Cheilanthes argentea f. obscura (Christ) Kitag.",
+        "청부싯깃고사리"
+      ],
+      "taxon_id": "TX000111"
+    },
+    {
+      "names": [
+        "Hypolepis punctata (Thunb. ex Murray) Mett.",
+        "점고사리"
+      ],
+      "taxon_id": "TX000112"
+    },
+    {
+      "names": [
+        "Microlepia pseudostrigosa Makino",
+        "겹돌잔고사리"
+      ],
+      "taxon_id": "TX000113"
+    },
+    {
+      "names": [
+        "Microlepia marginata var. bipinnata Makino",
+        "깃돌잔고사리"
+      ],
+      "taxon_id": "TX000114"
+    },
+    {
+      "names": [
+        "Microlepia marginata (Houtt.) C.Chr.",
+        "돌잔고사리"
+      ],
+      "taxon_id": "TX000115"
+    },
+    {
+      "names": [
+        "Microlepia strigosa (Thunb.) C.Presl",
+        "돌토끼고사리"
+      ],
+      "taxon_id": "TX000116"
+    },
+    {
+      "names": [
+        "Pteridium aquilinum var. latiusculum (Desv.) Underw. ex A.Heller",
+        "고사리"
+      ],
+      "taxon_id": "TX000117"
+    },
+    {
+      "names": [
+        "Cystopteris sudetica A.Braun & Milde",
+        "바람고사리"
+      ],
+      "taxon_id": "TX000118"
+    },
+    {
+      "names": [
+        "Cystopteris fragilis (L.) Bernh.",
+        "한들고사리"
+      ],
+      "taxon_id": "TX000119"
+    },
+    {
+      "names": [
+        "Gymnocarpium jessoense (Koidz.) Koidz.",
+        "산토끼고사리"
+      ],
+      "taxon_id": "TX000120"
+    },
+    {
+      "names": [
+        "Gymnocarpium dryopteris (L.) Newman",
+        "토끼고사리"
+      ],
+      "taxon_id": "TX000121"
+    },
+    {
+      "names": [
+        "Diplazium mesosorum (Makino) Koidz.",
+        "큰개고사리"
+      ],
+      "taxon_id": "TX000122"
+    },
+    {
+      "names": [
+        "Asplenium yoshinagae Makino",
+        "가거꼬리고사리"
+      ],
+      "taxon_id": "TX000123"
+    },
+    {
+      "names": [
+        "Asplenium capillipes Makino",
+        "각시꼬리고사리"
+      ],
+      "taxon_id": "TX000124"
+    },
+    {
+      "names": [
+        "Asplenium boreale (Ohwi ex Sa.Kurata) Nakaike",
+        "개반들깃고사리"
+      ],
+      "taxon_id": "TX000125"
+    },
+    {
+      "names": [
+        "Asplenium oligophlebium Baker",
+        "개차고사리"
+      ],
+      "taxon_id": "TX000126"
+    },
+    {
+      "names": [
+        "Asplenium tripteropus Nakai",
+        "개차꼬리고사리"
+      ],
+      "taxon_id": "TX000127"
+    },
+    {
+      "names": [
+        "Asplenium ruprechtii Sa.Kurata",
+        "거미고사리"
+      ],
+      "taxon_id": "TX000128"
+    },
+    {
+      "names": [
+        "Asplenium castaneoviride Baker",
+        "거미꼬리고사리"
+      ],
+      "taxon_id": "TX000129"
+    },
+    {
+      "names": [
+        "Asplenium × kitazawae Sa.Kurata & Hutoh",
+        "거미돌담고사리"
+      ],
+      "taxon_id": "TX000130"
+    },
+    {
+      "names": [
+        "Asplenium × uiryeongse C.S.Lee & Kanghyup Lee",
+        "거미사철고사리"
+      ],
+      "taxon_id": "TX000131"
+    },
+    {
+      "names": [
+        "Asplenium × akaishiense Otsuka",
+        "거미애기꼬리고사리"
+      ],
+      "taxon_id": "TX000132"
+    },
+    {
+      "names": [
+        "Asplenium komarovii Akasawa",
+        "골고사리"
+      ],
+      "taxon_id": "TX000133"
+    },
+    {
+      "names": [
+        "Asplenium normale D.Don",
+        "깃고사리"
+      ],
+      "taxon_id": "TX000134"
+    },
+    {
+      "names": [
+        "Asplenium incisum Thunb.",
+        "꼬리고사리"
+      ],
+      "taxon_id": "TX000135"
+    },
+    {
+      "names": [
+        "Asplenium wrightii D.C.Eaton ex Hook.",
+        "눈썹고사리"
+      ],
+      "taxon_id": "TX000136"
+    },
+    {
+      "names": [
+        "Asplenium sarelii Hook.",
+        "돌담고사리"
+      ],
+      "taxon_id": "TX000137"
+    },
+    {
+      "names": [
+        "Asplenium × kidoi Sleep ex Viane, Y.X.Lin & Reichst.",
+        "돌담사철고사리"
+      ],
+      "taxon_id": "TX000138"
+    },
+    {
+      "names": [
+        "Asplenium ruta-muraria L.",
+        "돌좀고사리"
+      ],
+      "taxon_id": "TX000139"
+    },
+    {
+      "names": [
+        "Asplenium sarelii var. anogrammoides (Christ) Tagawa",
+        "바위좀고사리"
+      ],
+      "taxon_id": "TX000140"
+    },
+    {
+      "names": [
+        "Asplenium boreale (Ohwi ex Sa.Kurata) Nakaike",
+        "반들깃고사리"
+      ],
+      "taxon_id": "TX000141"
+    },
+    {
+      "names": [
+        "Asplenium pekinense Hance",
+        "사철고사리"
+      ],
+      "taxon_id": "TX000142"
+    },
+    {
+      "names": [
+        "Asplenium pekinense Hance",
+        "사철꼬리고사리"
+      ],
+      "taxon_id": "TX000143"
+    },
+    {
+      "names": [
+        "Asplenium × bimixtum C.S.Lee & Kanghyup Lee ex Y.H.Ha",
+        "산꼬리고사리"
+      ],
+      "taxon_id": "TX000144"
+    },
+    {
+      "names": [
+        "Asplenium tenerum G.Forst.",
+        "선녀고사리"
+      ],
+      "taxon_id": "TX000145"
+    },
+    {
+      "names": [
+        "Asplenium septentrionale (L.) Hoffm.",
+        "솔잎고사리"
+      ],
+      "taxon_id": "TX000146"
+    },
+    {
+      "names": [
+        "Asplenium wilfordii Mett. ex Kuhn",
+        "수수고사리"
+      ],
+      "taxon_id": "TX000147"
+    },
+    {
+      "names": [
+        "Asplenium prolongatum Hook.",
+        "숫돌담고사리"
+      ],
+      "taxon_id": "TX000148"
+    },
+    {
+      "names": [
+        "Asplenium tenuicaule Hayata",
+        "애기꼬리고사리"
+      ],
+      "taxon_id": "TX000149"
+    },
+    {
+      "names": [
+        "Asplenium × shikokianum Makino",
+        "잔눈썹고사리"
+      ],
+      "taxon_id": "TX000150"
+    },
+    {
+      "names": [
+        "Asplenium × pseudocapillipes Sang Hee Park, Jung Sung Kim & H.T.Kim",
+        "좀애기꼬리고사리"
+      ],
+      "taxon_id": "TX000151"
+    },
+    {
+      "names": [
+        "Asplenium ritoense Hayata",
+        "쪽잔고사리"
+      ],
+      "taxon_id": "TX000152"
+    },
+    {
+      "names": [
+        "Asplenium trichomanes subsp. quadrivalens D.E.Mey.",
+        "차꼬리고사리"
+      ],
+      "taxon_id": "TX000153"
+    },
+    {
+      "names": [
+        "Asplenium antiquum Makino",
+        "파초일엽"
+      ],
+      "taxon_id": "TX000154"
+    },
+    {
+      "names": [
+        "Hymenasplenium hondoense (N.Murak. & Hatan.) Nakaike",
+        "지느러미고사리"
+      ],
+      "taxon_id": "TX000155"
+    },
+    {
+      "names": [
+        "Woodsia microsora Kodama",
+        "금강가물고사리"
+      ],
+      "taxon_id": "TX000156"
+    },
+    {
+      "names": [
+        "Woodsia ilvensis (L.) R.Br.",
+        "두메우드풀"
+      ],
+      "taxon_id": "TX000157"
+    },
+    {
+      "names": [
+        "Woodsia subcordata Turcz.",
+        "산우드풀"
+      ],
+      "taxon_id": "TX000158"
+    },
+    {
+      "names": [
+        "Woodsia hancockii Baker",
+        "애기가물고사리"
+      ],
+      "taxon_id": "TX000159"
+    },
+    {
+      "names": [
+        "Woodsia polystichoides D.C.Eaton",
+        "우드풀"
+      ],
+      "taxon_id": "TX000160"
+    },
+    {
+      "names": [
+        "Woodsia intermedia Tagawa",
+        "좀우드풀"
+      ],
+      "taxon_id": "TX000161"
+    },
+    {
+      "names": [
+        "Woodsia macrochlaena Mett. ex Kuhn",
+        "참우드풀"
+      ],
+      "taxon_id": "TX000162"
+    },
+    {
+      "names": [
+        "Woodsia glabella R.Br.",
+        "큰솜털고사리"
+      ],
+      "taxon_id": "TX000163"
+    },
+    {
+      "names": [
+        "Matteuccia struthiopteris (L.) Tod.",
+        "청나래고사리"
+      ],
+      "taxon_id": "TX000164"
+    },
+    {
+      "names": [
+        "Onoclea interrupta (Maxim.) Ching & P.S.Chiu",
+        "야산고비"
+      ],
+      "taxon_id": "TX000165"
+    },
+    {
+      "names": [
+        "Pentarhizidium orientale (Hook.) Hayata",
+        "개면마"
+      ],
+      "taxon_id": "TX000166"
+    },
+    {
+      "names": [
+        "Woodwardia japonica (L.fil.) Sm.",
+        "새깃아재비"
+      ],
+      "taxon_id": "TX000167"
+    },
+    {
+      "names": [
+        "Athyrium iseanum Rosenst.",
+        "가는잎개고사리"
+      ],
+      "taxon_id": "TX000168"
+    },
+    {
+      "names": [
+        "Athyrium × pseudospinescens Seriz.",
+        "가는잎산개고사리"
+      ],
+      "taxon_id": "TX000169"
+    },
+    {
+      "names": [
+        "Athyrium reflexipinnum Hayata",
+        "거꾸리개고사리"
+      ],
+      "taxon_id": "TX000170"
+    },
+    {
+      "names": [
+        "Athyrium otophorum (Miq.) Koidz.",
+        "골개고사리"
+      ],
+      "taxon_id": "TX000171"
+    },
+    {
+      "names": [
+        "Athyrium deltoidofrons Makino",
+        "구슬개고사리"
+      ],
+      "taxon_id": "TX000172"
+    },
+    {
+      "names": [
+        "Athyrium wardii (Hook.) Makino",
+        "넓은잎개고사리"
+      ],
+      "taxon_id": "TX000173"
+    },
+    {
+      "names": [
+        "Athyrium × pseudowardii Seriz.",
+        "넓은잎산개고사리"
+      ],
+      "taxon_id": "TX000174"
+    },
+    {
+      "names": [
+        "Athyrium spinulosum (Maxim.) Milde",
+        "두메개고사리"
+      ],
+      "taxon_id": "TX000175"
+    },
+    {
+      "names": [
+        "Athyrium fallaciosum Milde",
+        "물뱀고사리"
+      ],
+      "taxon_id": "TX000176"
+    },
+    {
+      "names": [
+        "Athyrium yokoscense (Franch. & Sav.) Christ",
+        "뱀고사리"
+      ],
+      "taxon_id": "TX000177"
+    },
+    {
+      "names": [
+        "Athyrium × mentiens Sa.Kurata",
+        "뱀산개고사리"
+      ],
+      "taxon_id": "TX000178"
+    },
+    {
+      "names": [
+        "Athyrium melanolepis (Franch. & Sav.) Christ",
+        "북새발고사리"
+      ],
+      "taxon_id": "TX000179"
+    },
+    {
+      "names": [
+        "Athyrium vidalii (Franch. & Sav.) Nakai",
+        "산개고사리"
+      ],
+      "taxon_id": "TX000180"
+    },
+    {
+      "names": [
+        "Athyrium alpestre Clairv.",
+        "산고사리"
+      ],
+      "taxon_id": "TX000181"
+    },
+    {
+      "names": [
+        "Athyrium fauriei (Christ) Makino",
+        "산뱀고사리"
+      ],
+      "taxon_id": "TX000182"
+    },
+    {
+      "names": [
+        "Athyrium epirachis (Christ) Ching",
+        "산중개고사리"
+      ],
+      "taxon_id": "TX000183"
+    },
+    {
+      "names": [
+        "Athyrium acutipinnulum Kodama ex Nakai",
+        "섬고사리"
+      ],
+      "taxon_id": "TX000184"
+    },
+    {
+      "names": [
+        "Athyrium clivicola Tagawa",
+        "암뱀고사리"
+      ],
+      "taxon_id": "TX000185"
+    },
+    {
+      "names": [
+        "Athyrium excelsius Ching",
+        "지리산고사리"
+      ],
+      "taxon_id": "TX000186"
+    },
+    {
+      "names": [
+        "Athyrium monomachii (Kom.) Kom.",
+        "참새발고사리"
+      ],
+      "taxon_id": "TX000187"
+    },
+    {
+      "names": [
+        "Deparia oldhamii (Hook. & Baker) Y.C.Oh & C.S.Lee",
+        "가좀진고사리"
+      ],
+      "taxon_id": "TX000188"
+    },
+    {
+      "names": [
+        "Deparia × angustata (Nakai) Nakaike",
+        "개좀진고사리"
+      ],
+      "taxon_id": "TX000189"
+    },
+    {
+      "names": [
+        "Deparia coreana (Christ) M.Kato",
+        "곱새고사리"
+      ],
+      "taxon_id": "TX000190"
+    },
+    {
+      "names": [
+        "Deparia lushanensis (J.X.Li) Z.R.He",
+        "긴진고사리"
+      ],
+      "taxon_id": "TX000191"
+    },
+    {
+      "names": [
+        "Deparia pseudoconilii (Seriz.) Seriz.",
+        "나도좀진고사리"
+      ],
+      "taxon_id": "TX000192"
+    },
+    {
+      "names": [
+        "Deparia lancea (Thunb.) Fraser-Jenk.",
+        "버들참빗"
+      ],
+      "taxon_id": "TX000193"
+    },
+    {
+      "names": [
+        "Deparia pterorachis (Christ) M.Kato",
+        "왕고사리"
+      ],
+      "taxon_id": "TX000194"
+    },
+    {
+      "names": [
+        "Deparia conilii (Franch. & Sav.) M.Kato",
+        "좀진고사리"
+      ],
+      "taxon_id": "TX000195"
+    },
+    {
+      "names": [
+        "Deparia japonica (Thunb.) M.Kato",
+        "진고사리"
+      ],
+      "taxon_id": "TX000196"
+    },
+    {
+      "names": [
+        "Deparia okuboana (Makino) M.Kato",
+        "진퍼리개고사리"
+      ],
+      "taxon_id": "TX000197"
+    },
+    {
+      "names": [
+        "Deparia dimorphophylla (Koidz.) M.Kato",
+        "큰진고사리"
+      ],
+      "taxon_id": "TX000198"
+    },
+    {
+      "names": [
+        "Deparia petersenii (Kunze) M.Kato",
+        "탐라진고사리"
+      ],
+      "taxon_id": "TX000199"
+    },
+    {
+      "names": [
+        "Deparia pycnosora (Christ) M.Kato",
+        "털고사리"
+      ],
+      "taxon_id": "TX000200"
+    },
+    {
+      "names": [
+        "Deparia coreana (Christ) M.Kato",
+        "털곱새고사리"
+      ],
+      "taxon_id": "TX000201"
+    },
+    {
+      "names": [
+        "Deparia kiusiana (Koidz.) M.Kato",
+        "털진고사리"
+      ],
+      "taxon_id": "TX000202"
+    },
+    {
+      "names": [
+        "Deparia viridifrons (Makino) M.Kato",
+        "푸른개고사리"
+      ],
+      "taxon_id": "TX000203"
+    },
+    {
+      "names": [
+        "Deparia pycnosora var. albosquamata M.Kato",
+        "흰털고사리"
+      ],
+      "taxon_id": "TX000204"
+    },
+    {
+      "names": [
+        "Diplazium okudairae Makino",
+        "개톱고사리"
+      ],
+      "taxon_id": "TX000205"
+    },
+    {
+      "names": [
+        "Diplazium virescens Kunze",
+        "검정비늘고사리"
+      ],
+      "taxon_id": "TX000206"
+    },
+    {
+      "names": [
+        "Diplazium mettenianum (Miq.) C.Chr.",
+        "깃주름고사리"
+      ],
+      "taxon_id": "TX000207"
+    },
+    {
+      "names": [
+        "Diplazium squamigerum (Mett.) Hope",
+        "내장고사리"
+      ],
+      "taxon_id": "TX000208"
+    },
+    {
+      "names": [
+        "Diplazium sibiricum (Turcz. ex Kunze) Sa.Kurata",
+        "두메고사리"
+      ],
+      "taxon_id": "TX000209"
+    },
+    {
+      "names": [
+        "Diplazium sibiricum var. glabrum (Tagawa) Sa.Kurata",
+        "민두메고사리"
+      ],
+      "taxon_id": "TX000210"
+    },
+    {
+      "names": [
+        "Diplazium hachijoense Nakai",
+        "섬잔고사리"
+      ],
+      "taxon_id": "TX000211"
+    },
+    {
+      "names": [
+        "Diplazium chinense (Baker) C.Chr.",
+        "암고사리"
+      ],
+      "taxon_id": "TX000212"
+    },
+    {
+      "names": [
+        "Diplazium taquetii C.Chr.",
+        "제주암고사리"
+      ],
+      "taxon_id": "TX000213"
+    },
+    {
+      "names": [
+        "Diplazium wichurae (Mett.) Diels",
+        "주름고사리"
+      ],
+      "taxon_id": "TX000214"
+    },
+    {
+      "names": [
+        "Diplazium nipponicum Tagawa",
+        "큰섬잔고사리"
+      ],
+      "taxon_id": "TX000215"
+    },
+    {
+      "names": [
+        "Macrothelypteris torresiana var. calvata Holttum",
+        "각시고사리"
+      ],
+      "taxon_id": "TX000216"
+    },
+    {
+      "names": [
+        "Macrothelypteris viridifrons (Tagawa) Ching",
+        "푸른각시고사리"
+      ],
+      "taxon_id": "TX000217"
+    },
+    {
+      "names": [
+        "Phegopteris connectilis (Michx.) Watt",
+        "가래고사리"
+      ],
+      "taxon_id": "TX000218"
+    },
+    {
+      "names": [
+        "Phegopteris decursive-pinnata (H.C.Hall) Fée",
+        "설설고사리"
+      ],
+      "taxon_id": "TX000219"
+    },
+    {
+      "names": [
+        "Phegopteris koreana B.Y.Sun & C.H.Kim",
+        "큰설설고사리"
+      ],
+      "taxon_id": "TX000220"
+    },
+    {
+      "names": [
+        "Parathelypteris beddomei (Baker) Ching",
+        "가는잎처녀고사리"
+      ],
+      "taxon_id": "TX000221"
+    },
+    {
+      "names": [
+        "Parathelypteris glanduligera (Kunze) Ching",
+        "사다리고사리"
+      ],
+      "taxon_id": "TX000222"
+    },
+    {
+      "names": [
+        "Parathelypteris cystopteroides (D.C.Eaton) Ching",
+        "좀사다리고사리"
+      ],
+      "taxon_id": "TX000223"
+    },
+    {
+      "names": [
+        "Parathelypteris angustifrons (Miq.) Ching",
+        "탐라사다리고사리"
+      ],
+      "taxon_id": "TX000224"
+    },
+    {
+      "names": [
+        "Cyclosorus acuminatus (Houtt.) Nakai",
+        "별고사리"
+      ],
+      "taxon_id": "TX000225"
+    },
+    {
+      "names": [
+        "Cyclosorus dentatus (Forssk.) Ching",
+        "탐라별고사리"
+      ],
+      "taxon_id": "TX000226"
+    },
+    {
+      "names": [
+        "Cyclosorus parasiticus (L.) Farw.",
+        "털별고사리"
+      ],
+      "taxon_id": "TX000227"
+    },
+    {
+      "names": [
+        "Parathelypteris japonica var. glabrata (Ching) K.H.Shing",
+        "민지네고사리"
+      ],
+      "taxon_id": "TX000228"
+    },
+    {
+      "names": [
+        "Parathelypteris musashiensis (Hiyama) Nakaike",
+        "바위지네고사리"
+      ],
+      "taxon_id": "TX000229"
+    },
+    {
+      "names": [
+        "Parathelypteris japonica (Baker) Ching",
+        "지네고사리"
+      ],
+      "taxon_id": "TX000230"
+    },
+    {
+      "names": [
+        "Parathelypteris nipponica (Franch. & Sav.) Ching",
+        "키다리처녀고사리"
+      ],
+      "taxon_id": "TX000231"
+    },
+    {
+      "names": [
+        "Parathelypteris nipponica var. borealis (H.Hara) Nakaike",
+        "털산고사리"
+      ],
+      "taxon_id": "TX000232"
+    },
+    {
+      "names": [
+        "Thelypteris leveillei (Christ) C.M.Kuo",
+        "나도진퍼리고사리"
+      ],
+      "taxon_id": "TX000233"
+    },
+    {
+      "names": [
+        "Cyclosorus interruptus (Willd.) H.Itô",
+        "검은별고사리"
+      ],
+      "taxon_id": "TX000234"
+    },
+    {
+      "names": [
+        "Metathelypteris laxa (Franch. & Sav.) Ching",
+        "드문고사리"
+      ],
+      "taxon_id": "TX000235"
+    },
+    {
+      "names": [
+        "Metathelypteris hattori (H.Itô) Ching",
+        "잔털드문고사리"
+      ],
+      "taxon_id": "TX000236"
+    },
+    {
+      "names": [
+        "Thelypteris quelpartensis (Christ) Ching",
+        "큰처녀고사리"
+      ],
+      "taxon_id": "TX000237"
+    },
+    {
+      "names": [
+        "Thelypteris subochthodes Ching",
+        "제비꼬리고사리"
+      ],
+      "taxon_id": "TX000238"
+    },
+    {
+      "names": [
+        "Thelypteris palustris Schott",
+        "처녀고사리"
+      ],
+      "taxon_id": "TX000239"
+    },
+    {
+      "names": [
+        "Hypodematium angustifolium C.S.Lee & K.H.Lee",
+        "가는잎금털고사리"
+      ],
+      "taxon_id": "TX000240"
+    },
+    {
+      "names": [
+        "Hypodematium glandulosopilosum (Tagawa) Ohwi",
+        "금털고사리"
+      ],
+      "taxon_id": "TX000241"
+    },
+    {
+      "names": [
+        "Hypodematium squamulosopilosum Ching",
+        "흰금털고사리"
+      ],
+      "taxon_id": "TX000242"
+    },
+    {
+      "names": [
+        "Arachniodes exilis (Hance) Ching",
+        "가는쇠고사리"
+      ],
+      "taxon_id": "TX000243"
+    },
+    {
+      "names": [
+        "Arachniodes simplicior (Makino) Ohwi",
+        "꼬리쇠고사리"
+      ],
+      "taxon_id": "TX000244"
+    },
+    {
+      "names": [
+        "Arachniodes rhomboidea (Schott) Ching",
+        "쇠고사리"
+      ],
+      "taxon_id": "TX000245"
+    },
+    {
+      "names": [
+        "Arachniodes borealis Seriz.",
+        "왁살고사리"
+      ],
+      "taxon_id": "TX000246"
+    },
+    {
+      "names": [
+        "Arachniodes standishii (T.Moore) Ohwi",
+        "일색고사리"
+      ],
+      "taxon_id": "TX000247"
+    },
+    {
+      "names": [
+        "Arachniodes miqueliana (Maxim. ex Franch. & Sav.) Ohwi",
+        "제주왁살고사리"
+      ],
+      "taxon_id": "TX000248"
+    },
+    {
+      "names": [
+        "Arachniodes sporadosora (Kunze) Nakaike",
+        "좀가는쇠고사리"
+      ],
+      "taxon_id": "TX000249"
+    },
+    {
+      "names": [
+        "Arachniodes sporadosora (Kunze) Nakaike",
+        "좀쇠고사리"
+      ],
+      "taxon_id": "TX000250"
+    },
+    {
+      "names": [
+        "Arachniodes simplicior (Makino) Ohwi",
+        "큰꼬리쇠고사리"
+      ],
+      "taxon_id": "TX000251"
+    },
+    {
+      "names": [
+        "Arachniodes chinensis (Rosenst.) Ching",
+        "큰쇠고사리"
+      ],
+      "taxon_id": "TX000252"
+    },
+    {
+      "names": [
+        "Arachniodes mutica (Franch. & Sav.) Ohwi",
+        "털비늘고사리"
+      ],
+      "taxon_id": "TX000253"
+    },
+    {
+      "names": [
+        "Ctenitis sinii (Ching) Ohwi",
+        "남방고사리"
+      ],
+      "taxon_id": "TX000254"
+    },
+    {
+      "names": [
+        "Cyrtomium devexiscapulae (Koidz.) Ching",
+        "긴잎도깨비쇠고비"
+      ],
+      "taxon_id": "TX000255"
+    },
+    {
+      "names": [
+        "Cyrtomium falcatum (L.fil.) C.Presl",
+        "깃도깨비쇠고비"
+      ],
+      "taxon_id": "TX000256"
+    },
+    {
+      "names": [
+        "Cyrtomium falcatum (L.fil.) C.Presl",
+        "도깨비쇠고비"
+      ],
+      "taxon_id": "TX000257"
+    },
+    {
+      "names": [
+        "Cyrtomium yamamotoi Tagawa",
+        "반들산쇠고비"
+      ],
+      "taxon_id": "TX000258"
+    },
+    {
+      "names": [
+        "Cyrtomium fortunei var. clivicola (Makino) Tagawa",
+        "산쇠고비"
+      ],
+      "taxon_id": "TX000259"
+    },
+    {
+      "names": [
+        "Cyrtomium fortunei J.Sm.",
+        "쇠고비"
+      ],
+      "taxon_id": "TX000260"
+    },
+    {
+      "names": [
+        "Cyrtomium falcatum subsp. littorale S.Matsumoto ex S.Matsumoto & Ebihara",
+        "애기도깨비쇠고비"
+      ],
+      "taxon_id": "TX000261"
+    },
+    {
+      "names": [
+        "Cyrtomium laetevirens (Hiyama) Nakaike",
+        "윤쇠고비"
+      ],
+      "taxon_id": "TX000262"
+    },
+    {
+      "names": [
+        "Cyrtomium caryotideum (Wall. ex Hook. & Grev.) C.Presl",
+        "참쇠고비"
+      ],
+      "taxon_id": "TX000263"
+    },
+    {
+      "names": [
+        "Dryopteris chinensis (Baker) Koidz.",
+        "가는잎족제비고사리"
+      ],
+      "taxon_id": "TX000264"
+    },
+    {
+      "names": [
+        "Dryopteris caudipinna Nakai",
+        "가는홍지네고사리"
+      ],
+      "taxon_id": "TX000265"
+    },
+    {
+      "names": [
+        "Dryopteris hangchowensis Ching",
+        "각시톱지네고사리"
+      ],
+      "taxon_id": "TX000266"
+    },
+    {
+      "names": [
+        "Dryopteris × mituii Seriz.",
+        "개비늘고사리"
+      ],
+      "taxon_id": "TX000267"
+    },
+    {
+      "names": [
+        "Dryopteris melanocarpa Hayata",
+        "검은족제비고사리"
+      ],
+      "taxon_id": "TX000268"
+    },
+    {
+      "names": [
+        "Dryopteris subexaltata (Christ) C.Chr.",
+        "계곡고사리"
+      ],
+      "taxon_id": "TX000269"
+    },
+    {
+      "names": [
+        "Dryopteris uniformis (Makino) Makino",
+        "곰비늘고사리"
+      ],
+      "taxon_id": "TX000270"
+    },
+    {
+      "names": [
+        "Dryopteris × watanabei Sa.Kurata",
+        "곰비늘관중"
+      ],
+      "taxon_id": "TX000271"
+    },
+    {
+      "names": [
+        "Dryopteris decipiens (Hook.) Kuntze",
+        "공작지네고사리"
+      ],
+      "taxon_id": "TX000272"
+    },
+    {
+      "names": [
+        "Dryopteris crassirhizoma Nakai",
+        "관중"
+      ],
+      "taxon_id": "TX000273"
+    },
+    {
+      "names": [
+        "Dryopteris saxifragivaria Nakai",
+        "광릉족제비고사리"
+      ],
+      "taxon_id": "TX000274"
+    },
+    {
+      "names": [
+        "Dryopteris sieboldii (T.Moore) Kuntze",
+        "그늘고사리"
+      ],
+      "taxon_id": "TX000275"
+    },
+    {
+      "names": [
+        "Dryopteris austriaca Schinz & Thell.",
+        "금강고사리"
+      ],
+      "taxon_id": "TX000276"
+    },
+    {
+      "names": [
+        "Dryopteris gymnophylla (Baker) C.Chr.",
+        "금족제비고사리"
+      ],
+      "taxon_id": "TX000277"
+    },
+    {
+      "names": [
+        "Dryopteris formosana (Christ) C.Chr.",
+        "꼬리족제비고사리"
+      ],
+      "taxon_id": "TX000278"
+    },
+    {
+      "names": [
+        "Dryopteris subhikonensis K.Hori & N.Murak.",
+        "나도큰족제비고사리"
+      ],
+      "taxon_id": "TX000279"
+    },
+    {
+      "names": [
+        "Dryopteris cycadina (Franch. & Sav.) C.Chr.",
+        "나도톱지네고사리"
+      ],
+      "taxon_id": "TX000280"
+    },
+    {
+      "names": [
+        "Dryopteris × mayebarae Tagawa",
+        "남도톱지네고사리"
+      ],
+      "taxon_id": "TX000281"
+    },
+    {
+      "names": [
+        "Dryopteris crassirhizoma Nakai",
+        "넓은잎관중"
+      ],
+      "taxon_id": "TX000282"
+    },
+    {
+      "names": [
+        "Dryopteris kobayashii Kitag.",
+        "누른애기족제비고사리"
+      ],
+      "taxon_id": "TX000283"
+    },
+    {
+      "names": [
+        "Dryopteris tokyoensis (Matsum.) C.Chr.",
+        "느리미고사리"
+      ],
+      "taxon_id": "TX000284"
+    },
+    {
+      "names": [
+        "Dryopteris protobissetiana K.Hori & N.Murak.",
+        "들족제비고사리"
+      ],
+      "taxon_id": "TX000285"
+    },
+    {
+      "names": [
+        "Dryopteris sabaei (Franch. & Sav.) C.Chr.",
+        "뫼족제비고사리"
+      ],
+      "taxon_id": "TX000286"
+    },
+    {
+      "names": [
+        "Dryopteris saxifraga H.Itô",
+        "바위족제비고사리"
+      ],
+      "taxon_id": "TX000287"
+    },
+    {
+      "names": [
+        "Dryopteris goeringiana (Kunze) Koidz.",
+        "바위틈고사리"
+      ],
+      "taxon_id": "TX000288"
+    },
+    {
+      "names": [
+        "Dryopteris medioxima Koidz.",
+        "반들지네고사리"
+      ],
+      "taxon_id": "TX000289"
+    },
+    {
+      "names": [
+        "Dryopteris sichotensis Kom.",
+        "북관중"
+      ],
+      "taxon_id": "TX000290"
+    },
+    {
+      "names": [
+        "Dryopteris erythrovaria K.Hori & N.Murak.",
+        "붉은큰족제비고사리"
+      ],
+      "taxon_id": "TX000291"
+    },
+    {
+      "names": [
+        "Dryopteris lacera (Thunb.) Kuntze",
+        "비늘고사리"
+      ],
+      "taxon_id": "TX000292"
+    },
+    {
+      "names": [
+        "Dryopteris × fujipedis Sa.Kurata",
+        "비늘관중"
+      ],
+      "taxon_id": "TX000293"
+    },
+    {
+      "names": [
+        "Dryopteris polylepis (Franch. & Sav.) C.Chr.",
+        "산비늘고사리"
+      ],
+      "taxon_id": "TX000294"
+    },
+    {
+      "names": [
+        "Dryopteris bissetiana (Baker) C.Chr.",
+        "산족제비고사리"
+      ],
+      "taxon_id": "TX000295"
+    },
+    {
+      "names": [
+        "Dryopteris amurensis (Milde) Christ",
+        "아물고사리"
+      ],
+      "taxon_id": "TX000296"
+    },
+    {
+      "names": [
+        "Dryopteris sacrosancta Koidz.",
+        "애기족제비고사리"
+      ],
+      "taxon_id": "TX000297"
+    },
+    {
+      "names": [
+        "Dryopteris integripinnula Ching",
+        "애기지네고사리"
+      ],
+      "taxon_id": "TX000298"
+    },
+    {
+      "names": [
+        "Dryopteris commixta Tagawa",
+        "애기톱지네고사리"
+      ],
+      "taxon_id": "TX000299"
+    },
+    {
+      "names": [
+        "Dryopteris kinkiensis Koidz. ex Tagawa",
+        "엷은잎지네고사리"
+      ],
+      "taxon_id": "TX000300"
+    },
+    {
+      "names": [
+        "Dryopteris sparsa (D.Don) Kuntze",
+        "오름족제비고사리"
+      ],
+      "taxon_id": "TX000301"
+    },
+    {
+      "names": [
+        "Dryopteris monticola (Makino) C.Chr.",
+        "왕지네고사리"
+      ],
+      "taxon_id": "TX000302"
+    },
+    {
+      "names": [
+        "Dryopteris × kominatoensis Tagawa",
+        "왕지네느리미고사리"
+      ],
+      "taxon_id": "TX000303"
+    },
+    {
+      "names": [
+        "Dryopteris purpurella Tagawa",
+        "자주지네고사리"
+      ],
+      "taxon_id": "TX000304"
+    },
+    {
+      "names": [
+        "Dryopteris woodsiisora Hayata",
+        "장수고사리"
+      ],
+      "taxon_id": "TX000305"
+    },
+    {
+      "names": [
+        "Dryopteris championii (Benth.) C.Chr. ex Ching",
+        "제주지네고사리"
+      ],
+      "taxon_id": "TX000306"
+    },
+    {
+      "names": [
+        "Dryopteris varia (L.) Kuntze",
+        "족제비고사리"
+      ],
+      "taxon_id": "TX000307"
+    },
+    {
+      "names": [
+        "Dryopteris fragrans (L.) Schott",
+        "주저리고사리"
+      ],
+      "taxon_id": "TX000308"
+    },
+    {
+      "names": [
+        "Dryopteris maximowiczii (Baker) Kuntze",
+        "진저리고사리"
+      ],
+      "taxon_id": "TX000309"
+    },
+    {
+      "names": [
+        "Dryopteris sericea C.Chr.",
+        "참비늘고사리"
+      ],
+      "taxon_id": "TX000310"
+    },
+    {
+      "names": [
+        "Dryopteris nipponensis Koidz.",
+        "참지네고사리"
+      ],
+      "taxon_id": "TX000311"
+    },
+    {
+      "names": [
+        "Dryopteris erythrosora f. viridisora (Nakai ex H.Itô) H.Itô",
+        "청지네고사리"
+      ],
+      "taxon_id": "TX000312"
+    },
+    {
+      "names": [
+        "Dryopteris paomowanensis Ching & Z.Y.Liu",
+        "층층지네고사리"
+      ],
+      "taxon_id": "TX000313"
+    },
+    {
+      "names": [
+        "Dryopteris immixta Ching",
+        "큰족제비고사리"
+      ],
+      "taxon_id": "TX000314"
+    },
+    {
+      "names": [
+        "Dryopteris fuscipes C.Chr.",
+        "큰지네고사리"
+      ],
+      "taxon_id": "TX000315"
+    },
+    {
+      "names": [
+        "Dryopteris dickinsii (Franch. & Sav.) C.Chr.",
+        "큰톱지네고사리"
+      ],
+      "taxon_id": "TX000316"
+    },
+    {
+      "names": [
+        "Dryopteris hondoensis Koidz.",
+        "큰홍지네고사리"
+      ],
+      "taxon_id": "TX000317"
+    },
+    {
+      "names": [
+        "Dryopteris namegatae (Sa.Kurata) Sa.Kurata",
+        "탐라톱지네고사리"
+      ],
+      "taxon_id": "TX000318"
+    },
+    {
+      "names": [
+        "Dryopteris atrata (Wall) Ching",
+        "톱지네고사리"
+      ],
+      "taxon_id": "TX000319"
+    },
+    {
+      "names": [
+        "Dryopteris expansa (C.Presl) Fraser-Jenk. & Jermy",
+        "퍼진고사리"
+      ],
+      "taxon_id": "TX000320"
+    },
+    {
+      "names": [
+        "Dryopteris erythrosora (D.C.Eaton) Kuntze",
+        "홍지네고사리"
+      ],
+      "taxon_id": "TX000321"
+    },
+    {
+      "names": [
+        "Dryopteris maximowicziana (Miq.) C.Chr.",
+        "흰비늘고사리"
+      ],
+      "taxon_id": "TX000322"
+    },
+    {
+      "names": [
+        "Polystichum rigens Tagawa",
+        "가시개관중"
+      ],
+      "taxon_id": "TX000323"
+    },
+    {
+      "names": [
+        "Polystichum tsus-simense (Hook.) J.Sm.",
+        "검정개관중"
+      ],
+      "taxon_id": "TX000324"
+    },
+    {
+      "names": [
+        "Polystichum tagawanum Sa.Kurata",
+        "긴개관중"
+      ],
+      "taxon_id": "TX000325"
+    },
+    {
+      "names": [
+        "Polystichum pseudomakinoi Tagawa",
+        "나도개관중"
+      ],
+      "taxon_id": "TX000326"
+    },
+    {
+      "names": [
+        "Polystichum polyblepharum Nakai",
+        "나도히초미"
+      ],
+      "taxon_id": "TX000327"
+    },
+    {
+      "names": [
+        "Polystichum craspedosorum (Maxim.) Diels",
+        "낚시고사리"
+      ],
+      "taxon_id": "TX000328"
+    },
+    {
+      "names": [
+        "Polystichum lepidocaulon (Hook.) J.Sm.",
+        "더부살이고사리"
+      ],
+      "taxon_id": "TX000329"
+    },
+    {
+      "names": [
+        "Polystichum retrosopaleaceum (Kodama) Tagawa",
+        "비늘개관중"
+      ],
+      "taxon_id": "TX000330"
+    },
+    {
+      "names": [
+        "Polystichum longifrons Sa.Kurata",
+        "섬나도히초미"
+      ],
+      "taxon_id": "TX000331"
+    },
+    {
+      "names": [
+        "Polystichum tripteron (Kunze) C.Presl",
+        "십자고사리"
+      ],
+      "taxon_id": "TX000332"
+    },
+    {
+      "names": [
+        "Polystichum yaeyamense (Makino) Makino",
+        "애기십자고사리"
+      ],
+      "taxon_id": "TX000333"
+    },
+    {
+      "names": [
+        "Polystichum makinoi (Tagawa) Tagawa",
+        "윤개관중"
+      ],
+      "taxon_id": "TX000334"
+    },
+    {
+      "names": [
+        "Polystichum braunii (Spenn.) Fée",
+        "좀나도히초미"
+      ],
+      "taxon_id": "TX000335"
+    },
+    {
+      "names": [
+        "Polystichum × titibuense Sa.Kurata",
+        "좀참나도히초미"
+      ],
+      "taxon_id": "TX000336"
+    },
+    {
+      "names": [
+        "Polystichum ovatopaleaceum (Kodama) Sa.Kurata",
+        "지리개관중"
+      ],
+      "taxon_id": "TX000337"
+    },
+    {
+      "names": [
+        "Polystichum ovatopaleaceum var. coraiense (Christ) Sa.Kurata",
+        "참나도개관중"
+      ],
+      "taxon_id": "TX000338"
+    },
+    {
+      "names": [
+        "Polystichum ovatopaleaceum var. coraiense (Christ) Sa.Kurata",
+        "참나도히초미"
+      ],
+      "taxon_id": "TX000339"
+    },
+    {
+      "names": [
+        "Polystichum mayebarai Tagawa, 1934",
+        "큰개관중"
+      ],
+      "taxon_id": "TX000340"
+    },
+    {
+      "names": [
+        "Polystichum tripteron var. subpinnatum (H.Itô) Honda",
+        "큰십자고사리"
+      ],
+      "taxon_id": "TX000341"
+    },
+    {
+      "names": [
+        "Polystichum aculeatum var. fibrillosopaleaceum Kodama",
+        "털개관중"
+      ],
+      "taxon_id": "TX000342"
+    },
+    {
+      "names": [
+        "Polystichum putuoense Li Bing Zhang",
+        "톱니더부살이고사리"
+      ],
+      "taxon_id": "TX000343"
+    },
+    {
+      "names": [
+        "Nephrolepis cordifolia (L.) C.Presl",
+        "줄고사리"
+      ],
+      "taxon_id": "TX000344"
+    },
+    {
+      "names": [
+        "Tectaria fuscipes (Wall. ex Bedd.) C.Chr.",
+        "백록고사리"
+      ],
+      "taxon_id": "TX000345"
+    },
+    {
+      "names": [
+        "Davallia mariesii H.J.Veitch",
+        "넉줄고사리"
+      ],
+      "taxon_id": "TX000346"
+    },
+    {
+      "names": [
+        "Loxogramme salicifolia (Makino) Makino",
+        "버들일엽"
+      ],
+      "taxon_id": "TX000347"
+    },
+    {
+      "names": [
+        "Loxogramme duclouxii Christ",
+        "숟갈일엽"
+      ],
+      "taxon_id": "TX000348"
+    },
+    {
+      "names": [
+        "Loxogramme grammitoides (Baker) C.Chr.",
+        "주걱일엽"
+      ],
+      "taxon_id": "TX000349"
+    },
+    {
+      "names": [
+        "Pyrrosia lingua (Thunb.) Farw.",
+        "석위"
+      ],
+      "taxon_id": "TX000350"
+    },
+    {
+      "names": [
+        "Pyrrosia hastata (Thunb. ex Houtt.) Ching",
+        "세뿔석위"
+      ],
+      "taxon_id": "TX000351"
+    },
+    {
+      "names": [
+        "Pyrrosia petiolosa (Christ) Ching",
+        "애기석위"
+      ],
+      "taxon_id": "TX000352"
+    },
+    {
+      "names": [
+        "Pyrrosia linearifolia (Hook.) Ching",
+        "우단일엽"
+      ],
+      "taxon_id": "TX000353"
+    },
+    {
+      "names": [
+        "Pyrrosia × nipponica M.Beppu & Seriz.",
+        "큰우단일엽"
+      ],
+      "taxon_id": "TX000354"
+    },
+    {
+      "names": [
+        "Selliguea hastata (Thunb.) Fraser-Jenk.",
+        "고란초"
+      ],
+      "taxon_id": "TX000355"
+    },
+    {
+      "names": [
+        "Selliguea veitchii (Baker) H.Ohashi & K.Ohashi",
+        "층층고란초"
+      ],
+      "taxon_id": "TX000356"
+    },
+    {
+      "names": [
+        "Selliguea engleri (Luerss.) Fraser-Jenk.",
+        "큰고란초"
+      ],
+      "taxon_id": "TX000357"
+    },
+    {
+      "names": [
+        "Lepisorus nigripes T.Fujiw. & Seriz.",
+        "검은일엽초"
+      ],
+      "taxon_id": "TX000358"
+    },
+    {
+      "names": [
+        "Lemmaphyllum microphyllum var. obovatum (Harr.) C.Chr.",
+        "긴콩짜개덩굴"
+      ],
+      "taxon_id": "TX000359"
+    },
+    {
+      "names": [
+        "Lepisorus annuifrons (Makino) Ching",
+        "다시마일엽초"
+      ],
+      "taxon_id": "TX000360"
+    },
+    {
+      "names": [
+        "Neolepisorus ensatus (Thunb.) Ching",
+        "밤일엽"
+      ],
+      "taxon_id": "TX000361"
+    },
+    {
+      "names": [
+        "Lepisorus ussuriensis (Regel & Mack.) Ching",
+        "산일엽초"
+      ],
+      "taxon_id": "TX000362"
+    },
+    {
+      "names": [
+        "Lepisorus hachijoensis Sa.Kurata",
+        "섬일엽초"
+      ],
+      "taxon_id": "TX000363"
+    },
+    {
+      "names": [
+        "Lepisorus onoei (Franch. & Sav.) Ching",
+        "애기일엽초"
+      ],
+      "taxon_id": "TX000364"
+    },
+    {
+      "names": [
+        "Lepisorus thunbergianus (Kaulf.) Ching",
+        "일엽초"
+      ],
+      "taxon_id": "TX000365"
+    },
+    {
+      "names": [
+        "Microsorum superficiale (Blume) Ching",
+        "창일엽"
+      ],
+      "taxon_id": "TX000366"
+    },
+    {
+      "names": [
+        "Lemmaphyllum microphyllum C.Presl",
+        "콩짜개덩굴"
+      ],
+      "taxon_id": "TX000367"
+    },
+    {
+      "names": [
+        "Leptochilus wrightii (Hook.) X.C.Zhang",
+        "밤잎고사리"
+      ],
+      "taxon_id": "TX000368"
+    },
+    {
+      "names": [
+        "Leptochilus ellipticus (Thunb.) Noot.",
+        "손고비"
+      ],
+      "taxon_id": "TX000369"
+    },
+    {
+      "names": [
+        "Leptochilus × shintenensis (Hayata) Nakaike",
+        "제주창고사리"
+      ],
+      "taxon_id": "TX000370"
+    },
+    {
+      "names": [
+        "Leptochilus × simplicifrons (Christ) Nakaike",
+        "창고사리"
+      ],
+      "taxon_id": "TX000371"
+    },
+    {
+      "names": [
+        "Leptochilus neopothifolius Nakaike",
+        "큰손고비"
+      ],
+      "taxon_id": "TX000372"
+    },
+    {
+      "names": [
+        "Pleurosoriopsis makinoi (Maxim.) Fomin",
+        "좀고사리"
+      ],
+      "taxon_id": "TX000373"
+    },
+    {
+      "names": [
+        "Polypodium fauriei Christ",
+        "나사미역고사리"
+      ],
+      "taxon_id": "TX000374"
+    },
+    {
+      "names": [
+        "Polypodium vulgare L.",
+        "미역고사리"
+      ],
+      "taxon_id": "TX000375"
+    },
+    {
+      "names": [
+        "Polypodium sibiricum Sipliv.",
+        "좀미역고사리"
+      ],
+      "taxon_id": "TX000376"
+    },
+    {
+      "names": [
+        "Isoetes sinensis T.C.Palmer",
+        "가는물부추"
+      ],
+      "taxon_id": "TX000377"
+    },
+    {
+      "names": [
+        "Isoetes japonica A.Braun",
+        "물부추"
+      ],
+      "taxon_id": "TX000378"
+    },
+    {
+      "names": [
+        "Isoetes jejuensis H.K.Choi, Ch.Kim & J.Jung",
+        "제주물부추"
+      ],
+      "taxon_id": "TX000379"
+    },
+    {
+      "names": [
+        "Isoetes coreana Y.H.Chung & H.K.Choi",
+        "참물부추"
+      ],
+      "taxon_id": "TX000380"
+    },
+    {
+      "names": [
+        "Isoetes hallasanensis H.K.Choi, Ch.Kim & J.Jung",
+        "한라물부추"
+      ],
+      "taxon_id": "TX000381"
+    },
+    {
+      "names": [
+        "Botrychium strictum Underw.",
+        "긴꽃고사리삼"
+      ],
+      "taxon_id": "TX000382"
+    },
+    {
+      "names": [
+        "Athyrium niponicum (Mett) Hance",
+        "개고사리"
+      ],
+      "taxon_id": "TX000383"
+    },
+    {
+      "names": [
+        "Athyrium sheareri (Baker) Ching",
+        "개톱날고사리"
+      ],
+      "taxon_id": "TX000384"
+    },
+    {
+      "names": [
+        "Athyrium concinnum Nakai",
+        "광릉개고사리"
+      ],
+      "taxon_id": "TX000385"
+    },
+    {
+      "names": [
+        "Athyrium × saitoanum (Sugim.) Seriz.",
+        "깃개톱날고사리"
+      ],
+      "taxon_id": "TX000386"
+    },
+    {
+      "names": [
+        "Cornopteris decurrentialata (Hook.) Nakai",
+        "뿔고사리"
+      ],
+      "taxon_id": "TX000387"
+    },
+    {
+      "names": [
+        "Cornopteris crenulatoserrulata (Makino) Nakai",
+        "응달고사리"
+      ],
+      "taxon_id": "TX000388"
+    },
+    {
+      "names": [
+        "Cornopteris christenseniana (Koidz.) Tagawa",
+        "지리산숲고사리"
+      ],
+      "taxon_id": "TX000389"
+    },
+    {
+      "names": [
+        "Cornopteris decurrentialata var. pilosella H.Itô",
+        "털숲고사리"
+      ],
+      "taxon_id": "TX000390"
+    },
+    {
+      "names": [
+        "Cheilanthes chusana Hook.",
+        "개부싯깃고사리"
+      ],
+      "taxon_id": "TX000391"
+    },
+    {
+      "names": [
+        "Cheilanthes kuhnii Milde",
+        "북부싯깃고사리"
+      ],
+      "taxon_id": "TX000392"
+    },
+    {
+      "names": [
+        "Cheilanthes kuhnii Milde",
+        "산부싯깃고사리"
+      ],
+      "taxon_id": "TX000393"
+    },
+    {
+      "names": [
+        "Leptogramma pozoi subsp. mollissima (Kunze) Nakaike",
+        "진퍼리고사리"
+      ],
+      "taxon_id": "TX000394"
+    },
+    {
+      "names": [
+        "Cyclosorus penangianus (Hook.) Copel.",
+        "큰별고사리"
+      ],
+      "taxon_id": "TX000395"
+    },
+    {
+      "names": [
+        "Woodsia manchuriensis Hook.",
+        "만주우드풀"
+      ],
+      "taxon_id": "TX000396"
+    },
+    {
+      "names": [
+        "Dennstaedtia scabra (Wall. ex Hook.) T.Moore",
+        "사철잔고사리"
+      ],
+      "taxon_id": "TX000397"
+    },
+    {
+      "names": [
+        "Dennstaedtia hirsuta (Sw.) Mett. ex Miq.",
+        "잔고사리"
+      ],
+      "taxon_id": "TX000398"
+    },
+    {
+      "names": [
+        "Dennstaedtia wilfordii (T.Moore) Christ",
+        "황고사리"
+      ],
+      "taxon_id": "TX000399"
+    },
+    {
+      "names": [
+        "Asplenium antiquum Makino",
+        "파초일엽"
+      ],
+      "taxon_id": "TX000400"
+    }
+  ],
+  "release_id": "6adf7b4cf3f05af36868b95f2e13121458937310f65cb9683e8fd0828cb95a15",
+  "schema_version": 1
+}

@@ -1,0 +1,21 @@
+{
+  "cytotypes": [],
+  "images": [],
+  "morphology": [],
+  "release_id": "6adf7b4cf3f05af36868b95f2e13121458937310f65cb9683e8fd0828cb95a15",
+  "schema_version": 1,
+  "synonyms": [],
+  "taxon": {
+    "accepted_scientific_name": null,
+    "accepted_taxon_id": null,
+    "family": "Dryopteridaceae",
+    "gbif_status": "ACCEPTED",
+    "gbif_taxon_key": null,
+    "genus": "Dryopteris",
+    "korean_name": "느리미고사리",
+    "order": "Polypodiales",
+    "scientific_name": "Dryopteris tokyoensis (Matsum.) C.Chr.",
+    "taxon_id": "TX000284",
+    "taxon_rank": "SPECIES"
+  }
+}

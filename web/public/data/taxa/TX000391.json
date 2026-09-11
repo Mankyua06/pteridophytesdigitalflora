@@ -1,0 +1,21 @@
+{
+  "cytotypes": [],
+  "images": [],
+  "morphology": [],
+  "release_id": "6adf7b4cf3f05af36868b95f2e13121458937310f65cb9683e8fd0828cb95a15",
+  "schema_version": 1,
+  "synonyms": [],
+  "taxon": {
+    "accepted_scientific_name": "Oeosporangium chusanum (Hook.) Fraser-Jenk.",
+    "accepted_taxon_id": null,
+    "family": "Pteridaceae",
+    "gbif_status": "SYNONYM",
+    "gbif_taxon_key": null,
+    "genus": "Oeosporangium",
+    "korean_name": "개부싯깃고사리",
+    "order": "Polypodiales",
+    "scientific_name": "Cheilanthes chusana Hook.",
+    "taxon_id": "TX000391",
+    "taxon_rank": "SPECIES"
+  }
+}

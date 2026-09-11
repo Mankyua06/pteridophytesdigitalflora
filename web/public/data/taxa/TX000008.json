@@ -1,0 +1,21 @@
+{
+  "cytotypes": [],
+  "images": [],
+  "morphology": [],
+  "release_id": "6adf7b4cf3f05af36868b95f2e13121458937310f65cb9683e8fd0828cb95a15",
+  "schema_version": 1,
+  "synonyms": [],
+  "taxon": {
+    "accepted_scientific_name": "Spinulum annotinum subsp. annotinum",
+    "accepted_taxon_id": null,
+    "family": "Lycopodiaceae",
+    "gbif_status": "SYNONYM",
+    "gbif_taxon_key": null,
+    "genus": "Spinulum",
+    "korean_name": "개석송",
+    "order": "Lycopodiales",
+    "scientific_name": "Lycopodium annotinum L.",
+    "taxon_id": "TX000008",
+    "taxon_rank": "SPECIES"
+  }
+}

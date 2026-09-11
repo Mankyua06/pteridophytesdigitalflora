@@ -1,0 +1,21 @@
+{
+  "cytotypes": [],
+  "images": [],
+  "morphology": [],
+  "release_id": "6adf7b4cf3f05af36868b95f2e13121458937310f65cb9683e8fd0828cb95a15",
+  "schema_version": 1,
+  "synonyms": [],
+  "taxon": {
+    "accepted_scientific_name": "Aleuritopteris argentea var. obscura (Christ) Ching",
+    "accepted_taxon_id": null,
+    "family": "Pteridaceae",
+    "gbif_status": "SYNONYM",
+    "gbif_taxon_key": null,
+    "genus": "Aleuritopteris",
+    "korean_name": "청부싯깃고사리",
+    "order": "Polypodiales",
+    "scientific_name": "Cheilanthes argentea f. obscura (Christ) Kitag.",
+    "taxon_id": "TX000111",
+    "taxon_rank": "FORM"
+  }
+}

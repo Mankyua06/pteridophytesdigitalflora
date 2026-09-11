@@ -1,0 +1,21 @@
+{
+  "cytotypes": [],
+  "images": [],
+  "morphology": [],
+  "release_id": "6adf7b4cf3f05af36868b95f2e13121458937310f65cb9683e8fd0828cb95a15",
+  "schema_version": 1,
+  "synonyms": [],
+  "taxon": {
+    "accepted_scientific_name": null,
+    "accepted_taxon_id": null,
+    "family": "Thelypteridaceae",
+    "gbif_status": "ACCEPTED",
+    "gbif_taxon_key": null,
+    "genus": "Phegopteris",
+    "korean_name": "가래고사리",
+    "order": "Polypodiales",
+    "scientific_name": "Phegopteris connectilis (Michx.) Watt",
+    "taxon_id": "TX000218",
+    "taxon_rank": "SPECIES"
+  }
+}

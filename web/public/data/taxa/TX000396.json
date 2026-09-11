@@ -1,0 +1,21 @@
+{
+  "cytotypes": [],
+  "images": [],
+  "morphology": [],
+  "release_id": "6adf7b4cf3f05af36868b95f2e13121458937310f65cb9683e8fd0828cb95a15",
+  "schema_version": 1,
+  "synonyms": [],
+  "taxon": {
+    "accepted_scientific_name": "Physematium manchuriense (Hook.) Nakai",
+    "accepted_taxon_id": null,
+    "family": "Woodsiaceae",
+    "gbif_status": "SYNONYM",
+    "gbif_taxon_key": null,
+    "genus": "Physematium",
+    "korean_name": "만주우드풀",
+    "order": "Polypodiales",
+    "scientific_name": "Woodsia manchuriensis Hook.",
+    "taxon_id": "TX000396",
+    "taxon_rank": "SPECIES"
+  }
+}

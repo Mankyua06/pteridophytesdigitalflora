@@ -1,0 +1,1137 @@
+{
+  "links": [
+    {
+      "display_order": 1,
+      "image_id": "IM000001",
+      "morphology_id": "MO0001",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 2,
+      "image_id": "IM000002",
+      "morphology_id": "MO0002",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 3,
+      "image_id": "IM000003",
+      "morphology_id": "MO0003",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 4,
+      "image_id": "IM000004",
+      "morphology_id": "MO0004",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 5,
+      "image_id": "IM000005",
+      "morphology_id": "MO0005",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 6,
+      "image_id": "IM000006",
+      "morphology_id": "MO0006",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 7,
+      "image_id": "IM000007",
+      "morphology_id": "MO0007",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 8,
+      "image_id": "IM000008",
+      "morphology_id": "MO0008",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 9,
+      "image_id": "IM000009",
+      "morphology_id": "MO0009",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 10,
+      "image_id": "IM000010",
+      "morphology_id": "MO0010",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 11,
+      "image_id": "IM000011",
+      "morphology_id": "MO0011",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 12,
+      "image_id": "IM000012",
+      "morphology_id": "MO0012",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 13,
+      "image_id": "IM000013",
+      "morphology_id": "MO0013",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 14,
+      "image_id": "IM000014",
+      "morphology_id": "MO0014",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 15,
+      "image_id": "IM000015",
+      "morphology_id": "MO0015",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 16,
+      "image_id": "IM000016",
+      "morphology_id": "MO0016",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 17,
+      "image_id": "IM000017",
+      "morphology_id": "MO0017",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 18,
+      "image_id": "IM000018",
+      "morphology_id": "MO0018",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 19,
+      "image_id": "IM000019",
+      "morphology_id": "MO0019",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 20,
+      "image_id": "IM000020",
+      "morphology_id": "MO0020",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 21,
+      "image_id": "IM000021",
+      "morphology_id": "MO0021",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 22,
+      "image_id": "IM000022",
+      "morphology_id": "MO0022",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 23,
+      "image_id": "IM000023",
+      "morphology_id": "MO0023",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 24,
+      "image_id": "IM000024",
+      "morphology_id": "MO0024",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 25,
+      "image_id": "IM000025",
+      "morphology_id": "MO0025",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 26,
+      "image_id": "IM000026",
+      "morphology_id": "MO0026",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 27,
+      "image_id": "IM000027",
+      "morphology_id": "MO0027",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 28,
+      "image_id": "IM000028",
+      "morphology_id": "MO0028",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 29,
+      "image_id": "IM000029",
+      "morphology_id": "MO0029",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 30,
+      "image_id": "IM000030",
+      "morphology_id": "MO0030",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 31,
+      "image_id": "IM000031",
+      "morphology_id": "MO0031",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 32,
+      "image_id": "IM000032",
+      "morphology_id": "MO0032",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 33,
+      "image_id": "IM000033",
+      "morphology_id": "MO0033",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 34,
+      "image_id": "IM000034",
+      "morphology_id": "MO0034",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 35,
+      "image_id": "IM000035",
+      "morphology_id": "MO0035",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 36,
+      "image_id": "IM000036",
+      "morphology_id": "MO0036",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 37,
+      "image_id": "IM000037",
+      "morphology_id": "MO0037",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 38,
+      "image_id": "IM000038",
+      "morphology_id": "MO0038",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 39,
+      "image_id": "IM000039",
+      "morphology_id": "MO0039",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 40,
+      "image_id": "IM000040",
+      "morphology_id": "MO0040",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 41,
+      "image_id": "IM000041",
+      "morphology_id": "MO0041",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 42,
+      "image_id": "IM000042",
+      "morphology_id": "MO0042",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 43,
+      "image_id": "IM000043",
+      "morphology_id": "MO0043",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 44,
+      "image_id": "IM000044",
+      "morphology_id": "MO0044",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 45,
+      "image_id": "IM000045",
+      "morphology_id": "MO0045",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 46,
+      "image_id": "IM000046",
+      "morphology_id": "MO0046",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 47,
+      "image_id": "IM000047",
+      "morphology_id": "MO0047",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 48,
+      "image_id": "IM000048",
+      "morphology_id": "MO0048",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 49,
+      "image_id": "IM000049",
+      "morphology_id": "MO0049",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 50,
+      "image_id": "IM000050",
+      "morphology_id": "MO0050",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 51,
+      "image_id": "IM000051",
+      "morphology_id": "MO0051",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 52,
+      "image_id": "IM000052",
+      "morphology_id": "MO0052",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 53,
+      "image_id": "IM000053",
+      "morphology_id": "MO0053",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 54,
+      "image_id": "IM000054",
+      "morphology_id": "MO0054",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 55,
+      "image_id": "IM000055",
+      "morphology_id": "MO0055",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 56,
+      "image_id": "IM000056",
+      "morphology_id": "MO0056",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 57,
+      "image_id": "IM000057",
+      "morphology_id": "MO0057",
+      "representative": true,
+      "role": "primary"
+    },
+    {
+      "display_order": 58,
+      "image_id": "IM000058",
+      "morphology_id": "MO0058",
+      "representative": true,
+      "role": "primary"
+    }
+  ],
+  "nodes": [
+    {
+      "context_label": "Whole plant",
+      "display_order": 1,
+      "morphology_id": "MO0001",
+      "parent_id": null,
+      "term_id": "MT0001"
+    },
+    {
+      "context_label": "Whole plant > Frond",
+      "display_order": 1,
+      "morphology_id": "MO0002",
+      "parent_id": "MO0001",
+      "term_id": "MT0002"
+    },
+    {
+      "context_label": "Whole plant > Rhizome",
+      "display_order": 2,
+      "morphology_id": "MO0051",
+      "parent_id": "MO0001",
+      "term_id": "MT0019"
+    },
+    {
+      "context_label": "Frond > Circinate vernation",
+      "display_order": 1,
+      "morphology_id": "MO0003",
+      "parent_id": "MO0002",
+      "term_id": "MT0003"
+    },
+    {
+      "context_label": "Frond > Blade / Lamina",
+      "display_order": 2,
+      "morphology_id": "MO0004",
+      "parent_id": "MO0002",
+      "term_id": "MT0004"
+    },
+    {
+      "context_label": "Frond > Petiole / Stipe",
+      "display_order": 3,
+      "morphology_id": "MO0044",
+      "parent_id": "MO0002",
+      "term_id": "MT0005"
+    },
+    {
+      "context_label": "Blade / Lamina > Rachis ",
+      "display_order": 1,
+      "morphology_id": "MO0005",
+      "parent_id": "MO0004",
+      "term_id": "MT0007"
+    },
+    {
+      "context_label": "Blade / Lamina > Pinna ",
+      "display_order": 2,
+      "morphology_id": "MO0011",
+      "parent_id": "MO0004",
+      "term_id": "MT0012"
+    },
+    {
+      "context_label": "Blade / Lamina > Segment",
+      "display_order": 3,
+      "morphology_id": "MO0020",
+      "parent_id": "MO0004",
+      "term_id": "MT0014"
+    },
+    {
+      "context_label": "Blade / Lamina > Ultimate segment",
+      "display_order": 4,
+      "morphology_id": "MO0021",
+      "parent_id": "MO0004",
+      "term_id": "MT0015"
+    },
+    {
+      "context_label": "Blade / Lamina > Vein",
+      "display_order": 5,
+      "morphology_id": "MO0022",
+      "parent_id": "MO0004",
+      "term_id": "MT0010"
+    },
+    {
+      "context_label": "Blade / Lamina > Apex",
+      "display_order": 6,
+      "morphology_id": "MO0024",
+      "parent_id": "MO0004",
+      "term_id": "MT0016"
+    },
+    {
+      "context_label": "Blade / Lamina > Base",
+      "display_order": 7,
+      "morphology_id": "MO0025",
+      "parent_id": "MO0004",
+      "term_id": "MT0017"
+    },
+    {
+      "context_label": "Blade / Lamina > Margin",
+      "display_order": 8,
+      "morphology_id": "MO0026",
+      "parent_id": "MO0004",
+      "term_id": "MT0018"
+    },
+    {
+      "context_label": "Blade / Lamina > Scale",
+      "display_order": 9,
+      "morphology_id": "MO0027",
+      "parent_id": "MO0004",
+      "term_id": "MT0022"
+    },
+    {
+      "context_label": "Blade / Lamina > Trichome",
+      "display_order": 10,
+      "morphology_id": "MO0028",
+      "parent_id": "MO0004",
+      "term_id": "MT0023"
+    },
+    {
+      "context_label": "Blade / Lamina > Gland",
+      "display_order": 11,
+      "morphology_id": "MO0031",
+      "parent_id": "MO0004",
+      "term_id": "MT0026"
+    },
+    {
+      "context_label": "Blade / Lamina > Farina",
+      "display_order": 12,
+      "morphology_id": "MO0032",
+      "parent_id": "MO0004",
+      "term_id": "MT0027"
+    },
+    {
+      "context_label": "Blade / Lamina > Sorus",
+      "display_order": 13,
+      "morphology_id": "MO0033",
+      "parent_id": "MO0004",
+      "term_id": "MT0028"
+    },
+    {
+      "context_label": "Rachis > Abaxial / dorsal surface",
+      "display_order": 1,
+      "morphology_id": "MO0059",
+      "parent_id": "MO0005",
+      "term_id": "MT0040"
+    },
+    {
+      "context_label": "Rachis > Scale",
+      "display_order": 2,
+      "morphology_id": "MO0006",
+      "parent_id": "MO0005",
+      "term_id": "MT0022"
+    },
+    {
+      "context_label": "Rachis > Trichome",
+      "display_order": 3,
+      "morphology_id": "MO0007",
+      "parent_id": "MO0005",
+      "term_id": "MT0023"
+    },
+    {
+      "context_label": "Rachis > Gland",
+      "display_order": 4,
+      "morphology_id": "MO0010",
+      "parent_id": "MO0005",
+      "term_id": "MT0026"
+    },
+    {
+      "context_label": "Rachis > Trichome > Hair",
+      "display_order": 1,
+      "morphology_id": "MO0008",
+      "parent_id": "MO0007",
+      "term_id": "MT0024"
+    },
+    {
+      "context_label": "Rachis > Trichome > Glandular hair",
+      "display_order": 2,
+      "morphology_id": "MO0009",
+      "parent_id": "MO0007",
+      "term_id": "MT0025"
+    },
+    {
+      "context_label": "Pinna > Abaxial / dorsal surface",
+      "display_order": 1,
+      "morphology_id": "MO0060",
+      "parent_id": "MO0011",
+      "term_id": "MT0040"
+    },
+    {
+      "context_label": "Pinna > Costa ",
+      "display_order": 2,
+      "morphology_id": "MO0012",
+      "parent_id": "MO0011",
+      "term_id": "MT0008"
+    },
+    {
+      "context_label": "Pinna > Pinnule ",
+      "display_order": 3,
+      "morphology_id": "MO0013",
+      "parent_id": "MO0011",
+      "term_id": "MT0013"
+    },
+    {
+      "context_label": "Pinna > Scale",
+      "display_order": 4,
+      "morphology_id": "MO0015",
+      "parent_id": "MO0011",
+      "term_id": "MT0022"
+    },
+    {
+      "context_label": "Pinna > Trichome",
+      "display_order": 5,
+      "morphology_id": "MO0016",
+      "parent_id": "MO0011",
+      "term_id": "MT0023"
+    },
+    {
+      "context_label": "Pinna > Gland",
+      "display_order": 6,
+      "morphology_id": "MO0019",
+      "parent_id": "MO0011",
+      "term_id": "MT0026"
+    },
+    {
+      "context_label": "Costa > Abaxial / dorsal surface",
+      "display_order": 1,
+      "morphology_id": "MO0061",
+      "parent_id": "MO0012",
+      "term_id": "MT0040"
+    },
+    {
+      "context_label": "Pinnule > Abaxial / dorsal surface",
+      "display_order": 1,
+      "morphology_id": "MO0062",
+      "parent_id": "MO0013",
+      "term_id": "MT0040"
+    },
+    {
+      "context_label": "Pinnule > Costule ",
+      "display_order": 2,
+      "morphology_id": "MO0014",
+      "parent_id": "MO0013",
+      "term_id": "MT0009"
+    },
+    {
+      "context_label": "Costule > Abaxial / dorsal surface",
+      "display_order": 1,
+      "morphology_id": "MO0063",
+      "parent_id": "MO0014",
+      "term_id": "MT0040"
+    },
+    {
+      "context_label": "Pinna > Trichome > Hair",
+      "display_order": 1,
+      "morphology_id": "MO0017",
+      "parent_id": "MO0016",
+      "term_id": "MT0024"
+    },
+    {
+      "context_label": "Pinna > Trichome > Glandular hair",
+      "display_order": 2,
+      "morphology_id": "MO0018",
+      "parent_id": "MO0016",
+      "term_id": "MT0025"
+    },
+    {
+      "context_label": "Blade / Lamina > Vein > Veinlet",
+      "display_order": 1,
+      "morphology_id": "MO0023",
+      "parent_id": "MO0022",
+      "term_id": "MT0011"
+    },
+    {
+      "context_label": "Blade / Lamina > Trichome > Hair",
+      "display_order": 1,
+      "morphology_id": "MO0029",
+      "parent_id": "MO0028",
+      "term_id": "MT0024"
+    },
+    {
+      "context_label": "Blade / Lamina > Trichome > Glandular hair",
+      "display_order": 2,
+      "morphology_id": "MO0030",
+      "parent_id": "MO0028",
+      "term_id": "MT0025"
+    },
+    {
+      "context_label": "Sorus > Soral receptacle",
+      "display_order": 1,
+      "morphology_id": "MO0034",
+      "parent_id": "MO0033",
+      "term_id": "MT0029"
+    },
+    {
+      "context_label": "Sorus > Indusium",
+      "display_order": 2,
+      "morphology_id": "MO0035",
+      "parent_id": "MO0033",
+      "term_id": "MT0030"
+    },
+    {
+      "context_label": "Sorus > False indusium",
+      "display_order": 3,
+      "morphology_id": "MO0036",
+      "parent_id": "MO0033",
+      "term_id": "MT0031"
+    },
+    {
+      "context_label": "Sorus > Sporangium",
+      "display_order": 4,
+      "morphology_id": "MO0037",
+      "parent_id": "MO0033",
+      "term_id": "MT0032"
+    },
+    {
+      "context_label": "Sporangium > Annulus",
+      "display_order": 1,
+      "morphology_id": "MO0038",
+      "parent_id": "MO0037",
+      "term_id": "MT0033"
+    },
+    {
+      "context_label": "Sporangium > Stomium",
+      "display_order": 2,
+      "morphology_id": "MO0039",
+      "parent_id": "MO0037",
+      "term_id": "MT0034"
+    },
+    {
+      "context_label": "Sporangium > Spore",
+      "display_order": 3,
+      "morphology_id": "MO0040",
+      "parent_id": "MO0037",
+      "term_id": "MT0035"
+    },
+    {
+      "context_label": "Spore > Aperture",
+      "display_order": 1,
+      "morphology_id": "MO0041",
+      "parent_id": "MO0040",
+      "term_id": "MT0036"
+    },
+    {
+      "context_label": "Spore > Exospore",
+      "display_order": 2,
+      "morphology_id": "MO0042",
+      "parent_id": "MO0040",
+      "term_id": "MT0037"
+    },
+    {
+      "context_label": "Spore > Perispore",
+      "display_order": 3,
+      "morphology_id": "MO0043",
+      "parent_id": "MO0040",
+      "term_id": "MT0038"
+    },
+    {
+      "context_label": "Petiole / Stipe > Petiole base",
+      "display_order": 1,
+      "morphology_id": "MO0045",
+      "parent_id": "MO0044",
+      "term_id": "MT0006"
+    },
+    {
+      "context_label": "Petiole / Stipe > Scale",
+      "display_order": 2,
+      "morphology_id": "MO0046",
+      "parent_id": "MO0044",
+      "term_id": "MT0022"
+    },
+    {
+      "context_label": "Petiole / Stipe > Trichome",
+      "display_order": 3,
+      "morphology_id": "MO0047",
+      "parent_id": "MO0044",
+      "term_id": "MT0023"
+    },
+    {
+      "context_label": "Petiole / Stipe > Gland",
+      "display_order": 4,
+      "morphology_id": "MO0050",
+      "parent_id": "MO0044",
+      "term_id": "MT0026"
+    },
+    {
+      "context_label": "Petiole / Stipe > Trichome > Hair",
+      "display_order": 1,
+      "morphology_id": "MO0048",
+      "parent_id": "MO0047",
+      "term_id": "MT0024"
+    },
+    {
+      "context_label": "Petiole / Stipe > Trichome > Glandular hair",
+      "display_order": 2,
+      "morphology_id": "MO0049",
+      "parent_id": "MO0047",
+      "term_id": "MT0025"
+    },
+    {
+      "context_label": "Rhizome > Rhizome apex",
+      "display_order": 1,
+      "morphology_id": "MO0052",
+      "parent_id": "MO0051",
+      "term_id": "MT0020"
+    },
+    {
+      "context_label": "Rhizome > Root",
+      "display_order": 2,
+      "morphology_id": "MO0053",
+      "parent_id": "MO0051",
+      "term_id": "MT0021"
+    },
+    {
+      "context_label": "Rhizome > Scale",
+      "display_order": 3,
+      "morphology_id": "MO0054",
+      "parent_id": "MO0051",
+      "term_id": "MT0022"
+    },
+    {
+      "context_label": "Rhizome > Trichome",
+      "display_order": 4,
+      "morphology_id": "MO0055",
+      "parent_id": "MO0051",
+      "term_id": "MT0023"
+    },
+    {
+      "context_label": "Rhizome > Gland",
+      "display_order": 5,
+      "morphology_id": "MO0058",
+      "parent_id": "MO0051",
+      "term_id": "MT0026"
+    },
+    {
+      "context_label": "Rhizome > Trichome > Hair",
+      "display_order": 1,
+      "morphology_id": "MO0056",
+      "parent_id": "MO0055",
+      "term_id": "MT0024"
+    },
+    {
+      "context_label": "Rhizome > Trichome > Glandular hair",
+      "display_order": 2,
+      "morphology_id": "MO0057",
+      "parent_id": "MO0055",
+      "term_id": "MT0025"
+    }
+  ],
+  "release_id": "6adf7b4cf3f05af36868b95f2e13121458937310f65cb9683e8fd0828cb95a15",
+  "schema_version": 1,
+  "terms": [
+    {
+      "category": "general",
+      "definition": null,
+      "english": "Whole plant",
+      "korean": "전체 식물체",
+      "term_id": "MT0001"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Frond",
+      "korean": "잎",
+      "term_id": "MT0002"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "circinate vernation",
+      "korean": "권엽",
+      "term_id": "MT0003"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Blade / Lamina",
+      "korean": "엽신",
+      "term_id": "MT0004"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Petiole / Stipe",
+      "korean": "엽병",
+      "term_id": "MT0005"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Petiole base",
+      "korean": "엽병 기부",
+      "term_id": "MT0006"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Rachis",
+      "korean": "중축",
+      "term_id": "MT0007"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Costa",
+      "korean": "우축",
+      "term_id": "MT0008"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Costule",
+      "korean": "소우축",
+      "term_id": "MT0009"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Vein",
+      "korean": "엽맥",
+      "term_id": "MT0010"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Veinlet",
+      "korean": "세맥",
+      "term_id": "MT0011"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Pinna",
+      "korean": "우편",
+      "term_id": "MT0012"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Pinnule",
+      "korean": "소우편",
+      "term_id": "MT0013"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Segment",
+      "korean": "열편",
+      "term_id": "MT0014"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Ultimate segment",
+      "korean": "최종 열편",
+      "term_id": "MT0015"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Apex",
+      "korean": "선단",
+      "term_id": "MT0016"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Base",
+      "korean": "기부",
+      "term_id": "MT0017"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Margin",
+      "korean": "가장자리",
+      "term_id": "MT0018"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Rhizome",
+      "korean": "근경",
+      "term_id": "MT0019"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Rhizome apex",
+      "korean": "근경 선단",
+      "term_id": "MT0020"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Root",
+      "korean": "뿌리",
+      "term_id": "MT0021"
+    },
+    {
+      "category": "indumentum",
+      "definition": null,
+      "english": "Scale",
+      "korean": "인편",
+      "term_id": "MT0022"
+    },
+    {
+      "category": "indumentum",
+      "definition": null,
+      "english": "Trichome",
+      "korean": "모상체",
+      "term_id": "MT0023"
+    },
+    {
+      "category": "indumentum",
+      "definition": null,
+      "english": "Hair",
+      "korean": "털",
+      "term_id": "MT0024"
+    },
+    {
+      "category": "indumentum",
+      "definition": null,
+      "english": "Glandular hair",
+      "korean": "선모",
+      "term_id": "MT0025"
+    },
+    {
+      "category": "indumentum",
+      "definition": null,
+      "english": "Gland",
+      "korean": "선체",
+      "term_id": "MT0026"
+    },
+    {
+      "category": "indumentum",
+      "definition": null,
+      "english": "Farina",
+      "korean": "분상물",
+      "term_id": "MT0027"
+    },
+    {
+      "category": "reproductive",
+      "definition": null,
+      "english": "Sorus",
+      "korean": "포자낭군",
+      "term_id": "MT0028"
+    },
+    {
+      "category": "reproductive",
+      "definition": null,
+      "english": "Soral receptacle",
+      "korean": "포자낭군탁",
+      "term_id": "MT0029"
+    },
+    {
+      "category": "reproductive",
+      "definition": null,
+      "english": "Indusium",
+      "korean": "포막",
+      "term_id": "MT0030"
+    },
+    {
+      "category": "reproductive",
+      "definition": null,
+      "english": "False indusium",
+      "korean": "위포막",
+      "term_id": "MT0031"
+    },
+    {
+      "category": "reproductive",
+      "definition": null,
+      "english": "Sporangium",
+      "korean": "포자낭",
+      "term_id": "MT0032"
+    },
+    {
+      "category": "reproductive",
+      "definition": null,
+      "english": "Annulus",
+      "korean": "환대",
+      "term_id": "MT0033"
+    },
+    {
+      "category": "reproductive",
+      "definition": null,
+      "english": "Stomium",
+      "korean": "열개부",
+      "term_id": "MT0034"
+    },
+    {
+      "category": "reproductive",
+      "definition": null,
+      "english": "Spore",
+      "korean": "포자",
+      "term_id": "MT0035"
+    },
+    {
+      "category": "reproductive",
+      "definition": null,
+      "english": "Aperture",
+      "korean": "발아구",
+      "term_id": "MT0036"
+    },
+    {
+      "category": "reproductive",
+      "definition": null,
+      "english": "Exospore",
+      "korean": "외포벽",
+      "term_id": "MT0037"
+    },
+    {
+      "category": "reproductive",
+      "definition": null,
+      "english": "Perispore",
+      "korean": "주피층",
+      "term_id": "MT0038"
+    },
+    {
+      "category": "reproductive",
+      "definition": null,
+      "english": "Paraphysis",
+      "korean": "측사",
+      "term_id": "MT0039"
+    },
+    {
+      "category": "vegetative",
+      "definition": null,
+      "english": "Abaxial / dorsal",
+      "korean": "배축면 / 등면",
+      "term_id": "MT0040"
+    }
+  ]
+}

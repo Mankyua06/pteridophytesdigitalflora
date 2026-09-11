@@ -1,0 +1,21 @@
+{
+  "cytotypes": [],
+  "images": [],
+  "morphology": [],
+  "release_id": "6adf7b4cf3f05af36868b95f2e13121458937310f65cb9683e8fd0828cb95a15",
+  "schema_version": 1,
+  "synonyms": [],
+  "taxon": {
+    "accepted_scientific_name": null,
+    "accepted_taxon_id": null,
+    "family": "Blechnaceae",
+    "gbif_status": "ACCEPTED",
+    "gbif_taxon_key": null,
+    "genus": "Woodwardia",
+    "korean_name": "새깃아재비",
+    "order": "Polypodiales",
+    "scientific_name": "Woodwardia japonica (L.fil.) Sm.",
+    "taxon_id": "TX000167",
+    "taxon_rank": "SPECIES"
+  }
+}

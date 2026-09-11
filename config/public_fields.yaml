@@ -1,0 +1,84 @@
+{
+  "01_Taxa": [
+    "taxon_id",
+    "order",
+    "family",
+    "genus",
+    "scientific_name",
+    "taxon_rank",
+    "korean_name",
+    "gbif_status",
+    "gbif_taxon_key",
+    "accepted_scientific_name",
+    "accepted_taxon_id"
+  ],
+  "02_Cytotypes": [
+    "cytotype_id",
+    "taxon_id",
+    "ploidy",
+    "chromosome_number",
+    "genome_size_pg",
+    "reproductive_mode",
+    "status"
+  ],
+  "03_Morphology_Terms": [
+    "term_id",
+    "english",
+    "korean",
+    "definition",
+    "category"
+  ],
+  "04_Morphology_Tree": [
+    "morphology_id",
+    "parent_id",
+    "term_id",
+    "display_order",
+    "context_label"
+  ],
+  "05_Taxon_Morphology": [
+    "taxon_id",
+    "morphology_id",
+    "presence_status",
+    "documentation_status"
+  ],
+  "06_Images": [
+    "image_id",
+    "taxon_id",
+    "cytotype_id",
+    "photographer",
+    "collection_date",
+    "copyright",
+    "status",
+    "caption"
+  ],
+  "07_Image_Morphology": [
+    "image_id",
+    "morphology_id",
+    "role",
+    "representative",
+    "display_order"
+  ],
+  "08_Synonyms": [
+    "name_id",
+    "taxon_id",
+    "name",
+    "name_type",
+    "status"
+  ],
+  "09_Contributors": [
+    "contributor_id",
+    "affiliation",
+    "name",
+    "email",
+    "taxon_scope",
+    "role",
+    "email_public",
+    "display_order",
+    "researcher_type"
+  ],
+  "10_Site_Text": [
+    "key",
+    "text",
+    "text_ko"
+  ]
+}

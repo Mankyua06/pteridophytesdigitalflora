@@ -1,0 +1,39 @@
+{
+  "contributors": [
+    {
+      "affiliation": "경북대학교 식물자원학과",
+      "contributor_id": "CT000001",
+      "display_order": null,
+      "email": "htkim0922@knu.ac.kr",
+      "email_public": true,
+      "name": "김형태",
+      "researcher_type": "lead",
+      "role": null,
+      "taxon_scope": null
+    },
+    {
+      "affiliation": "충북대학교 산림학과",
+      "contributor_id": "CT000002",
+      "display_order": null,
+      "email": null,
+      "email_public": true,
+      "name": "김정성",
+      "researcher_type": "lead",
+      "role": null,
+      "taxon_scope": null
+    },
+    {
+      "affiliation": "충북대학교 산림학과",
+      "contributor_id": "CT000003",
+      "display_order": null,
+      "email": null,
+      "email_public": true,
+      "name": "박상희",
+      "researcher_type": "researcher",
+      "role": null,
+      "taxon_scope": null
+    }
+  ],
+  "release_id": "6adf7b4cf3f05af36868b95f2e13121458937310f65cb9683e8fd0828cb95a15",
+  "schema_version": 1
+}

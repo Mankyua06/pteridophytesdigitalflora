@@ -1,0 +1,21 @@
+{
+  "cytotypes": [],
+  "images": [],
+  "morphology": [],
+  "release_id": "6adf7b4cf3f05af36868b95f2e13121458937310f65cb9683e8fd0828cb95a15",
+  "schema_version": 1,
+  "synonyms": [],
+  "taxon": {
+    "accepted_scientific_name": null,
+    "accepted_taxon_id": null,
+    "family": "Ophioglossaceae",
+    "gbif_status": "ACCEPTED",
+    "gbif_taxon_key": null,
+    "genus": "Mankyua",
+    "korean_name": "제주고사리삼",
+    "order": "Ophioglossales",
+    "scientific_name": "Mankyua chejuensis B.Y.Sun, M.H.Kim & C.H.Kim",
+    "taxon_id": "TX000036",
+    "taxon_rank": "SPECIES"
+  }
+}

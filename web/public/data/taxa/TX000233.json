@@ -1,0 +1,21 @@
+{
+  "cytotypes": [],
+  "images": [],
+  "morphology": [],
+  "release_id": "6adf7b4cf3f05af36868b95f2e13121458937310f65cb9683e8fd0828cb95a15",
+  "schema_version": 1,
+  "synonyms": [],
+  "taxon": {
+    "accepted_scientific_name": "Cyclogramma leveillei (Christ) Ching",
+    "accepted_taxon_id": null,
+    "family": "Thelypteridaceae",
+    "gbif_status": "SYNONYM",
+    "gbif_taxon_key": null,
+    "genus": "Cyclogramma",
+    "korean_name": "나도진퍼리고사리",
+    "order": "Polypodiales",
+    "scientific_name": "Thelypteris leveillei (Christ) C.M.Kuo",
+    "taxon_id": "TX000233",
+    "taxon_rank": "SPECIES"
+  }
+}

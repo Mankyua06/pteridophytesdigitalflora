@@ -1,0 +1,27 @@
+master: Ferns_morphology_data.xlsx
+originals: images_original
+derived: images_web
+public: web/public/data
+sizes:
+  thumb: 480
+  medium: 1600
+  large: 3000
+quality: 85
+method: 6
+cache_control: 3600
+retries: 3
+schema_version: 1
+# Existing files remain untouched. Only unambiguous named aliases are read.
+aliases:
+  01_Taxa:
+    status: gbif_status
+    acceptedScientificName: accepted_scientific_name
+# User confirmed on 2026-09-09 that 01_Taxa.status is GBIF status.
+# Preserve existing Taxa cells verbatim. J has no declared meaning and is not exported.
+ignored_unnamed_columns:
+  01_Taxa: [J]
+optional_sheets: [08_Synonyms, 09_Contributors, 10_Site_Text]
+test_dataset:
+  enabled: false
+  taxon_id: TX000365
+  description: '58 photos arbitrarily linked for local UI testing; no biological claims.'

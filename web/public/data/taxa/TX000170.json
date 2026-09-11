@@ -1,0 +1,21 @@
+{
+  "cytotypes": [],
+  "images": [],
+  "morphology": [],
+  "release_id": "6adf7b4cf3f05af36868b95f2e13121458937310f65cb9683e8fd0828cb95a15",
+  "schema_version": 1,
+  "synonyms": [],
+  "taxon": {
+    "accepted_scientific_name": "Athyrium oppositipennum var. pubescens (Tagawa) Tagawa",
+    "accepted_taxon_id": null,
+    "family": "Athyriaceae",
+    "gbif_status": "SYNONYM",
+    "gbif_taxon_key": null,
+    "genus": "Athyrium",
+    "korean_name": "거꾸리개고사리",
+    "order": "Polypodiales",
+    "scientific_name": "Athyrium reflexipinnum Hayata",
+    "taxon_id": "TX000170",
+    "taxon_rank": "SPECIES"
+  }
+}
