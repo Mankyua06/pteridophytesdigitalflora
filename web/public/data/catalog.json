@@ -1,5 +1,5 @@
 {
-  "release_id": "6adf7b4cf3f05af36868b95f2e13121458937310f65cb9683e8fd0828cb95a15",
+  "release_id": "f7c5af59b1659c986fec0be93487ef6f745eb13a58e35dd0e51d4ff5efc885e2",
   "schema_version": 1,
   "taxa": [
     {
@@ -5108,7 +5108,7 @@
       "image_count": 58,
       "korean_name": "일엽초",
       "order": "Polypodiales",
-      "scientific_name": "Lepisorus thunbergianus (Kaulf.) Ching",
+      "scientific_name": "[i]Lepisorus thunbergianus[/i] (Kaulf.) Ching",
       "taxon_id": "TX000365",
       "taxon_rank": "SPECIES"
     },

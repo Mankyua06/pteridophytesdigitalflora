@@ -1,4 +1,5 @@
 
+import { ScientificName } from "@/components/scientific-name";
 import { getUi } from "@/lib/site-text-server";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -18,7 +19,7 @@ export default async function Layout({children, params}: {children: React.ReactN
           {t.order} / {t.family} / {t.genus}
         </p>
         <h1>
-          <i>{t.scientific_name}</i>
+          <ScientificName name={t.scientific_name} />
         </h1>
         <p>
           {t.korean_name || ui("no_korean_name_recorded")} <small>{t.taxon_id}</small>

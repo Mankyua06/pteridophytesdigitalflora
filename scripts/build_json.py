@@ -1,4 +1,5 @@
 import os
+import re
 import shutil
 import tempfile
 from pathlib import Path
@@ -69,8 +70,9 @@ def assemble(ctx, data, manifest):
                         set(
                             filter(
                                 None,
-                                [r["scientific_name"], r["korean_name"]]
-                                + [s["name"] for s in data["08_Synonyms"] if s["taxon_id"] == r["taxon_id"]],
+                                [re.sub(r"\[/?i\]", "", value) if value else value for value in
+                                 [r["scientific_name"], r["korean_name"]]
+                                 + [s["name"] for s in data["08_Synonyms"] if s["taxon_id"] == r["taxon_id"]]],
                             )
                         )
                     ),

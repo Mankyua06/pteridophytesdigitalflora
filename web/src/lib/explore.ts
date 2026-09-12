@@ -1,4 +1,5 @@
 
+import { plainScientificName } from "@/lib/scientific-name";
 import type { MorphNode, Photo, SearchEntry, Taxon } from "./types";
 export function searchTaxa(
   taxa: Taxon[],
@@ -11,7 +12,7 @@ export function searchTaxa(
     entries
       .filter((e) =>
         e.names.some((n) =>
-          n.normalize("NFKC").toLocaleLowerCase().includes(q),
+          plainScientificName(n).normalize("NFKC").toLocaleLowerCase().includes(q),
         ),
       )
       .map((e) => e.taxon_id),

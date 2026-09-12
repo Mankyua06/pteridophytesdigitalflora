@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import math
+import re
 from collections import Counter
 from datetime import date, datetime
 
@@ -169,6 +170,19 @@ def load_source(ctx, report):
 
 def validate_source(ctx, report):
     data = load_source(ctx, report)
+    for sheet, columns in [("01_Taxa", ("scientific_name", "accepted_scientific_name")),
+                           ("08_Synonyms", ("name",))]:
+        for row in data.get(sheet, []):
+            for column in columns:
+                opened = False
+                valid = True
+                for marker in re.findall(r"\[/?i\]", row.get(column) or ""):
+                    if (marker == "[i]") == opened:
+                        valid = False
+                    opened = marker == "[i]"
+                if opened or not valid:
+                    report.add("error", "SCIENTIFIC_NAME_MARKUP", "[i]와 [/i]를 중첩 없이 짝지어 입력하세요.",
+                               sheet=sheet, row=row["_row"], column=column)
     from .site_text import resolve
     try:
         resolve(ctx, data.get("10_Site_Text", []))

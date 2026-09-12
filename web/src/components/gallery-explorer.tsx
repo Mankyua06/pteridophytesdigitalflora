@@ -1,4 +1,5 @@
 "use client";
+import { plainScientificName } from "@/lib/scientific-name";
 import { useUi } from "@/components/language-provider";
 
 import Link from "next/link";
@@ -116,9 +117,9 @@ export function GalleryExplorer({
       <div className="filters">
         <label>{ui("taxa")}<select aria-label={ui("photo_taxon")} value={taxon} onChange={(e) => setTaxon(e.target.value)}>
             <option value="">{ui("select_a_taxon")}</option>
-            {[...taxa].sort((a, b) => a.scientific_name.localeCompare(b.scientific_name, "en") || a.taxon_id.localeCompare(b.taxon_id)).map((t) => (
+            {[...taxa].sort((a, b) => plainScientificName(a.scientific_name).localeCompare(plainScientificName(b.scientific_name), "en") || a.taxon_id.localeCompare(b.taxon_id)).map((t) => (
               <option key={t.taxon_id} value={t.taxon_id}>
-                {t.scientific_name}
+                {plainScientificName(t.scientific_name)}
               </option>
             ))}
           </select>

@@ -1,4 +1,6 @@
 "use client";
+import { plainScientificName } from "@/lib/scientific-name";
+import { ScientificName } from "@/components/scientific-name";
 import { useUi } from "@/components/language-provider";
 
 import Link from "next/link";
@@ -28,10 +30,10 @@ function ComparisonColumn({ taxon, node }: { taxon: Taxon; node: string }) {
     void load();
     return () => controller.abort();
   }, [taxon.taxon_id, node, attempt]);
-  return <article className="comparison-column" aria-label={ui("v0_comparison_photographs", {v0: taxon.korean_name || taxon.scientific_name})}>
+  return <article className="comparison-column" aria-label={ui("v0_comparison_photographs", {v0: taxon.korean_name || plainScientificName(taxon.scientific_name)})}>
     <div className="comparison-heading">
-      <h3><Link href={`/taxa/${taxon.taxon_id}`}>{taxon.korean_name || taxon.scientific_name}</Link></h3>
-      <p><i>{taxon.scientific_name}</i></p>
+      <h3><Link href={`/taxa/${taxon.taxon_id}`}>{taxon.korean_name || plainScientificName(taxon.scientific_name)}</Link></h3>
+      <p><ScientificName name={taxon.scientific_name} /></p>
       {photos && <p role="status">{photos.length}{ui("photographs")}</p>}
     </div>
     {error ? <div role="alert"><p>{ui("unable_to_load_photographs")}</p><button onClick={() => {setError(false); setAttempt(a => a + 1);}}>{ui("try_again")}</button></div>
@@ -63,11 +65,11 @@ export function PhotoComparison({ taxa, morph }: {taxa: Taxon[]; morph: Omit<Mor
       </select></label>
       <label>{ui("add_a_taxon_to_compare")}<select aria-label={ui("add_a_taxon_to_compare")} value="" onChange={e => {const id=e.target.value;if(id) setSelected(previous => previous.includes(id) ? previous : [...previous,id]);}}>
         <option value="">{ui("choose_a_taxon_to_add")}</option>
-        {taxa.filter(t => !selected.includes(t.taxon_id)).map(t => <option key={t.taxon_id} value={t.taxon_id}>{t.korean_name ? `${t.korean_name} · ` : ""}{t.scientific_name}</option>)}
+        {taxa.filter(t => !selected.includes(t.taxon_id)).map(t => <option key={t.taxon_id} value={t.taxon_id}>{t.korean_name ? `${t.korean_name} · ` : ""}{plainScientificName(t.scientific_name)}</option>)}
       </select></label>
     </div>
     <div className="comparison-selection" aria-label={ui("selected_taxa")}>
-      {selected.map(id => {const t=byId.get(id)!; return <button key={id} aria-label={ui("remove_v0", {v0: t.korean_name || t.scientific_name})} onClick={() => setSelected(ids => ids.filter(i => i !== id))}>{t.korean_name || t.scientific_name} ×</button>;})}
+      {selected.map(id => {const t=byId.get(id)!; return <button key={id} aria-label={ui("remove_v0", {v0: t.korean_name || plainScientificName(t.scientific_name)})} onClick={() => setSelected(ids => ids.filter(i => i !== id))}>{t.korean_name || plainScientificName(t.scientific_name)} ×</button>;})}
     </div>
     <p className="muted">{ui("compare_photographs_linked_directly_to_the_selected_feature_desc")}</p>
     <button className="compare-start" disabled={!node || selected.length < 2} onClick={() => setComparison({node, ids: [...selected]})}>{ui("compare_taxa_count", {count: selected.length})}</button>

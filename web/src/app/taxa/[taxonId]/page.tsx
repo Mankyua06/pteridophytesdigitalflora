@@ -1,4 +1,5 @@
 
+import { ScientificName } from "@/components/scientific-name";
 import { getUi } from "@/lib/site-text-server";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -23,7 +24,7 @@ export default async function Page({params}: {params: Promise<{taxonId: string}>
             <dt>{ui("gbif_taxonomic_status")}</dt>
             <dd>{t.gbif_status || ui("not_recorded")}</dd>
             <dt>{ui("gbif_accepted_scientific_name")}</dt>
-            <dd>{acceptedName}</dd>
+            <dd><ScientificName name={acceptedName} /></dd>
           </dl>
           {t.accepted_taxon_id && (
             <Link href={`/taxa/${t.accepted_taxon_id}`}>{ui("view_accepted_taxon")}</Link>
@@ -32,7 +33,7 @@ export default async function Page({params}: {params: Promise<{taxonId: string}>
           {detail.synonyms.length ? (
             <ul>
               {detail.synonyms.map((s) => (
-                <li key={s.name_id}>{s.name}</li>
+                <li key={s.name_id}><ScientificName name={s.name} /></li>
               ))}
             </ul>
           ) : (

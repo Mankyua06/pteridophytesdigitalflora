@@ -1,4 +1,5 @@
 "use client";
+import { ScientificName } from "@/components/scientific-name";
 import { useUi } from "@/components/language-provider";
 
 import { useState } from "react";
@@ -97,7 +98,7 @@ export function TaxonExplorer({
                   {t.family || ui("family_not_recorded")} / {t.genus || ui("genus_not_recorded")}
                 </small>
                 <strong>
-                  <i>{t.scientific_name}</i>
+                  <ScientificName name={t.scientific_name} />
                 </strong>
                 <span>{t.korean_name || ui("no_korean_name_recorded")}</span>
               </span>
