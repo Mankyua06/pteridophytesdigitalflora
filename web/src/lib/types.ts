@@ -1,6 +1,7 @@
 export type Taxon = {
   taxon_id: string;
   scientific_name: string;
+  holding_status?: "held" | null;
   korean_name: string | null;
   order: string | null;
   family: string | null;

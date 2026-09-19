@@ -2,7 +2,7 @@
   "cytotypes": [],
   "images": [],
   "morphology": [],
-  "release_id": "f7c5af59b1659c986fec0be93487ef6f745eb13a58e35dd0e51d4ff5efc885e2",
+  "release_id": "3799deac1190b4809f2669c6853e24190804f44e0734cffcee2e6fe2dc1c9b0c",
   "schema_version": 1,
   "synonyms": [],
   "taxon": {
@@ -12,6 +12,7 @@
     "gbif_status": "ACCEPTED",
     "gbif_taxon_key": null,
     "genus": "Athyrium",
+    "holding_status": null,
     "korean_name": "산개고사리",
     "order": "Polypodiales",
     "scientific_name": "Athyrium vidalii (Franch. & Sav.) Nakai",

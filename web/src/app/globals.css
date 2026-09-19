@@ -620,3 +620,5 @@ footer span:first-child {
 .tree summary::marker { color:var(--green); }
 .tree summary:focus-visible { outline:2px solid var(--green); outline-offset:4px; }
 .tree .tree-node-link { margin:4px 0 8px 20px; font-size:13px; }
+.holding-badge { display: inline-block; padding: .2rem .65rem; border: 1px solid #aaa; border-radius: 1rem; font-size: .85rem; font-style: normal; color: #444; background: #f3f3f3; }
+.holding-badge[data-held="true"] { color: #1e5135; background: #e7f3e9; border-color: #6d9877; }

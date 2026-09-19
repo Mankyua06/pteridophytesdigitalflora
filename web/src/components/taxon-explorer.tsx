@@ -1,6 +1,7 @@
 "use client";
 import { ScientificName } from "@/components/scientific-name";
 import { useUi } from "@/components/language-provider";
+import { HoldingStatus } from "./holding-status";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -103,6 +104,7 @@ export function TaxonExplorer({
                 <span>{t.korean_name || ui("no_korean_name_recorded")}</span>
               </span>
               <span className="row-end">
+                <HoldingStatus status={t.holding_status} />
                 {ui("photo_count", {count: t.image_count || 0})} <span aria-hidden>↗</span>
               </span>
             </Link>

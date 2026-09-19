@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useUi } from "./language-provider";
-import { coverage, type CoverageLink } from "@/lib/statistics";
+import { coverage, holdingsCoverage, type CoverageLink } from "@/lib/statistics";
 import type { Taxon, MorphNode, Term } from "@/lib/types";
 
 export function Statistics({taxa, nodes, terms, links, photoCount}: {
@@ -10,6 +10,7 @@ export function Statistics({taxa, nodes, terms, links, photoCount}: {
   const ui = useUi();
   const [feature, setFeature] = useState("");
   const rows = coverage(taxa, links, feature);
+  const holdings = holdingsCoverage(taxa);
   const names = new Map(terms.map(t => [t.term_id, t.english]));
   const linkedFeatures = new Set(links.map(l => l.morphology_id));
   return <>
@@ -17,6 +18,27 @@ export function Statistics({taxa, nodes, terms, links, photoCount}: {
       {[[taxa.length,"published_taxa"],[nodes.length,"morphological_features"],[photoCount,"published_photographs"],[linkedFeatures.size,"features_with_photographs"]].map(([count,key]) =>
         <div key={key}><strong>{count}</strong><span>{ui(String(key))}</span></div>)}
     </div>
+    <section aria-labelledby="holdings-heading">
+      <h2 id="holdings-heading">{ui("holdings_title")}</h2>
+      <p>{ui("holdings_definition")}</p>
+      <div className="coverage-grid">
+        {[
+          { key: "holdings_total_coverage", count: holdings.held, total: holdings.total },
+          { key: "holdings_photo_coverage", count: holdings.photographed, total: holdings.held },
+        ].map(row => {
+          const percentage = row.total ? row.count / row.total * 100 : 0;
+          return <article className="coverage-card" key={row.key}>
+            <h3>{ui(row.key)}</h3>
+            <div className="coverage-donut" role="img" aria-label={`${ui(row.key)}: ${row.count} / ${row.total}`}
+              style={{background: `conic-gradient(var(--coverage-green) ${percentage}%, var(--coverage-empty) 0)`}}>
+              <div><strong>{row.total ? `${percentage.toFixed(1)}%` : "—"}</strong><span>{row.count} / {row.total}</span></div>
+            </div>
+          </article>;
+        })}
+      </div>
+      <p>{ui("holding_held")}: {holdings.held} · {ui("holding_not_held")}: {holdings.notHeld}</p>
+      <p className="muted">{ui("holdings_photo_note")}</p>
+    </section>
     <section aria-labelledby="coverage-heading">
       <h2 id="coverage-heading">{ui("photographic_coverage")}</h2>
       <p>{ui("coverage_definition")}</p>

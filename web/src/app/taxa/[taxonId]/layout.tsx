@@ -1,5 +1,6 @@
 
 import { ScientificName } from "@/components/scientific-name";
+import { HoldingStatus } from "@/components/holding-status";
 import { getUi } from "@/lib/site-text-server";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -26,5 +27,6 @@ export default async function Layout({children, params}: {children: React.ReactN
         </p>
       </div>
       <TaxonNav taxonId={taxonId} />
+      <p><HoldingStatus status={t.holding_status} /> {ui("holdings_definition")}</p>
 {children}</>;
 }
