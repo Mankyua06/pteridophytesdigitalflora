@@ -3,7 +3,6 @@ import { getUi } from "@/lib/site-text-server";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { taxonDetail, morphology } from "@/lib/data";
-import { documentationLabels, presenceLabels } from "@/lib/explore";
 export default async function Page({params}: {params: Promise<{taxonId: string}>}) {
   const ui = await getUi();
  const {taxonId} = await params;
@@ -50,7 +49,7 @@ export default async function Page({params}: {params: Promise<{taxonId: string}>
  };
  return <>      <section>
         <h2>{ui("morphology_and_documentation")}</h2>
-        <p className="muted">{ui("structural_presence_and_documentation_are_recorded_separately_an")}</p>
+        <p className="muted">{ui("morphology_photo_availability")}</p>
         {detail.morphology.length ? (
           <div className="state-list">
             {orderedMorphology.map((m) => {
@@ -62,8 +61,7 @@ export default async function Page({params}: {params: Promise<{taxonId: string}>
                     <span>{englishPath(m.morphology_id) || term?.english || m.morphology_id}</span>
                     <small lang="ko">{koreanPath(m.morphology_id)}</small>
                   </Link>
-                  <span>{ui(presenceLabels[m.presence_status])}</span>
-                  <span>{ui(documentationLabels[m.documentation_status])}</span>
+                  <span>{ui("photo_count", {count: detail.images.filter(p => p.morphology.some(l => l.morphology_id === m.morphology_id)).length})}</span>
                   {detail.images.some(p => p.morphology.some(l => l.morphology_id === m.morphology_id)) ? <Link href={`/taxa/${taxonId}/photos?node=${m.morphology_id}&include=false`}>{ui("view_photos")}</Link> : <span className="muted">{ui("no_photographs_recorded")}</span>}
                 </div>
               );

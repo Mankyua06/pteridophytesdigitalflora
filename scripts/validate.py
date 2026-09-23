@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import math
 import re
-from collections import Counter
 from datetime import date, datetime
 
 from openpyxl import load_workbook
@@ -247,10 +246,9 @@ def validate_source(ctx, report):
                 path=row["original_filename"],
                 **loc,
             )
-        if row["status"] == "active":
-            for key in ("photographer", "copyright"):
-                if not row.get(key):
-                    report.add("warning", "CREDIT_MISSING", "공개 이미지 표시 정보 누락", column=key, **loc)
+        for key in ("photographer", "copyright"):
+            if not row.get(key):
+                report.add("warning", "CREDIT_MISSING", "공개 이미지 표시 정보 누락", column=key, **loc)
     for path in ctx.originals.rglob("*"):
         if path.is_file():
             rel = path.relative_to(ctx.originals).as_posix()
@@ -265,48 +263,6 @@ def validate_source(ctx, report):
         ids = [r[idcol] for r in data[sheet] if r[idcol]]
         if len({i.casefold() for i in ids}) != len(set(ids)):
             report.add("error", "CASE_COLLISION", "ID 대소문자 충돌", sheet=sheet)
-    links = data["07_Image_Morphology"]
-    images = {r["image_id"]: r for r in data["06_Images"]}
-    primaries = Counter(r["image_id"] for r in links if r["role"] == "primary")
-    reps = Counter(
-        (images.get(r["image_id"], {}).get("taxon_id"), r["morphology_id"])
-        for r in links
-        if r["representative"]
-    )
-    if any(n > 1 for n in primaries.values()):
-        report.add("warning", "MULTIPLE_PRIMARY", "한 사진에 primary 연결이 여러 개입니다.")
-    if any(n > 1 for n in reps.values()):
-        report.add("warning", "MULTIPLE_REPRESENTATIVE", "같은 taxon/형태의 대표사진이 여러 개입니다.")
-    for row in data["05_Taxon_Morphology"]:
-        matching = [
-            images[r["image_id"]]
-            for r in links
-            if r["image_id"] in images
-            and r["morphology_id"] == row["morphology_id"]
-            and images[r["image_id"]]["taxon_id"] == row["taxon_id"]
-        ]
-        if row["documentation_status"] == "documented":
-            if not matching:
-                report.add(
-                    "warning",
-                    "DOCUMENTED_NO_IMAGE",
-                    "documented이지만 연결 사진이 없습니다.",
-                    row=row["_row"],
-                )
-            elif not any(i["status"] == "active" for i in matching):
-                report.add(
-                    "warning",
-                    "DOCUMENTED_NONPUBLIC_ONLY",
-                    "자료는 있으나 공개 사진이 없습니다.",
-                    row=row["_row"],
-                )
-        if matching and row["presence_status"] == "absent":
-            report.add(
-                "warning",
-                "ABSENT_WITH_IMAGE",
-                "absent 상태에 연결 사진이 있습니다. 상태는 자동 변경하지 않습니다.",
-                row=row["_row"],
-            )
     return data
 
 
@@ -325,8 +281,6 @@ def validate_derived(ctx, report, data=None, active_only=False):
     settings = digest(ctx.settings())
     expected = set()
     for row in data["06_Images"]:
-        if active_only and row["status"] != "active":
-            continue
         ident = row["image_id"]
         if not ident or not ID_RE.fullmatch(ident):
             continue

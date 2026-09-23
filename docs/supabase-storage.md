@@ -22,7 +22,7 @@ dry-run도 원격 목록 조회·다운로드는 할 수 있지만 upload/delete
 
 ## hidden 전환과 삭제
 
-Excel status를 hidden/inactive로 바꾸어 JSON에서 제외해도 이미 공개 bucket에 올라간 객체는 URL로 계속 접근할 수 있습니다. upload/verify 보고서의 REMOTE_ORPHAN에 해당 객체가 표시됩니다. 삭제가 필요하면 운영자가 해당 image_id의 세 경로와 다른 사용처를 검토한 뒤 Dashboard에서 **명시적으로 선택하여 삭제**합니다. 이 작업은 로컬 원본 삭제와 무관합니다. 캐시된 사본의 즉시 제거를 보장할 수 없으므로 민감한 사진은 최초 업로드 전에 공개 적합성을 확인합니다.
+등록 사진은 모두 공개 대상입니다. Excel에서 사진 행과 관련 연결 행을 제거하고 JSON을 재생성하더라도 이미 공개 bucket에 올라간 객체는 URL로 계속 접근할 수 있습니다. upload/verify 보고서의 REMOTE_ORPHAN에 해당 객체가 표시됩니다. 삭제가 필요하면 운영자가 해당 image_id의 세 경로와 다른 사용처를 검토한 뒤 Dashboard에서 **명시적으로 선택하여 삭제**합니다. 이 작업은 로컬 원본 삭제와 무관합니다. 캐시된 사본의 즉시 제거를 보장할 수 없으므로 민감한 사진은 최초 업로드 전에 공개 적합성을 확인합니다.
 
 기본 cacheControl은 3600초이며 pipeline.yaml에서 변경합니다. 교체 후 verify_storage가 이전 hash를 받으면 캐시 지연 가능성을 확인하고 이후 다시 검사합니다. 해시 query만으로 즉시 갱신을 보장하지 않습니다.
 

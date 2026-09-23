@@ -24,6 +24,12 @@
       "scientific_name": {
         "type": "string"
       },
+      "holding_status": {
+        "type": "string",
+        "enum": [
+          "held"
+        ]
+      },
       "taxon_rank": {
         "type": "string"
       },
@@ -155,9 +161,7 @@
     ],
     "required": [
       "taxon_id",
-      "morphology_id",
-      "presence_status",
-      "documentation_status"
+      "morphology_id"
     ],
     "columns": {
       "taxon_id": {
@@ -167,24 +171,6 @@
       "morphology_id": {
         "type": "id",
         "references": "04_Morphology_Tree.morphology_id"
-      },
-      "presence_status": {
-        "type": "string",
-        "enum": [
-          "present",
-          "absent",
-          "unknown",
-          "variable"
-        ]
-      },
-      "documentation_status": {
-        "type": "string",
-        "enum": [
-          "documented",
-          "missing",
-          "not_examined",
-          "not_applicable"
-        ]
       },
       "note": {
         "type": "string"
@@ -198,8 +184,7 @@
     "required": [
       "image_id",
       "taxon_id",
-      "original_filename",
-      "status"
+      "original_filename"
     ],
     "columns": {
       "image_id": {
@@ -228,14 +213,6 @@
       "copyright": {
         "type": "string"
       },
-      "status": {
-        "type": "string",
-        "enum": [
-          "active",
-          "hidden",
-          "inactive"
-        ]
-      },
       "note": {
         "type": "string"
       }
@@ -248,10 +225,7 @@
     ],
     "required": [
       "image_id",
-      "morphology_id",
-      "role",
-      "representative",
-      "display_order"
+      "morphology_id"
     ],
     "columns": {
       "image_id": {
@@ -261,20 +235,6 @@
       "morphology_id": {
         "type": "id",
         "references": "04_Morphology_Tree.morphology_id"
-      },
-      "role": {
-        "type": "string",
-        "enum": [
-          "primary",
-          "secondary"
-        ]
-      },
-      "representative": {
-        "type": "boolean"
-      },
-      "display_order": {
-        "type": "integer",
-        "minimum": 0
       }
     }
   },

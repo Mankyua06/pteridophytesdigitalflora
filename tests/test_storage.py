@@ -30,16 +30,16 @@ class FakeStorage:
 TARGET = ("https://synthetic.supabase.co", "fern-images")
 
 
-def test_dry_run_and_hidden(ctx):
+def test_dry_run_and_all_registered_images(ctx):
     release(ctx)
     storage = FakeStorage()
     report = run(ctx, upload, dry_run=True, storage=storage, target=TARGET)
     assert report.ok and storage.writes == 0 and not storage.files
     report = run(ctx, upload, storage=storage, target=TARGET)
-    assert report.ok and len(storage.files) == 3
-    assert all("IM000002" not in k for k in storage.files)
+    assert report.ok and len(storage.files) == 6
+    assert any("IM000002" in k for k in storage.files)
     report = run(ctx, upload, storage=storage, target=TARGET)
-    assert report.ok and report.counts["skipped"] == 3 and storage.writes == 3
+    assert report.ok and report.counts["skipped"] == 6 and storage.writes == 6
     assert run(ctx, verify, storage=storage, target=TARGET).ok
 
 
@@ -53,7 +53,7 @@ def test_changed_remote_and_partial_failure(ctx):
     storage = FakeStorage()
     storage.permanent = "medium/IM000001.webp"
     report = run(ctx, upload, storage=storage, target=TARGET)
-    assert not report.ok and report.counts["failed"] == 1 and len(storage.files) == 2
+    assert not report.ok and report.counts["failed"] == 1 and len(storage.files) == 5
     assert not run(ctx, verify, storage=storage, target=TARGET).ok
 
 
@@ -62,7 +62,7 @@ def test_retry_and_preflight(ctx):
     storage = FakeStorage()
     storage.failures = 1
     assert run(ctx, upload, storage=storage, target=TARGET).ok
-    assert storage.attempts == 4
+    assert storage.attempts == 7
     (ctx.derived / "thumb/IM000001.webp").write_bytes(b"tampered")
     storage.writes = 0
     assert not run(ctx, upload, storage=storage, target=TARGET).ok

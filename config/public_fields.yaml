@@ -5,6 +5,7 @@
     "family",
     "genus",
     "scientific_name",
+    "holding_status",
     "taxon_rank",
     "korean_name",
     "gbif_status",
@@ -37,9 +38,7 @@
   ],
   "05_Taxon_Morphology": [
     "taxon_id",
-    "morphology_id",
-    "presence_status",
-    "documentation_status"
+    "morphology_id"
   ],
   "06_Images": [
     "image_id",
@@ -48,15 +47,11 @@
     "photographer",
     "collection_date",
     "copyright",
-    "status",
     "caption"
   ],
   "07_Image_Morphology": [
     "image_id",
-    "morphology_id",
-    "role",
-    "representative",
-    "display_order"
+    "morphology_id"
   ],
   "08_Synonyms": [
     "name_id",

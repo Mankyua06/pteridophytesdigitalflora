@@ -36,7 +36,6 @@ def main():
         "04_Morphology_Tree",
         morphology_id="MO0001",
         term_id="MT0001",
-        display_order=0,
         context_label="Synthetic root",
     )
     append(
@@ -64,8 +63,6 @@ def main():
         "05_Taxon_Morphology",
         taxon_id="TX000001",
         morphology_id="MO0001",
-        presence_status="present",
-        documentation_status="missing",
     )
     append(ctx, "01_Taxa", taxon_id="TX000003", scientific_name="Synthetic taxon C", taxon_rank="SPECIES")
     for index in range(1, 4):
@@ -77,7 +74,6 @@ def main():
             image_id=ident,
             taxon_id="TX000001" if index < 3 else "TX000003",
             original_filename=f"{ident}.jpg",
-            status="active",
             photographer="Synthetic photographer",
             copyright="Synthetic test only",
         )
@@ -86,9 +82,6 @@ def main():
             "07_Image_Morphology",
             image_id=ident,
             morphology_id="MO0002",
-            role="primary",
-            representative=index == 1,
-            display_order=index,
         )
     append(ctx, "09_Contributors", contributor_id="CT000001", name="Synthetic contributor", affiliation="Synthetic institution", email="visible@example.org", email_public=True, status="active", taxon_scope="Synthetic order", role="Photo contribution", display_order=1, researcher_type="lead")
     append(ctx, "09_Contributors", contributor_id="CT000002", name="Private contact contributor", email="hidden@example.org", email_public=False, status="active", display_order=2)

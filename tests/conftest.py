@@ -36,9 +36,9 @@ def ctx(tmp_path):
     append(
         c, "04_Morphology_Tree", morphology_id="MO0002", parent_id="MO0001", term_id="MT0001", display_order=1
     )
-    for ident, filename, status in [
-        ("IM000001", "first.jpg", "active"),
-        ("IM000002", "sub/second.jpg", "hidden"),
+    for ident, filename in [
+        ("IM000001", "first.jpg"),
+        ("IM000002", "sub/second.jpg"),
     ]:
         path = c.originals / filename
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -51,7 +51,6 @@ def ctx(tmp_path):
             original_filename=filename,
             photographer="Synthetic author",
             copyright="Synthetic test only",
-            status=status,
             note="DO_NOT_PUBLISH",
             locality="SECRET_PRECISE_LOCALITY",
         )
@@ -60,9 +59,6 @@ def ctx(tmp_path):
         "07_Image_Morphology",
         image_id="IM000001",
         morphology_id="MO0001",
-        role="primary",
-        representative=True,
-        display_order=0,
     )
     append(
         c,

@@ -8,9 +8,9 @@
 | 02_Cytotypes | cytotype_id | taxon_id → Taxa, genome_size_pg 양수 |
 | 03_Morphology_Terms | term_id | 개념 정의. category는 general/vegetative/indumentum/reproductive |
 | 04_Morphology_Tree | morphology_id | term_id 및 선택 parent_id. parent만으로 계층 결정 |
-| 05_Taxon_Morphology | taxon_id + morphology_id | 생물학적 존재와 자료 확보를 별개로 관리 |
-| 06_Images | image_id | taxon_id, 선택 cytotype_id, 원본 상대경로. active만 공개 |
-| 07_Image_Morphology | image_id + morphology_id | primary/secondary, boolean representative, 0 이상 display_order |
+| 05_Taxon_Morphology | taxon_id + morphology_id | 분류군과 형태 연결, 선택 note |
+| 06_Images | image_id | taxon_id, 선택 cytotype_id, 원본 상대경로. 등록 사진 전체 공개 |
+| 07_Image_Morphology | image_id + morphology_id | 사진과 형태 연결 |
 | 08_Synonyms | name_id | taxon_id와 연결된 scientific_synonym/korean_synonym |
 
 ID는 문자열이며 문자로 시작하는 영문·숫자·`_`·`-`만 경로에 허용합니다. 길이와 숫자 부분은 통일하지 않습니다. 순서나 분류 의미를 ID에서 해석하지 않습니다. 기존 문자열의 선행 0을 보존하고 숫자 셀을 내부 ID로 변환하지 않습니다. 이 형식 밖의 기존 ID는 사용자 검토 전 발행을 중단합니다.
@@ -19,9 +19,9 @@ ID는 문자열이며 문자로 시작하는 영문·숫자·`_`·`-`만 경로�
 
 선택값은 빈 셀과 선택 열 누락을 null로 읽습니다. 필수 열 누락은 오류, 선택 열 누락은 경고입니다. 새 템플릿은 모든 기본 열을 제공합니다. 추가 열은 원본에 남고 허용 목록에 없는 값은 공개되지 않습니다. 병합 셀과 핵심 열 수식은 오류입니다. 추가 도우미 열 수식은 경고 후 무시하며 Excel 수식을 평가하지 않습니다.
 
-`absent + not_applicable`는 구조 없음, `present + missing`은 구조 있음/자료 없음, `unknown + not_examined`는 미확인입니다. 행 없음도 absent로 바꾸지 않습니다. documented인데 연결 사진이 없거나 비공개 사진만 있을 때 서로 다른 경고를 냅니다.
+사진 자료 유무는 연결된 사진에서 계산합니다. 생물학적 존재·부재는 추정하지 않습니다. 05의 presence_status/documentation_status 및 04/06의 status는 사용하지 않습니다.
 
-한 사진의 primary 중복, 같은 taxon/morphology의 representative 중복은 경고입니다. 표시 순서는 대표사진 우선, display_order, image_id 순입니다. 형태 선택 시 직접 연결/하위 노드 포함 여부를 화면에서 선택합니다. 같은 사진은 한 번만 표시합니다.
+07의 role/representative/display_order는 사용하지 않습니다. 사진은 image_id 순서이며 첫 사진이 썸네일이 됩니다. 04의 display_order는 형태 트리 순서를 결정합니다. 형태 선택 시 직접 연결/하위 노드 포함 여부를 화면에서 선택합니다. 같은 사진은 한 번만 표시합니다.
 
 형태 탐색 원칙은 사용자가 제공한 기존 합의(Whole plant → Frond/Rhizome, Frond → Blade/Petiole, Blade 아래 Sorus, Trichome 아래 Hair/Glandular hair)를 유지하는 것입니다. 코드가 기존 MO/MT의 뜻이나 부모를 임의 수정하지 않습니다. 전체 트리나 정의가 없으면 합성 학술 자료를 채우지 않습니다.
 

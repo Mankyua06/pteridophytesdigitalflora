@@ -1,4 +1,12 @@
 {
+  "morphology_photo_availability": "Photograph availability is calculated from registered image links. No biological presence or absence is inferred.",
+"holding_held": "Held",
+"holding_not_held": "Not held",
+"holdings_title": "Holdings",
+"holdings_definition": "Held includes living plants currently maintained and previously held plants with completed photographic documentation.",
+"holdings_total_coverage": "Held taxa / all taxa",
+"holdings_photo_coverage": "Held taxa with photographs / held taxa",
+"holdings_photo_note": "Photo coverage means at least one published photograph, not a complete record. These totals are independent of the morphology filter. A dash indicates a zero denominator.",
   "morphology_comparison": "Morphology Comparison",
   "photo_gallery": "← Photo Gallery",
   "compare_photographs_of_the_same_morphological_feature_across_tax": "Compare photographs of the same morphological feature across taxa.",

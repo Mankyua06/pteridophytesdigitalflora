@@ -46,30 +46,8 @@ export function orderedPhotos(
     p.morphology.filter((l) => !selected || selected.has(l.morphology_id));
   return unique
     .filter((p) => !selected || matching(p).length > 0)
-    .sort((a, b) => {
-      const al = matching(a),
-        bl = matching(b);
-      const representative =
-        Number(bl.some((l) => l.representative)) -
-        Number(al.some((l) => l.representative));
-      const order =
-        Math.min(...al.map((l) => l.display_order), Number.MAX_SAFE_INTEGER) -
-        Math.min(...bl.map((l) => l.display_order), Number.MAX_SAFE_INTEGER);
-      return representative || order || a.image_id.localeCompare(b.image_id);
-    });
+    .sort((a, b) => a.image_id.localeCompare(b.image_id, "en", { numeric: true }));
 }
-export const presenceLabels: Record<string, string> = {
-  present: "present",
-  absent: "absent",
-  unknown: "presence_unknown",
-  variable: "variable",
-};
-export const documentationLabels: Record<string, string> = {
-  documented: "documented",
-  missing: "not_documented",
-  not_examined: "not_examined",
-  not_applicable: "not_applicable",
-};
 
 /** Retain photo-linked nodes and their ancestors, without inferring presence. */
 export function photoTreeNodes(nodes: MorphNode[], photos: Photo[]) {

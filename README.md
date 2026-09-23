@@ -1,5 +1,28 @@
 # Pteridophyte Digital Flora
 
+## 먼저 알아둘 용어
+
+이 문서에서는 아래 전체 이름과 뜻을 먼저 설명한 뒤 약어를 사용합니다. 파일명, 환경변수명, 실행 명령은 그대로 입력해야 하므로 풀어 쓰지 않습니다.
+
+| 전체 이름과 약어 | 이 프로젝트에서의 뜻 |
+|---|---|
+| Cascading Style Sheets (CSS) | 웹페이지의 글꼴, 색상, 여백, 크기, 배치 등 화면 디자인을 지정하는 언어입니다. 예를 들어 사진 카드 간격이나 버튼 색상을 바꾸는 작업이 해당합니다. 주요 파일은 `web/src/app/globals.css`입니다. |
+| JavaScript Object Notation (JSON) | 데이터를 텍스트로 저장하는 형식입니다. Python이 Excel에서 만든 공개 데이터를 웹사이트가 이 형식으로 읽습니다. |
+| Uniform Resource Locator (URL) | 웹페이지나 사진 등 인터넷 자원의 주소입니다. |
+| User Interface (UI) | 사용자가 보는 화면, 버튼, 메뉴, 입력란 등의 사용자 인터페이스입니다. |
+| HyperText Markup Language (HTML) | 웹페이지의 제목, 문단, 목록, 입력란 같은 구조를 표현하는 언어입니다. |
+| Application Programming Interface (API) | 프로그램끼리 기능과 데이터를 주고받는 인터페이스입니다. API key는 접근을 위해 사용하는 키입니다. |
+| Software Development Kit (SDK) | 외부 서비스 기능을 프로그램에서 사용할 수 있도록 제공하는 개발 도구 모음입니다. |
+| Command-Line Interface (CLI) | 터미널에 명령어를 입력하여 프로그램을 실행하는 방식입니다. GitHub CLI의 실행 명령은 `gh`입니다. |
+| Hypertext Transfer Protocol Secure (HTTPS) | 암호화된 연결을 사용하는 웹 통신 방식입니다. 주소가 `https://`로 시작합니다. |
+| Row-Level Security (RLS) | 데이터베이스에서 행 단위로 접근 권한을 제어하는 기능입니다. |
+| Exchangeable image file format (Exif, EXIF) | 사진 파일에 촬영 시각, 카메라 설정 등의 메타데이터를 기록하는 규격입니다. |
+| Global Positioning System (GPS) | 위성 기반 위치 결정 시스템입니다. 사진 메타데이터에 촬영 위치 좌표가 포함될 수 있습니다. |
+| Identifier (ID) | 분류군이나 사진 등을 구별하는 식별자입니다. 예: `taxon_id`, `image_id`. |
+| Pixel (px) | 이미지 크기를 나타내는 픽셀 단위입니다. |
+
+WebP는 이미지 형식의 이름이며 여기서 임의의 풀네임으로 확장하지 않습니다. Git, GitHub, Python, Next.js, Supabase, Vercel, uv, npm도 제품·도구 이름으로 사용합니다. Auth는 authentication(인증)의 줄임말입니다.
+
 운영 안내 · 코드 확인일: 2026-09-12. 이 문서의 명령은 별도 표시가 없으면 `FernDigitalFlora` 루트에서 실행합니다. 명령은 하나씩 실행하고, 실패하면 다음 업로드·commit·push로 넘어가지 않습니다. 이 문서는 연결 방법을 설명하며 원격 업로드나 배포 완료를 보증하는 상태 보고서가 아닙니다.
 
 Excel master와 로컬 원본 사진으로 만드는 한국 양치식물(Pteridophytes) 디지털 도감입니다. Python은 Excel 검증, WebP 생성, 공개 JSON 생성, Supabase Storage 업로드를 담당합니다. `web/`의 Next.js 앱은 공개 JSON과 Supabase의 공개 이미지 URL만 사용합니다. 현재 구조에는 Supabase Database와 Auth가 필요하지 않습니다.
@@ -48,6 +71,12 @@ uv run python -m scripts.pipeline --mode normal
 
 ## Excel 시트 수정 후 로컬 웹에 반영
 
+### 보유 상태
+
+`01_Taxa`에 `holding_status` 열을 추가하고 해당 분류군에만 `held`를 입력합니다. 빈 셀은 미보유입니다. `held`는 현재 살아 있는 식물체를 보유하거나 과거 보유한 식물체의 필요한 사진 촬영을 완료한 경우입니다. 이 값은 사진 개수에서 자동 추정하지 않습니다. 다른 문자열은 검증 오류입니다.
+
+저장 후 `.venv/bin/python -m scripts.pipeline --mode normal`을 실행합니다. 검색 결과와 분류군 상세 페이지에 보유/미보유가 표시됩니다. 통계에는 보유 분류군 ÷ 전체 분류군, 공개 사진이 1장 이상 있는 보유 분류군 ÷ 보유 분류군이 표시됩니다. 분모가 0이면 비율을 —로 표시합니다. 사진이 있다는 사실은 전체 촬영 완료를 뜻하지 않습니다. 새 UI 문구는 `config/site_text.json`, `config/site_text_ko.json`에 기본값이 있으며 동일 키를 `10_Site_Text`에 추가하면 수정할 수 있습니다.
+
 ### 학명의 이탤릭 표시
 
 기존 `01_Taxa.scientific_name`과 `acceptedScientificName` 셀에 `[i]...[/i]`를 직접 입력합니다. 별도 display 열은 필요하지 않습니다. `08_Synonyms.name`에도 같은 표기를 사용할 수 있습니다.
@@ -86,15 +115,26 @@ Excel을 완전히 저장하고 프로젝트 루트에서 수정 범위에 맞�
 ## 사진 추가와 교체
 
 1. 원본 사진을 `images_original/`에 넣습니다. 하위 폴더를 사용할 수 있으며 코드는 원본을 수정하지 않습니다.
-2. `06_Images`에 영구 `image_id`, `taxon_id`, `original_filename`, `status`, 촬영자, 저작권 정보를 입력합니다.
-3. `original_filename`은 `DSC_0001.jpeg` 또는 `2026/Jeju/DSC_0001.jpeg`처럼 `images_original/` 기준 상대경로를 입력합니다. 대소문자와 확장자도 실제 파일과 일치해야 합니다.
-4. `07_Image_Morphology`에 사진과 형태 항목의 관계를 입력합니다. 형태 항목과 연결하지 않은 사진도 해당 taxon의 갤러리에는 포함됩니다.
-5. `05_Taxon_Morphology`에는 사진 유무와 별개로 구조 존재 여부와 자료 확보 상태를 입력합니다.
+2. 새 파일명은 `TX000365_MO0001_001.jpg`처럼 `taxon_id_morphology_id_구분문자.확장자` 형식으로 지정합니다. 첫 두 식별자는 Excel에 존재해야 하며 마지막 부분에는 밑줄도 사용할 수 있습니다. 기존 등록 사진은 이름을 바꾸지 않아도 됩니다.
+3. Excel을 저장하고 닫은 다음 아래 등록 명령으로 미리 확인하고 적용합니다. `05_Taxon_Morphology`, `06_Images`, `07_Image_Morphology`에 필요한 행만 추가됩니다. `image_id`는 `IM000001` 형식의 영구 연속 번호이며 재실행해도 기존 번호나 수동 정보를 덮어쓰지 않습니다.
+4. 촬영자, 저작권, cytotype, note 등은 등록 후 Excel에서 보완합니다. `original_filename`은 원본 폴더 기준 상대경로로 자동 기록됩니다.
+5. 모든 등록 사진이 공개 대상입니다. 사진 유무는 연결된 사진에서 계산하며, 사진이 없다고 구조가 없다고 판단하지 않습니다. 형태 트리의 `display_order`는 유지하고 사진은 image_id 순으로 표시합니다.
 6. 다음 명령을 실행합니다.
 
 ```bash
+.venv/bin/python -m scripts.register_images
+.venv/bin/python -m scripts.register_images --apply
 .venv/bin/python -m scripts.validate --stage source
 .venv/bin/python -m scripts.pipeline --mode normal
+```
+
+등록 명령은 기본적으로 미리보기입니다. 적용 시 변경 전 Excel을 `backups/`에 보관합니다. 잘못된 이름, 없는 분류군·형태 식별자, 중복 사진 또는 사라진 등록 원본이 있으면 적용하지 않습니다. 원본 이름 변경은 자동 추정하지 않습니다. `.state/image-id-registry.json`도 함께 백업하여 삭제된 번호의 재사용을 방지하세요. 로컬 생성 이후 원격 사진 업로드와 웹 배포는 아래 절차를 별도로 수행합니다.
+
+이전 형식의 Excel은 한 번만 다음 명령으로 전환합니다. 04의 status, 05의 presence_status/documentation_status, 06의 status, 07의 role/representative/display_order를 제거합니다. 다른 시트의 status는 유지합니다.
+
+```bash
+.venv/bin/python -m scripts.register_images --migrate
+.venv/bin/python -m scripts.register_images --migrate --apply
 ```
 
 등록되지 않은 원본 파일은 리사이즈하지 않습니다. 기존 ID를 바꾸거나 재번호화하지 마세요. `normal`은 이미 정상인 WebP를 유지하고 새 사진이나 누락된 크기만 만듭니다.
@@ -351,7 +391,7 @@ git push
 
 Excel 파일 자체는 Git에 올리지 않습니다. Vercel에 반영되는 것은 pipeline이 생성한 공개 JSON입니다.
 
-사진 status를 공개로 바꾸는 등 공개 이미지 목록이 늘어난 경우에는 메타데이터만 수정했어도 아래 사진 업로드 절차를 수행해야 합니다. 검사에서 이미지 누락이 나오면 그대로 배포하지 않습니다.
+등록 이미지 목록이 늘어난 경우에는 아래 사진 업로드 절차를 수행해야 합니다. 검사에서 이미지 누락이 나오면 그대로 배포하지 않습니다.
 
 ### 새 원본 사진을 추가한 경우
 

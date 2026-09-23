@@ -24,9 +24,6 @@ export type ImageSize = "thumb" | "medium" | "large";
 export type ImageLink = {
   image_id: string;
   morphology_id: string;
-  role: string;
-  representative: boolean;
-  display_order: number;
 };
 export type Photo = {
   image_id: string;
@@ -61,8 +58,6 @@ export type MorphData = {
 export type MorphState = {
   taxon_id: string;
   morphology_id: string;
-  presence_status: string;
-  documentation_status: string;
 };
 export type Cytotype = {
   cytotype_id: string;

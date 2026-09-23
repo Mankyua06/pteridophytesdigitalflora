@@ -1,4 +1,12 @@
 {
+  "morphology_photo_availability": "사진 자료 유무는 등록된 사진 연결에서 자동 계산합니다. 구조의 존재·부재를 추정하지 않습니다.",
+"holding_held": "보유",
+"holding_not_held": "미보유",
+"holdings_title": "분류군 보유 현황",
+"holdings_definition": "보유는 현재 살아 있는 식물체를 보유하거나, 과거 보유한 식물체의 필요한 사진 촬영을 모두 완료한 경우를 포함합니다.",
+"holdings_total_coverage": "보유 분류군 / 전체 분류군",
+"holdings_photo_coverage": "공개 사진이 있는 보유 분류군 / 보유 분류군",
+"holdings_photo_note": "사진 보유는 공개 사진이 1장 이상 있다는 뜻이며 촬영 완료를 의미하지 않습니다. 이 통계는 형태 필터와 무관합니다. 분모가 0이면 —로 표시합니다.",
   "morphology_comparison": "형태 사진 비교",
   "photo_gallery": "← 사진 도감",
   "compare_photographs_of_the_same_morphological_feature_across_tax": "같은 형태의 사진을 분류군별로 나란히 살펴보세요.",

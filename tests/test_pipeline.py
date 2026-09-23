@@ -34,8 +34,7 @@ def test_valid(ctx):
         ("04_Morphology_Tree", "parent_id", "MO0002", "TREE_CYCLE"),
         ("06_Images", "original_filename", "missing.jpg", "ORIGINAL_MISSING"),
         ("06_Images", "original_filename", "../escape.jpg", "UNSAFE_PATH"),
-        ("07_Image_Morphology", "representative", 1, "INVALID_VALUE"),
-        ("07_Image_Morphology", "display_order", -1, "INVALID_VALUE"),
+        ("04_Morphology_Tree", "display_order", -1, "INVALID_VALUE"),
         ("06_Images", "collection_date", "01/02/2026", "INVALID_VALUE"),
     ],
 )
@@ -111,7 +110,6 @@ def test_privacy_determinism(ctx):
     before = {str(p.relative_to(ctx.public)): p.read_bytes() for p in ctx.public.rglob("*.json")}
     all_text = b"".join(before.values())
     for forbidden in (
-        b"IM000002",
         b"DO_NOT_PUBLISH",
         b"SECRET_PRECISE_LOCALITY",
         b"original_filename",
@@ -169,38 +167,6 @@ def test_formula_policy_and_source_only_first_run(ctx):
     report = run(ctx, validate_source)
     assert not report.ok and "FORMULA" in {i["code"] for i in report.issues}
     assert "MANIFEST_MISSING" not in {i["code"] for i in report.issues}
-
-
-def test_documented_nonpublic_and_no_image_are_distinct(ctx):
-    append(
-        ctx,
-        "07_Image_Morphology",
-        image_id="IM000002",
-        morphology_id="MO0002",
-        role="primary",
-        representative=False,
-        display_order=0,
-    )
-    append(
-        ctx,
-        "05_Taxon_Morphology",
-        taxon_id="TX000001",
-        morphology_id="MO0002",
-        presence_status="present",
-        documentation_status="documented",
-    )
-    append(
-        ctx,
-        "05_Taxon_Morphology",
-        taxon_id="TX000002",
-        morphology_id="MO0001",
-        presence_status="unknown",
-        documentation_status="documented",
-    )
-    report = run(ctx, validate_source)
-    assert report.ok
-    codes = {i["code"] for i in report.issues}
-    assert {"DOCUMENTED_NONPUBLIC_ONLY", "DOCUMENTED_NO_IMAGE"}.issubset(codes)
 
 
 def test_top_level_private_field_is_rejected(ctx):

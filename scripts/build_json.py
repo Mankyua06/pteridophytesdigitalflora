@@ -15,7 +15,7 @@ def project(ctx, sheet, row):
 
 def assemble(ctx, data, manifest):
     taxa = sorted(data["01_Taxa"], key=lambda r: r["taxon_id"])
-    images = sorted((r for r in data["06_Images"] if r["status"] == "active"), key=lambda r: r["image_id"])
+    images = sorted(data["06_Images"], key=lambda r: r["image_id"])
     public_ids = {r["image_id"] for r in images}
     links = sorted(
         (
@@ -23,7 +23,7 @@ def assemble(ctx, data, manifest):
             for r in data["07_Image_Morphology"]
             if r["image_id"] in public_ids
         ),
-        key=lambda r: (r["morphology_id"], not r["representative"], r["display_order"], r["image_id"]),
+        key=lambda r: (r["morphology_id"], r["image_id"]),
     )
     public_manifest = {
         r["image_id"]: {
@@ -234,7 +234,7 @@ def validate_public(ctx, report, directory=None):
             for image in detail["images"]:
                 allowed("06_Images", image, ("variants", "morphology"))
                 image_id = image["image_id"]
-                if image_id in seen_images or image["status"] != "active" or image["taxon_id"] != ident:
+                if image_id in seen_images or image["taxon_id"] != ident:
                     raise ValueError("image public relation")
                 if image["cytotype_id"] and image["cytotype_id"] not in cy_ids:
                     raise ValueError("cytotype relation")

@@ -42,19 +42,19 @@ test("parent filter is explicit and terminates even on malformed cycle", () => {
   assert.deepEqual([...descendants(nodes, "MO1", true)], ["MO1", "MO2"]);
   assert.deepEqual([...descendants(nodes, "MO1", false)], ["MO1"]);
 });
-test("photo deduplication and representative ordering", () => {
-  const p = (id: string, rep: boolean, order: number) =>
+test("photo deduplication and permanent identifier ordering", () => {
+  const p = (id: string) =>
     ({
       image_id: id,
       morphology: [
-        { morphology_id: "MO1", representative: rep, display_order: order },
+        { image_id: id, morphology_id: "MO1" },
       ],
     }) as Photo;
-  const a = p("IM1", false, 0),
-    b = p("IM2", true, 4);
+  const a = p("IM1"),
+    b = p("IM2");
   assert.deepEqual(
     orderedPhotos([a, b, a], new Set(["MO1"])).map((p) => p.image_id),
-    ["IM2", "IM1"],
+    ["IM1", "IM2"],
   );
 });
 

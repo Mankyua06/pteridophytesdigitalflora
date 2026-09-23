@@ -1,5 +1,5 @@
 {
-  "release_id": "5a13052171a833fa9bf264a176c2e0b95c04eafc1fe415d57059dcbe8d8cb002",
+  "release_id": "eec811e79be9a7a762c6a69f4c50c93386a0677f78a6a66c5621fb020a53197b",
   "schema_version": 1,
   "text": {
     "a_digital_flora_connecting_taxa_morphology_and_photographs": "A digital flora connecting taxa, morphology, and photographs.",
@@ -93,6 +93,7 @@
     "morphology_atlas": "MORPHOLOGY ATLAS",
     "morphology_comparison": "Morphology Comparison",
     "morphology_documentation": "Morphology & Documentation",
+    "morphology_photo_availability": "Photograph availability is calculated from registered image links. No biological presence or absence is inferred.",
     "morphology_tree": "← Morphology tree",
     "next_photo": "Next photo",
     "no_cytotype_data_recorded": "No cytotype data recorded.",
@@ -288,6 +289,7 @@
     "morphology_atlas": "형태 도감",
     "morphology_comparison": "형태 사진 비교",
     "morphology_documentation": "형태·자료 상태",
+    "morphology_photo_availability": "사진 자료 유무는 등록된 사진 연결에서 자동 계산합니다. 구조의 존재·부재를 추정하지 않습니다.",
     "morphology_tree": "← 형태 트리",
     "next_photo": "다음 사진",
     "no_cytotype_data_recorded": "등록된 cytotype 자료가 없습니다.",
