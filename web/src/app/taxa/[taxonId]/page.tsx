@@ -26,9 +26,6 @@ export default async function Page({params}: {params: Promise<{taxonId: string}>
             <dt>{ui("gbif_accepted_scientific_name")}</dt>
             <dd><ScientificName name={acceptedName} /></dd>
           </dl>
-          {t.accepted_taxon_id && (
-            <Link href={`/taxa/${t.accepted_taxon_id}`}>{ui("view_accepted_taxon")}</Link>
-          )}
           <h3>{ui("synonyms")}</h3>
           {detail.synonyms.length ? (
             <ul>

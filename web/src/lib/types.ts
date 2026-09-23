@@ -8,9 +8,7 @@ export type Taxon = {
   genus: string | null;
   taxon_rank: string;
   gbif_status: string | null;
-  gbif_taxon_key: string | null;
   accepted_scientific_name: string | null;
-  accepted_taxon_id: string | null;
   image_count?: number;
 };
 export type Variant = {
@@ -65,7 +63,6 @@ export type Cytotype = {
   chromosome_number: string | null;
   genome_size_pg: number | null;
   reproductive_mode: string | null;
-  status: string | null;
 };
 export type TaxonDetail = {
   taxon: Taxon;
