@@ -2,7 +2,7 @@ import content from "../../public/data/site-text.json";
 
 export type Locale = "en" | "ko";
 export type Translator = (key: string, values?: Record<string, string | number>) => string;
-export type SiteText = { text: Record<string, string>; text_ko?: Record<string, string> };
+export type SiteText = { text: Record<string, string>; text_ko?: Record<string, string>; theme?: Record<string, string> };
 /** Plain text only. A missing Korean translation falls back to the English copy. */
 export function translator(locale: Locale, source: SiteText = content): Translator {
   return (key, values = {}) => {

@@ -1,5 +1,7 @@
 import json
+
 import pytest
+
 from scripts.build_site_text import build
 from scripts.common import Report
 from scripts.site_text import resolve
@@ -23,8 +25,10 @@ def test_text_refresh_preserves_research_and_ignores_unfinished_contributors(ctx
 def test_text_keys_and_placeholders_are_validated(ctx):
     defaults = resolve(ctx, [])
     key = next(k for k,v in defaults.items() if '{v0}' in v)
-    with pytest.raises(ValueError): resolve(ctx, [{'key':key,'text':'Missing placeholder'}])
-    with pytest.raises(ValueError): resolve(ctx, [{'key':'mistyped_key','text':'New copy'}])
+    with pytest.raises(ValueError):
+        resolve(ctx, [{'key':key,'text':'Missing placeholder'}])
+    with pytest.raises(ValueError):
+        resolve(ctx, [{'key':'mistyped_key','text':'New copy'}])
     assert resolve(ctx, [{'key':key,'text':'New {v0}'}])[key] == 'New {v0}'
 
 
@@ -36,7 +40,8 @@ def test_korean_override_fallback_and_placeholder_validation(ctx):
     rows[0]['text_ko'] = '   '
     assert resolve(ctx, rows, 'ko')['compare_taxa_count'] == 'Compare {count} taxa'
     rows[0]['text_ko'] = '잘못된 문구'
-    with pytest.raises(ValueError): resolve(ctx, rows)
+    with pytest.raises(ValueError):
+        resolve(ctx, rows)
 
 
 def test_korean_text_only_refresh(ctx):

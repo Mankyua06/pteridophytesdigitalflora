@@ -4,6 +4,7 @@ import { getLocale, getSiteText } from "@/lib/site-text-server";
 import { LanguageProvider, LanguageSwitch } from "@/components/language-provider";
 import Link from "next/link";
 import "./globals.css";
+import { themeStyle } from "@/lib/site-theme";
 export async function generateMetadata() {
  const ui = await getUi();
  return {
@@ -18,7 +19,7 @@ export default async function Layout({ children }: { children: React.ReactNode }
   const ui = await getUi();
   const [locale, siteText] = await Promise.all([getLocale(), getSiteText()]);
   return (
-    <html lang={locale}>
+    <html lang={locale} style={themeStyle(siteText.theme)}>
       <body>
         <LanguageProvider locale={locale} source={siteText}>
         <a className="skip" href="#main">{ui("skip_to_content")}</a>

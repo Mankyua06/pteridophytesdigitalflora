@@ -1,7 +1,6 @@
 
 import { ScientificName } from "@/components/scientific-name";
 import { getUi } from "@/lib/site-text-server";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { taxonDetail } from "@/lib/data";
 export default async function Page({params}: {params: Promise<{taxonId: string}>}) {

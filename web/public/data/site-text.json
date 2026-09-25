@@ -1,5 +1,5 @@
 {
-  "release_id": "1173a2e9ce0151f91ad0239f27e8741fb720818361dfbc67bbc92ee9ee86e67e",
+  "release_id": "ee56af2f211cbb4de23d0ac6d55b5ec1b3b996b3e5296217665a8939cd46eea1",
   "schema_version": 1,
   "text": {
     "a_digital_flora_connecting_taxa_morphology_and_photographs": "A digital flora connecting taxa, morphology, and photographs.",
@@ -392,5 +392,17 @@
     "with_photographs": "사진 자료 있음",
     "without_photographs": "사진 자료 없음",
     "your_selection_has_changed_choose_compare_to_update_the_results": "선택 조건이 변경되었습니다. 비교 버튼을 누르면 결과를 갱신합니다."
+  },
+  "theme": {
+    "accent_color": "#315c43",
+    "background_color": "#f6f5ef",
+    "base_font_size": "16",
+    "body_font": "system",
+    "border_color": "#d4dcd1",
+    "heading_font": "system",
+    "heading_font_size": "48",
+    "muted_color": "#657267",
+    "surface_color": "#e6ebdf",
+    "text_color": "#203b2f"
   }
 }
