@@ -1,5 +1,5 @@
 {
-  "release_id": "ee56af2f211cbb4de23d0ac6d55b5ec1b3b996b3e5296217665a8939cd46eea1",
+  "release_id": "c077d761fbe5ec5db3071d501f760fdf6261048c183352a94b6654b78c733df7",
   "schema_version": 1,
   "taxa": [
     {
@@ -4740,7 +4740,7 @@
       "gbif_status": "ACCEPTED",
       "genus": "Lepisorus",
       "holding_status": "held",
-      "image_count": 58,
+      "image_count": 7,
       "korean_name": "일엽초",
       "order": "Polypodiales",
       "scientific_name": "[i]Lepisorus thunbergianus[/i] (Kaulf.) Ching",
