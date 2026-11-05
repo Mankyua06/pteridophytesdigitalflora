@@ -37,6 +37,7 @@ def main():
         morphology_id="MO0001",
         term_id="MT0001",
         context_label="Synthetic root",
+        display_order=0,
     )
     append(
         ctx,

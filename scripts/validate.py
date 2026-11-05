@@ -103,8 +103,9 @@ def load_source(ctx, report):
                 )
         for h in populated:
             if h not in spec["columns"]:
+                known_helper = h in ctx.config.get("helper_columns", {}).get(name, [])
                 report.add(
-                    "warning",
+                    "info" if known_helper else "warning",
                     "EXTRA_COLUMN",
                     "추가 열 보존. 공개 허용 목록에 없으면 제외합니다.",
                     sheet=name,
@@ -183,14 +184,21 @@ def validate_source(ctx, report):
                     report.add("error", "SCIENTIFIC_NAME_MARKUP", "[i]와 [/i]를 중첩 없이 짝지어 입력하세요.",
                                sheet=sheet, row=row["_row"], column=column)
     from .site_text import resolve
+    from .site_theme import resolve as resolve_theme
     try:
         resolve(ctx, data.get("10_Site_Text", []))
+        resolve_theme(data.get("11_Site_Theme", []))
     except ValueError as error:
         report.add("error", "SITE_TEXT_INVALID", str(error), sheet="10_Site_Text")
     for name, spec in ctx.schema.items():
         seen = set()
         for row in data[name]:
             key = tuple(row.get(k) for k in spec["primary_key"])
+            if name == "02_Cytotypes" and row.get("cytotype_id") is None:
+                key = ("placeholder", row.get("taxon_id"))
+                if any(row.get(k) is not None for k in ("ploidy", "chromosome_number", "genome_size_pg", "reproductive_mode")):
+                    report.add("error", "CYTOTYPE_ID_REQUIRED", "Assign cytotype_id before entering biological data.",
+                               sheet=name, row=row["_row"], column="cytotype_id")
             report.counts["checks"] += 1
             if key in seen:
                 report.add(
@@ -219,7 +227,7 @@ def validate_source(ctx, report):
                 break
             visited.add(current)
             current = tree[current]
-    cytotypes = {r["cytotype_id"]: r for r in data["02_Cytotypes"]}
+    cytotypes = {r["cytotype_id"]: r for r in data["02_Cytotypes"] if r["cytotype_id"]}
     registered, folded = set(), {}
     for row in data["06_Images"]:
         loc = dict(sheet="06_Images", row=row["_row"], record_id=row["image_id"])

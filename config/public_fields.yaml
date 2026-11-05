@@ -9,9 +9,7 @@
     "taxon_rank",
     "korean_name",
     "gbif_status",
-    "gbif_taxon_key",
-    "accepted_scientific_name",
-    "accepted_taxon_id"
+    "accepted_scientific_name"
   ],
   "02_Cytotypes": [
     "cytotype_id",
@@ -19,8 +17,7 @@
     "ploidy",
     "chromosome_number",
     "genome_size_pg",
-    "reproductive_mode",
-    "status"
+    "reproductive_mode"
   ],
   "03_Morphology_Terms": [
     "term_id",

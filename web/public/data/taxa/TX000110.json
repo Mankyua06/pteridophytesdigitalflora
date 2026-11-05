@@ -1,8 +1,562 @@
 {
   "cytotypes": [],
-  "images": [],
-  "morphology": [],
-  "release_id": "c077d761fbe5ec5db3071d501f760fdf6261048c183352a94b6654b78c733df7",
+  "images": [
+    {
+      "caption": null,
+      "collection_date": null,
+      "copyright": null,
+      "cytotype_id": null,
+      "image_id": "IM000068",
+      "morphology": [
+        {
+          "image_id": "IM000068",
+          "morphology_id": "MO0002"
+        }
+      ],
+      "photographer": null,
+      "taxon_id": "TX000110",
+      "variants": {
+        "large": {
+          "bytes": 2426902,
+          "height": 2160,
+          "object_key": "large/IM000068.webp",
+          "sha256": "dfbfa10e28ad9ad620546916b05bb677a4578452691a242e20ae3179957d7611",
+          "width": 2880
+        },
+        "medium": {
+          "bytes": 629938,
+          "height": 1200,
+          "object_key": "medium/IM000068.webp",
+          "sha256": "facf036990f6283f1c5c5b802f145d2066be1c9f6199d058cba9affe42cf280c",
+          "width": 1600
+        },
+        "thumb": {
+          "bytes": 38586,
+          "height": 360,
+          "object_key": "thumb/IM000068.webp",
+          "sha256": "440faa9d7a24429640c16b796549d38b5a29be593d11540334548c8a955e3d2f",
+          "width": 480
+        }
+      }
+    },
+    {
+      "caption": null,
+      "collection_date": null,
+      "copyright": null,
+      "cytotype_id": null,
+      "image_id": "IM000069",
+      "morphology": [
+        {
+          "image_id": "IM000069",
+          "morphology_id": "MO0002"
+        }
+      ],
+      "photographer": null,
+      "taxon_id": "TX000110",
+      "variants": {
+        "large": {
+          "bytes": 1860074,
+          "height": 2160,
+          "object_key": "large/IM000069.webp",
+          "sha256": "eea40f95cce2dcf51fc6e504af89c054ddff7b5dca8ef899675a05231111f93a",
+          "width": 2880
+        },
+        "medium": {
+          "bytes": 670982,
+          "height": 1200,
+          "object_key": "medium/IM000069.webp",
+          "sha256": "8f0fbccc51e0b2552c1d55b2eb8d4fca4c3c60174ed960de849bb0fe08d57b6f",
+          "width": 1600
+        },
+        "thumb": {
+          "bytes": 32292,
+          "height": 360,
+          "object_key": "thumb/IM000069.webp",
+          "sha256": "066ce19389bd220e97260da346b8a54941415303cb540bd378bca34261a16f67",
+          "width": 480
+        }
+      }
+    },
+    {
+      "caption": null,
+      "collection_date": null,
+      "copyright": null,
+      "cytotype_id": null,
+      "image_id": "IM000070",
+      "morphology": [
+        {
+          "image_id": "IM000070",
+          "morphology_id": "MO0002"
+        }
+      ],
+      "photographer": null,
+      "taxon_id": "TX000110",
+      "variants": {
+        "large": {
+          "bytes": 1419432,
+          "height": 2160,
+          "object_key": "large/IM000070.webp",
+          "sha256": "1853d422422743a34da977cff2f0ce794fc35abf56dd8030ed67d4cbc9850570",
+          "width": 2880
+        },
+        "medium": {
+          "bytes": 436762,
+          "height": 1200,
+          "object_key": "medium/IM000070.webp",
+          "sha256": "55637c8516fd2d3f21d96b7485573b15594602ea99a25bd0f14d23d676064bf3",
+          "width": 1600
+        },
+        "thumb": {
+          "bytes": 42012,
+          "height": 360,
+          "object_key": "thumb/IM000070.webp",
+          "sha256": "7a38fffb3b79f4a83872bd2c571ec6448f28d593962eee52b9bc28a03f9ff2b2",
+          "width": 480
+        }
+      }
+    },
+    {
+      "caption": null,
+      "collection_date": null,
+      "copyright": null,
+      "cytotype_id": null,
+      "image_id": "IM000071",
+      "morphology": [
+        {
+          "image_id": "IM000071",
+          "morphology_id": "MO0002"
+        }
+      ],
+      "photographer": null,
+      "taxon_id": "TX000110",
+      "variants": {
+        "large": {
+          "bytes": 1228090,
+          "height": 2160,
+          "object_key": "large/IM000071.webp",
+          "sha256": "09481a77d1cdcf1b203d48e716f6b37be54e0951effb3f46fa584a7a0867bd8f",
+          "width": 2880
+        },
+        "medium": {
+          "bytes": 546602,
+          "height": 1200,
+          "object_key": "medium/IM000071.webp",
+          "sha256": "79ecf16c07f150ac4ab49099f7758e76e2a85b67cea154413ef6229784ab243d",
+          "width": 1600
+        },
+        "thumb": {
+          "bytes": 59334,
+          "height": 360,
+          "object_key": "thumb/IM000071.webp",
+          "sha256": "9f140fb27c426a204efbc425fb41a5cd1b6d1efd06bf8f9d4b4b177b6d0832ee",
+          "width": 480
+        }
+      }
+    },
+    {
+      "caption": null,
+      "collection_date": null,
+      "copyright": null,
+      "cytotype_id": null,
+      "image_id": "IM000072",
+      "morphology": [
+        {
+          "image_id": "IM000072",
+          "morphology_id": "MO0005"
+        }
+      ],
+      "photographer": null,
+      "taxon_id": "TX000110",
+      "variants": {
+        "large": {
+          "bytes": 1806898,
+          "height": 2160,
+          "object_key": "large/IM000072.webp",
+          "sha256": "85930b6718625c919341886ca6171bfc37bf03c52842e84332f815ac7e7feb57",
+          "width": 2880
+        },
+        "medium": {
+          "bytes": 704730,
+          "height": 1200,
+          "object_key": "medium/IM000072.webp",
+          "sha256": "842ed0166d92688390fa7a3be1823d417d60a3a479ce65f57b16bbb2b0188e26",
+          "width": 1600
+        },
+        "thumb": {
+          "bytes": 76274,
+          "height": 360,
+          "object_key": "thumb/IM000072.webp",
+          "sha256": "2a8c8eb8bea801740726797e96ce18f2f293e94d543a5d8ea11cee5d27ab6c57",
+          "width": 480
+        }
+      }
+    },
+    {
+      "caption": null,
+      "collection_date": null,
+      "copyright": null,
+      "cytotype_id": null,
+      "image_id": "IM000073",
+      "morphology": [
+        {
+          "image_id": "IM000073",
+          "morphology_id": "MO0005"
+        }
+      ],
+      "photographer": null,
+      "taxon_id": "TX000110",
+      "variants": {
+        "large": {
+          "bytes": 1509896,
+          "height": 2160,
+          "object_key": "large/IM000073.webp",
+          "sha256": "70cb5e42653e44195646373d97f6beb73a792b816015224e37cff9979c307cc2",
+          "width": 2880
+        },
+        "medium": {
+          "bytes": 513912,
+          "height": 1200,
+          "object_key": "medium/IM000073.webp",
+          "sha256": "ee59ff17e4e8332e988356fc3209392dfbb463b77cb5a637b95acef4eb6a46fd",
+          "width": 1600
+        },
+        "thumb": {
+          "bytes": 56382,
+          "height": 360,
+          "object_key": "thumb/IM000073.webp",
+          "sha256": "e27dd2242d168f2e9ab5bd33eed4f19f4b076a7ac0e164f785bd89a381328adb",
+          "width": 480
+        }
+      }
+    },
+    {
+      "caption": null,
+      "collection_date": null,
+      "copyright": null,
+      "cytotype_id": null,
+      "image_id": "IM000074",
+      "morphology": [
+        {
+          "image_id": "IM000074",
+          "morphology_id": "MO0022"
+        }
+      ],
+      "photographer": null,
+      "taxon_id": "TX000110",
+      "variants": {
+        "large": {
+          "bytes": 1441416,
+          "height": 2160,
+          "object_key": "large/IM000074.webp",
+          "sha256": "51d97942df2cfcd4c1eda785226ba0fee65450f495c259494238e7f104067852",
+          "width": 2880
+        },
+        "medium": {
+          "bytes": 623344,
+          "height": 1200,
+          "object_key": "medium/IM000074.webp",
+          "sha256": "b3ee25966ad665c04a0ce1166300693d3f534ec6b04ae491580e4bebacac4f05",
+          "width": 1600
+        },
+        "thumb": {
+          "bytes": 65268,
+          "height": 360,
+          "object_key": "thumb/IM000074.webp",
+          "sha256": "810f772a431f746544ab71b55705de97c1784592537db77896f4aef813bbe6b4",
+          "width": 480
+        }
+      }
+    },
+    {
+      "caption": null,
+      "collection_date": null,
+      "copyright": null,
+      "cytotype_id": null,
+      "image_id": "IM000075",
+      "morphology": [
+        {
+          "image_id": "IM000075",
+          "morphology_id": "MO0022"
+        }
+      ],
+      "photographer": null,
+      "taxon_id": "TX000110",
+      "variants": {
+        "large": {
+          "bytes": 1725778,
+          "height": 2160,
+          "object_key": "large/IM000075.webp",
+          "sha256": "973372996696e0132d1fc11fa405cefb945432eb27932002cc3aedb43c4bd5a0",
+          "width": 2880
+        },
+        "medium": {
+          "bytes": 633648,
+          "height": 1200,
+          "object_key": "medium/IM000075.webp",
+          "sha256": "f379fc829469a939afc725079dee0311eaf21bb9bbd8137cf446bf37a9a6435d",
+          "width": 1600
+        },
+        "thumb": {
+          "bytes": 60096,
+          "height": 360,
+          "object_key": "thumb/IM000075.webp",
+          "sha256": "a3a9e2591d56101eab992898cefd589dd4ae93edfd4729830b2a2bf19a0e993a",
+          "width": 480
+        }
+      }
+    },
+    {
+      "caption": null,
+      "collection_date": null,
+      "copyright": null,
+      "cytotype_id": null,
+      "image_id": "IM000076",
+      "morphology": [
+        {
+          "image_id": "IM000076",
+          "morphology_id": "MO0025"
+        }
+      ],
+      "photographer": null,
+      "taxon_id": "TX000110",
+      "variants": {
+        "large": {
+          "bytes": 1564956,
+          "height": 2160,
+          "object_key": "large/IM000076.webp",
+          "sha256": "54fa6aadfdcf2e91848084cb4665d417cfd189fc183038f2f0172bb763153894",
+          "width": 2880
+        },
+        "medium": {
+          "bytes": 580026,
+          "height": 1200,
+          "object_key": "medium/IM000076.webp",
+          "sha256": "a13afeff337992970621705f24b277618fcf86bc2b0c139c9c2792230c7968b7",
+          "width": 1600
+        },
+        "thumb": {
+          "bytes": 56380,
+          "height": 360,
+          "object_key": "thumb/IM000076.webp",
+          "sha256": "393f2d19b0e947bc6807e0de47d95869dd905ada3bda7777e4d45d2509b61ec3",
+          "width": 480
+        }
+      }
+    },
+    {
+      "caption": null,
+      "collection_date": null,
+      "copyright": null,
+      "cytotype_id": null,
+      "image_id": "IM000077",
+      "morphology": [
+        {
+          "image_id": "IM000077",
+          "morphology_id": "MO0036"
+        }
+      ],
+      "photographer": null,
+      "taxon_id": "TX000110",
+      "variants": {
+        "large": {
+          "bytes": 1270380,
+          "height": 2160,
+          "object_key": "large/IM000077.webp",
+          "sha256": "bf4cd4f9570fd21f75e768d9c8e2d14d5aaf64ec061f88b1df812547aa2e9fd6",
+          "width": 2880
+        },
+        "medium": {
+          "bytes": 432844,
+          "height": 1200,
+          "object_key": "medium/IM000077.webp",
+          "sha256": "8ddc4ca375792c2260ddbf97905a98da628fdba12eea9844c25c9f7dde690f97",
+          "width": 1600
+        },
+        "thumb": {
+          "bytes": 47498,
+          "height": 360,
+          "object_key": "thumb/IM000077.webp",
+          "sha256": "4dae79a3a6d4763743c1a1cf432321dd4471f1b071a68c0fb76c426a6c8e5bc4",
+          "width": 480
+        }
+      }
+    },
+    {
+      "caption": null,
+      "collection_date": null,
+      "copyright": null,
+      "cytotype_id": null,
+      "image_id": "IM000078",
+      "morphology": [
+        {
+          "image_id": "IM000078",
+          "morphology_id": "MO0036"
+        }
+      ],
+      "photographer": null,
+      "taxon_id": "TX000110",
+      "variants": {
+        "large": {
+          "bytes": 1373910,
+          "height": 2160,
+          "object_key": "large/IM000078.webp",
+          "sha256": "84d61c1093e0a00737d2d41d68e8e0c6d7cb0059a9a6744cd4ff3c29784f44f4",
+          "width": 2880
+        },
+        "medium": {
+          "bytes": 380452,
+          "height": 1200,
+          "object_key": "medium/IM000078.webp",
+          "sha256": "37a77e5dd4968765dd48f47d34efa0afb84cbcb99a760c59339770c43d0e8a6e",
+          "width": 1600
+        },
+        "thumb": {
+          "bytes": 38532,
+          "height": 360,
+          "object_key": "thumb/IM000078.webp",
+          "sha256": "cc44ef78b8e565f67045d0f027056b7555e63378fe220f6b7606ce746f1ca5cc",
+          "width": 480
+        }
+      }
+    },
+    {
+      "caption": null,
+      "collection_date": null,
+      "copyright": null,
+      "cytotype_id": null,
+      "image_id": "IM000079",
+      "morphology": [
+        {
+          "image_id": "IM000079",
+          "morphology_id": "MO0036"
+        }
+      ],
+      "photographer": null,
+      "taxon_id": "TX000110",
+      "variants": {
+        "large": {
+          "bytes": 1668464,
+          "height": 2160,
+          "object_key": "large/IM000079.webp",
+          "sha256": "3e04708dc238d4347bcb87f15a3ea5aa9370c8fdcf4c46572fae0fc5bca8b321",
+          "width": 2880
+        },
+        "medium": {
+          "bytes": 625430,
+          "height": 1200,
+          "object_key": "medium/IM000079.webp",
+          "sha256": "4b857f3b1b0abee6b1d7f857e187b12c6acc927a568a9fd4daa12224f60e90fa",
+          "width": 1600
+        },
+        "thumb": {
+          "bytes": 66332,
+          "height": 360,
+          "object_key": "thumb/IM000079.webp",
+          "sha256": "fa578edd23fca4f15ba6331272e9ccb6719a32bead479b226c55056fc17b8ccc",
+          "width": 480
+        }
+      }
+    },
+    {
+      "caption": null,
+      "collection_date": null,
+      "copyright": null,
+      "cytotype_id": null,
+      "image_id": "IM000080",
+      "morphology": [
+        {
+          "image_id": "IM000080",
+          "morphology_id": "MO0036"
+        }
+      ],
+      "photographer": null,
+      "taxon_id": "TX000110",
+      "variants": {
+        "large": {
+          "bytes": 878130,
+          "height": 2160,
+          "object_key": "large/IM000080.webp",
+          "sha256": "5964fb82005f69191f56c933e160f4157038febe5e8c361759cffead21f86d8a",
+          "width": 2880
+        },
+        "medium": {
+          "bytes": 406458,
+          "height": 1200,
+          "object_key": "medium/IM000080.webp",
+          "sha256": "12515d0ab69307a9fe9c94b0b3c4c0b73a6ba5653c949624889985dbefd84dab",
+          "width": 1600
+        },
+        "thumb": {
+          "bytes": 47416,
+          "height": 360,
+          "object_key": "thumb/IM000080.webp",
+          "sha256": "3b6392cce86662ac255339df7e4ccbd932c1ae443266e571494269846d7058a0",
+          "width": 480
+        }
+      }
+    },
+    {
+      "caption": null,
+      "collection_date": null,
+      "copyright": null,
+      "cytotype_id": null,
+      "image_id": "IM000081",
+      "morphology": [
+        {
+          "image_id": "IM000081",
+          "morphology_id": "MO0036"
+        }
+      ],
+      "photographer": null,
+      "taxon_id": "TX000110",
+      "variants": {
+        "large": {
+          "bytes": 1050556,
+          "height": 2160,
+          "object_key": "large/IM000081.webp",
+          "sha256": "b11effa294a409a7df86316c2545c775f2f1808a1d9c38d8b57ca8d8ad085da6",
+          "width": 2880
+        },
+        "medium": {
+          "bytes": 434902,
+          "height": 1200,
+          "object_key": "medium/IM000081.webp",
+          "sha256": "1394d4c60f88f5482d7641b8e2d7ecc96802519e4d7480379493630a76a0635f",
+          "width": 1600
+        },
+        "thumb": {
+          "bytes": 49972,
+          "height": 360,
+          "object_key": "thumb/IM000081.webp",
+          "sha256": "ad0abdc3cea70f3e32dae5621f3f23af88cff178794740dfd34defdb7c15fbdb",
+          "width": 480
+        }
+      }
+    }
+  ],
+  "morphology": [
+    {
+      "morphology_id": "MO0002",
+      "taxon_id": "TX000110"
+    },
+    {
+      "morphology_id": "MO0005",
+      "taxon_id": "TX000110"
+    },
+    {
+      "morphology_id": "MO0022",
+      "taxon_id": "TX000110"
+    },
+    {
+      "morphology_id": "MO0025",
+      "taxon_id": "TX000110"
+    },
+    {
+      "morphology_id": "MO0036",
+      "taxon_id": "TX000110"
+    }
+  ],
+  "release_id": "ff401ae826717e9ff929dff0543d24eca6b7a2d3ec0af3acec54fb25a9846571",
   "schema_version": 1,
   "synonyms": [],
   "taxon": {

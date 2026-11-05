@@ -2634,35 +2634,35 @@
     },
     {
       "names": [
-        "Isoetes sinensis T.C.Palmer",
+        "Isoëtes sinensis T.C.Palmer",
         "가는물부추"
       ],
       "taxon_id": "TX000377"
     },
     {
       "names": [
-        "Isoetes japonica A.Braun",
+        "Isoëtes japonica A.Braun",
         "물부추"
       ],
       "taxon_id": "TX000378"
     },
     {
       "names": [
-        "Isoetes jejuensis H.K.Choi, Ch.Kim & J.Jung",
+        "Isoëtes jejuensis H.K.Choi, Ch.Kim & J.Jung",
         "제주물부추"
       ],
       "taxon_id": "TX000379"
     },
     {
       "names": [
-        "Isoetes coreana Y.H.Chung & H.K.Choi",
+        "Isoëtes coreana Y.H.Chung & H.K.Choi",
         "참물부추"
       ],
       "taxon_id": "TX000380"
     },
     {
       "names": [
-        "Isoetes hallasanensis H.K.Choi, Ch.Kim & J.Jung",
+        "Isoëtes hallasanensis H.K.Choi, Ch.Kim & J.Jung",
         "한라물부추"
       ],
       "taxon_id": "TX000381"
@@ -2801,6 +2801,6 @@
       "taxon_id": "TX000400"
     }
   ],
-  "release_id": "c077d761fbe5ec5db3071d501f760fdf6261048c183352a94b6654b78c733df7",
+  "release_id": "ff401ae826717e9ff929dff0543d24eca6b7a2d3ec0af3acec54fb25a9846571",
   "schema_version": 1
 }

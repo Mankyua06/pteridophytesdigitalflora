@@ -1,5 +1,7 @@
 # 자료 업데이트
 
+원본 폴더에서 추가·삭제·이름 변경·내용 교체가 함께 발생했다면 먼저 `.venv/bin/python -m scripts.sync_images`로 변경 계획을 확인하고, `.venv/bin/python -m scripts.sync_images --apply`로 Excel과 파생 사진을 동기화합니다. 원본이 모두 사라진 경우에는 중단하며, 삭제한 사진의 Excel 06/07 기록과 파생 파일은 제거하되 02/05 연구 기록은 유지합니다. 적용 전 데이터는 `backups/sync-<run_id>/`에서 복구할 수 있습니다. 이후 아래 pipeline·업로드·배포 단계를 수행합니다. 원격 파일 삭제는 자동 수행하지 않습니다.
+
 1. 원본 사진을 보존하고 `images_original/`에 사본 또는 관리 원본을 배치합니다. Excel의 original_filename과 상대경로·대소문자를 맞춥니다.
 2. 새 원본을 `taxon_id_morphology_id_구분문자.jpg` 형식으로 지정하고 `.venv/bin/python -m scripts.register_images`로 미리 확인한 뒤 `--apply`를 추가하여 적용합니다. 기존 ID와 메타데이터는 유지됩니다. 촬영자·저작권 등은 Excel에서 보완합니다. 이전 열 구조의 전환에는 `--migrate`를 사용합니다. 자세한 예시는 README의 사진 추가 절차를 참고하세요.
 3. `uv run python -m scripts.validate --stage source`. 오류가 있으면 `reports/<run_id>/validation.md`의 셀 위치를 확인합니다. 경고는 검토 후 진행할 수 있습니다.

@@ -13,6 +13,7 @@ from .common import atomic_json, cli, read_json, safe_path, sha
 from .validate import validate_source
 
 REMOVED = {
+    "02_Cytotypes": {"status"},
     "04_Morphology_Tree": {"status"},
     "05_Taxon_Morphology": {"presence_status", "documentation_status"},
     "06_Images": {"status"},
@@ -58,6 +59,42 @@ def register(ctx, report, apply=False, migrate=False):
     temporary = None
     try:
         changes = 0
+        if migrate and "11_Site_Theme" not in wb.sheetnames:
+            from .site_theme import DEFAULTS
+
+            ws = wb.create_sheet("11_Site_Theme")
+            ws.append(["key", "value", "description"])
+            for key, value in DEFAULTS.items():
+                description = ("색상: #RRGGBB" if key.endswith("_color") else
+                               "system / sans / serif (기기 설치 글꼴 사용)" if key.endswith("_font") else
+                               "12–24 px (본문)" if key == "base_font_size" else "24–72 px (주 제목, 모바일 자동 축소)")
+                ws.append([key, value, description])
+            ws.freeze_panes = "A2"
+            ws.auto_filter.ref = ws.dimensions
+            for column, width in (("A", 26), ("B", 22), ("C", 56)):
+                ws.column_dimensions[column].width = width
+                ws.column_dimensions[column].number_format = "@"
+            for cell in ws[1]:
+                from copy import copy
+
+                cell.font = copy(wb["01_Taxa"]["A1"].font)
+                cell.fill = copy(wb["01_Taxa"]["A1"].fill)
+            changes += 1
+            report.add("info", "THEME_SHEET_CREATED", "Added editable site theme defaults")
+        if migrate and "08_Synonyms" not in wb.sheetnames:
+            from openpyxl.styles import Font, PatternFill
+
+            ws = wb.create_sheet("08_Synonyms", wb.sheetnames.index("07_Image_Morphology") + 1)
+            ws.append(list(ctx.schema["08_Synonyms"]["columns"]))
+            ws.freeze_panes = "A2"
+            ws.auto_filter.ref = ws.dimensions
+            for cell in ws[1]:
+                cell.font = Font(bold=True, color="FFFFFF")
+                cell.fill = PatternFill("solid", fgColor="244B39")
+                ws.column_dimensions[cell.column_letter].width = max(22, len(cell.value) + 3)
+                ws.column_dimensions[cell.column_letter].number_format = "@"
+            changes += 1
+            report.add("info", "SYNONYMS_SHEET_CREATED", "Added empty synonym entry sheet")
         for sheet, columns in REMOVED.items():
             ws = wb[sheet]
             obsolete = [(c.column, c.value) for c in ws[1] if c.value in columns]
@@ -90,6 +127,7 @@ def register(ctx, report, apply=False, migrate=False):
         known_hashes = {sha(safe_path(ctx.originals, p)): p for p in by_path}
         known_hashes.update({v["sha256"]: v["path"] for v in registry["files"].values()})
         folded = set()
+        filename_taxa = set()
         for path in sorted(ctx.originals.rglob("*")):
             if not path.is_file() or path.name.startswith("."):
                 continue
@@ -105,19 +143,22 @@ def register(ctx, report, apply=False, migrate=False):
                     row = by_path[rel]
                     if row["taxon_id"] != parts[0] or (row["image_id"], parts[1]) not in links:
                         raise ValueError(f"Filename conflicts with existing registration: {rel}")
+                    filename_taxa.add(parts[0])
                 continue
             if path.suffix.lower() not in EXTENSIONS:
                 report.add("warning", "UNSUPPORTED_FILE", "Not imported", path=rel)
                 continue
             parts = path.stem.split("_", 2)
             if len(parts) != 3 or not parts[2].strip() or parts[0] not in taxa or parts[1] not in nodes:
-                raise ValueError(f"Invalid filename or unknown taxon/morphology: {rel}")
+                report.add("warning", "SKIPPED_FILENAME", "Invalid filename or unknown taxon/morphology; original preserved", path=rel)
+                continue
             with Image.open(path) as image:
                 image.verify()
             fingerprint = sha(path)
             if fingerprint in known_hashes:
                 raise ValueError(f"Possible duplicate/renamed photo: {rel}; registered as {known_hashes[fingerprint]}")
             high += 1
+            filename_taxa.add(parts[0])
             ident = f"IM{high:06d}"
             row = {"image_id": ident, "taxon_id": parts[0], "original_filename": rel}
             append(wb["06_Images"], row)
@@ -128,6 +169,11 @@ def register(ctx, report, apply=False, migrate=False):
             known_hashes[fingerprint] = rel
             changes += 2
             report.add("info", "REGISTER_IMAGE", f"{ident}: {parts[0]} / {parts[1]}", path=rel)
+        cytotype_taxa = {r["taxon_id"] for r in rows(wb["02_Cytotypes"])}
+        for taxon in sorted(filename_taxa - cytotype_taxa):
+            append(wb["02_Cytotypes"], {"taxon_id": taxon})
+            changes += 1
+            report.add("info", "CYTOTYPE_PLACEHOLDER", "Taxon awaiting cytotype information", record_id=taxon)
         for ident, node in sorted(links):
             if ident not in by_id or node not in nodes:
                 raise ValueError("Existing image link references an unknown image or morphology.")

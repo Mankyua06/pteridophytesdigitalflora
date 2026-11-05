@@ -2,18 +2,18 @@
   "cytotypes": [],
   "images": [],
   "morphology": [],
-  "release_id": "c077d761fbe5ec5db3071d501f760fdf6261048c183352a94b6654b78c733df7",
+  "release_id": "ff401ae826717e9ff929dff0543d24eca6b7a2d3ec0af3acec54fb25a9846571",
   "schema_version": 1,
   "synonyms": [],
   "taxon": {
     "accepted_scientific_name": null,
-    "family": "Isoetaceae",
+    "family": "Isoëtaceae",
     "gbif_status": "ACCEPTED",
-    "genus": "Isoetes",
+    "genus": "Isoëtes",
     "holding_status": null,
     "korean_name": "한라물부추",
-    "order": "Isoetales",
-    "scientific_name": "Isoetes hallasanensis H.K.Choi, Ch.Kim & J.Jung",
+    "order": "Isoëtales",
+    "scientific_name": "Isoëtes hallasanensis H.K.Choi, Ch.Kim & J.Jung",
     "taxon_id": "TX000381",
     "taxon_rank": "SPECIES"
   }

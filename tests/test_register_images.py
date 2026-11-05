@@ -42,12 +42,42 @@ def test_preview_apply_and_repeat_preserve_metadata(ctx):
     assert len(list((ctx.root / "backups").glob("*.xlsx"))) == 1
 
 
-def test_invalid_batch_is_atomic(ctx):
+def test_invalid_names_are_skipped_while_valid_photos_are_registered(ctx):
     photo(ctx, "TX000001_MO0001_good.jpg")
     photo(ctx, "TX999999_MO0001_invalid.jpg", "blue")
+    report = run(ctx, register, apply=True)
+    assert report.ok
+    assert any(i['code'] == 'SKIPPED_FILENAME' for i in report.issues)
+    wb = load_workbook(ctx.master)
+    names = {r['original_filename'] for r in rows(wb['06_Images'])}
+    assert 'TX000001_MO0001_good.jpg' in names
+    assert 'TX999999_MO0001_invalid.jpg' not in names
+    assert (ctx.originals / 'TX999999_MO0001_invalid.jpg').exists()
+
+
+def test_cytotype_placeholder_is_blank_unique_and_not_published(ctx):
+    import json
+
+    from tests.test_pipeline import release
+
+    wb = load_workbook(ctx.master)
+    ws = wb["02_Cytotypes"]
+    ws.delete_rows(2, ws.max_row)
+    wb.save(ctx.master)
+    photo(ctx, "TX000001_MO0002_a.jpg")
+    assert run(ctx, register, apply=True).ok
+    wb = load_workbook(ctx.master)
+    records = rows(wb["02_Cytotypes"])
+    assert len(records) == 1
+    assert records[0]["taxon_id"] == "TX000001"
+    assert all(v is None for k, v in records[0].items() if k != "taxon_id")
     before = sha(ctx.master)
-    assert not run(ctx, register, apply=True).ok
+    assert run(ctx, register, apply=True).ok
     assert sha(ctx.master) == before
+
+    release(ctx)
+    detail = json.loads((ctx.public / "taxa/TX000001.json").read_text())
+    assert detail["cytotypes"] == []
 
 
 def test_duplicate_photo_requires_reconciliation(ctx):

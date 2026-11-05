@@ -6,6 +6,7 @@ from pathlib import Path
 
 from .common import ID_RE, atomic_json, cli, digest, read_json, safe_path, sha
 from .site_text import resolve as resolve_site_text
+from .site_theme import resolve as resolve_theme
 from .validate import normalize, validate_derived, validate_source
 
 
@@ -47,7 +48,8 @@ def assemble(ctx, data, manifest):
         contributors.append(entry)
     site_text = resolve_site_text(ctx, data.get("10_Site_Text", []))
     files = {
-        "site-text.json": {"text": site_text, "text_ko": resolve_site_text(ctx, data.get("10_Site_Text", []), "ko")},
+        "site-text.json": {"text": site_text, "text_ko": resolve_site_text(ctx, data.get("10_Site_Text", []), "ko"),
+                           "theme": resolve_theme(data.get("11_Site_Theme", []))},
         "contributors.json": {"contributors": contributors},
         "catalog.json": {"taxa": catalog},
         "morphology.json": {
@@ -96,7 +98,8 @@ def assemble(ctx, data, manifest):
             "taxon": project(ctx, "01_Taxa", taxon),
             "images": taxon_images,
             "cytotypes": sorted(
-                [project(ctx, "02_Cytotypes", r) for r in data["02_Cytotypes"] if r["taxon_id"] == ident],
+                [project(ctx, "02_Cytotypes", r) for r in data["02_Cytotypes"]
+                 if r["taxon_id"] == ident and r["cytotype_id"]],
                 key=lambda r: r["cytotype_id"],
             ),
             "morphology": sorted(
@@ -151,6 +154,9 @@ def validate_public(ctx, report, directory=None):
             raise ValueError("content release fingerprint")
         if not all(isinstance(k, str) and isinstance(v, str) for language in ("text", "text_ko") for k, v in files["site-text.json"][language].items()):
             raise ValueError("invalid site text")
+        theme = files["site-text.json"]["theme"]
+        if resolve_theme([{"key": k, "value": v} for k, v in theme.items()]) != theme:
+            raise ValueError("invalid site theme")
         taxa = files["catalog.json"]["taxa"]
         ids = {t["taxon_id"] for t in taxa}
         terms = files["morphology.json"]["terms"]
@@ -162,7 +168,7 @@ def validate_public(ctx, report, directory=None):
         if set(files) != expected_files:
             raise ValueError("unexpected public payload files")
         top_fields = {
-            "site-text.json": {"text", "text_ko"},
+            "site-text.json": {"text", "text_ko", "theme"},
             "contributors.json": {"contributors"},
             "catalog.json": {"taxa"},
             "morphology.json": {"terms", "nodes", "links"},
@@ -197,8 +203,6 @@ def validate_public(ctx, report, directory=None):
             allowed("01_Taxa", t, ("image_count",))
             if not ID_RE.fullmatch(t["taxon_id"]):
                 raise ValueError("invalid ID")
-            if t.get("accepted_taxon_id") and t["accepted_taxon_id"] not in ids:
-                raise ValueError("accepted relation")
         for t in terms:
             allowed("03_Morphology_Terms", t)
         for n in nodes:

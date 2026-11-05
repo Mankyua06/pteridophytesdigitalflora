@@ -15,7 +15,7 @@ test("synonym search, detail, states and keyboard image viewer", async ({
   ).toBeVisible();
   await expect(page.getByText("CY0001", { exact: true })).toBeVisible();
   await page.getByRole("link", { name: "Morphology & Documentation", exact: true }).click();
-  await expect(page.getByText("Not documented", { exact: true })).toBeVisible();
+  await expect(page.locator(".state-list")).toContainText("0 photos");
   await page.getByRole("link", { name: "Photos", exact: true }).click();
   const trigger = page.getByRole("button", { name: "View photo IM000001" });
   await trigger.click();

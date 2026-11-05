@@ -39,15 +39,8 @@
       "gbif_status": {
         "type": "string"
       },
-      "gbif_taxon_key": {
-        "type": "external_key"
-      },
       "accepted_scientific_name": {
         "type": "string"
-      },
-      "accepted_taxon_id": {
-        "type": "id",
-        "references": "01_Taxa.taxon_id"
       }
     }
   },
@@ -56,7 +49,6 @@
       "cytotype_id"
     ],
     "required": [
-      "cytotype_id",
       "taxon_id"
     ],
     "columns": {
@@ -81,13 +73,6 @@
       },
       "note": {
         "type": "string"
-      },
-      "status": {
-        "type": "string",
-        "enum": [
-          "active",
-          "inactive"
-        ]
       }
     }
   },
@@ -323,6 +308,11 @@
         ]
       }
     }
+  },
+  "11_Site_Theme": {
+    "primary_key": ["key"],
+    "required": ["key"],
+    "columns": {"key": {"type": "id"}, "value": {"type": "string"}, "description": {"type": "string"}}
   },
   "10_Site_Text": {
     "primary_key": [

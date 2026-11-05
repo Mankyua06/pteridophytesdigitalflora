@@ -112,7 +112,48 @@ Excel을 완전히 저장하고 프로젝트 루트에서 수정 범위에 맞�
 
 검증 오류가 있으면 명령이 종료 코드 1로 끝나고 기존 정상 공개 JSON은 유지됩니다. 터미널에 표시된 `reports/<run_id>/summary.md`와 단계별 보고서에서 시트명, 셀 위치, 오류 내용을 확인합니다. 성공 후 로컬 페이지를 새로고침합니다. 환경변수를 바꾼 경우에는 Next.js 개발 서버도 종료 후 다시 실행해야 합니다.
 
+## 색상·글꼴 변경 (`11_Site_Theme`)
+
+`key`는 그대로 두고 `value`만 수정합니다. `description`은 입력 안내이며 공개되지 않습니다. 빈 value는 기본값으로 돌아갑니다. 색상은 `#RRGGBB` 형식입니다. background_color(배경), text_color(본문), muted_color(보조 글자), border_color(테두리), accent_color(강조), surface_color(보조 배경)을 설정할 수 있습니다. 특수 상태 배지·사진 자체의 색은 이 설정의 대상이 아닙니다.
+
+body_font(본문)와 heading_font(제목)은 `system`, `sans`, `serif` 중 하나입니다. 새 글꼴을 다운로드하지 않고 기기에 설치된 글꼴과 한글 대체 글꼴을 사용하므로 기기별 모양은 다를 수 있습니다. base_font_size는 12–24, heading_font_size는 24–72 범위의 정수 픽셀 값이며 value 셀은 텍스트 형식을 유지합니다. 주 제목은 작은 화면에서 자동 축소되며 개별 버튼·보조 글자 등 고정 크기는 그대로 유지됩니다. 학명의 `[i]…[/i]` 표시는 별도로 유지됩니다.
+
+```bash
+# Excel을 저장하고 닫은 뒤 테마만 검증하고 갱신합니다. 연구 자료와 사진은 재생성하지 않습니다.
+.venv/bin/python -m scripts.build_site_theme
+```
+
+성공 후 로컬 페이지를 새로고침합니다. 잘못된 키·중복 키·허용 범위를 벗어난 값은 오류로 중단하며 기존 공개 데이터를 유지합니다. 전체 `pipeline --mode normal`도 테마를 반영합니다. `build_site_text`는 문구만, `build_site_theme`는 테마만 갱신합니다. 온라인 반영은 공개 데이터를 commit/push하는 기존 절차를 따릅니다. 이번 기능을 처음 배포할 때는 scripts/config/web/src와 공개 데이터를 함께 commit해야 합니다.
+
 ## 사진 추가와 교체
+
+### 원본 폴더 변경 동기화 (추가·삭제·이름 변경·내용 교체)
+
+Excel을 저장하고 닫은 뒤 아래 명령을 하나씩 실행합니다. 다른 등록·pipeline 명령을 동시에 실행하지 않습니다.
+
+```bash
+# 마지막 등록 기록의 파일명·SHA-256(파일 내용의 지문)과 현재 원본을 비교합니다.
+# reports/<run_id>/sync-plan.json에서 add/delete/rename/replace 내역을 확인합니다.
+.venv/bin/python -m scripts.sync_images
+
+# 검증 후 Excel과 images_web를 함께 동기화합니다. 신규·교체 사진은 크기별 파일을 생성합니다.
+.venv/bin/python -m scripts.sync_images --apply
+
+# 변경된 Excel과 사진을 기반으로 웹 공개 데이터를 생성합니다.
+.venv/bin/python -m scripts.pipeline --mode normal
+```
+
+신규 사진은 파일명 규칙에 따라 등록합니다. 삭제된 사진은 06의 행과 07의 연결, images_web의 세 파일을 제거합니다. 02와 05의 연구 기록은 유지합니다. 내용이 같은 파일의 명확한 이름 변경은 기존 image_id와 수동 메타데이터를 유지합니다. 이름 변경으로 taxon이나 형태를 변경할 수 없으며 모호한 중복 파일은 오류로 중단합니다. 같은 경로의 내용 교체는 기존 image_id로 파생 사진을 다시 생성합니다. 삭제된 번호는 재사용하지 않습니다.
+
+적용 전에 임시 작업 폴더에서 검증·생성을 완료하며, 실패하면 실제 Excel과 파생 파일은 바꾸지 않습니다. 적용 시 `backups/sync-<run_id>/`에 Excel, 기존 images_web 전체, 이미지 manifest와 등록 기록을 백업합니다. `recovery.json`에 원래 경로와 백업 위치가 기록됩니다. 기존 파생 사진은 이 복구 폴더에 남습니다. 삭제한 원본 자체를 복구하는 기능은 아니므로 원본은 별도로 백업하세요. 작업 중 프로세스가 강제 종료되었다면 재실행 전에 이 백업과 `.state/sync-images.lock`을 확인합니다. 원본 폴더가 없거나 등록 사진이 있는데 폴더에 사진이 하나도 없으면 대량 삭제를 방지하기 위해 중단합니다.
+
+동기화는 로컬 작업입니다. 신규 사진은 아래 업로드 절차, 교체 사진은 `--replace-changed` 업로드 절차를 수행한 뒤 공개 데이터와 코드를 배포합니다. 원격 사진은 자동 삭제하지 않습니다. 배포를 확인한 뒤 필요하면 별도로 삭제합니다. `register_images`는 기존의 추가 전용 명령이며, 원본의 삭제·이름 변경·내용 교체를 처리하려면 `sync_images`를 사용합니다.
+
+### 이명과 보조 열
+
+`08_Synonyms`의 열은 `name_id`, `taxon_id`, `name`, `name_type`, `status`, `note`입니다. 실제 이명을 입력할 때 앞의 네 열은 필수입니다. `name_id`는 고유 식별자(예: `SN000001`), `taxon_id`는 01의 분류군 식별자이며, `name_type`은 `scientific_synonym` 또는 `korean_synonym`입니다. status와 note는 선택 사항입니다. status는 이명 검색의 공개/비공개 필터로 사용하지 않습니다. 빈 시트에는 테스트 이명을 임의로 채우지 않습니다.
+
+01의 `gbif_taxon_key`와 `accepted_taxon_id`는 현재 기능에 필요하지 않아 스키마에서 제거했습니다. `status`와 `acceptedScientificName`은 계속 사용합니다. `config/pipeline.yaml`의 `helper_columns`에 등록한 보조 열은 원본을 보존하고 공개 데이터에서 제외하며 경고 대신 정보로 보고합니다. 등록되지 않은 추가 열은 입력 실수를 발견할 수 있도록 계속 경고합니다.
 
 1. 원본 사진을 `images_original/`에 넣습니다. 하위 폴더를 사용할 수 있으며 코드는 원본을 수정하지 않습니다.
 2. 새 파일명은 `TX000365_MO0001_001.jpg`처럼 `taxon_id_morphology_id_구분문자.확장자` 형식으로 지정합니다. 첫 두 식별자는 Excel에 존재해야 하며 마지막 부분에는 밑줄도 사용할 수 있습니다. 기존 등록 사진은 이름을 바꾸지 않아도 됩니다.
@@ -128,9 +169,11 @@ Excel을 완전히 저장하고 프로젝트 루트에서 수정 범위에 맞�
 .venv/bin/python -m scripts.pipeline --mode normal
 ```
 
-등록 명령은 기본적으로 미리보기입니다. 적용 시 변경 전 Excel을 `backups/`에 보관합니다. 잘못된 이름, 없는 분류군·형태 식별자, 중복 사진 또는 사라진 등록 원본이 있으면 적용하지 않습니다. 원본 이름 변경은 자동 추정하지 않습니다. `.state/image-id-registry.json`도 함께 백업하여 삭제된 번호의 재사용을 방지하세요. 로컬 생성 이후 원격 사진 업로드와 웹 배포는 아래 절차를 별도로 수행합니다.
+등록 명령은 기본적으로 미리보기입니다. 적용 시 변경 전 Excel을 `backups/`에 보관합니다. 신규 사진 중 잘못된 이름이나 없는 분류군·형태 식별자는 SKIPPED_FILENAME 경고로 기록하고 건너뜁니다. 원본 파일은 그대로 보존하며 유효한 사진은 계속 처리합니다. 중복 사진 또는 사라진 등록 원본은 추가 전용 등록 명령에서 오류가 됩니다. 원본 이름 변경은 등록 명령이 자동 추정하지 않으므로 sync_images를 사용합니다. 동기화 후 유효한 등록 사진이 하나도 남지 않으면 대량 삭제 보호로 중단합니다. `.state/image-id-registry.json`도 함께 백업하여 삭제된 번호의 재사용을 방지하세요. 로컬 생성 이후 원격 사진 업로드와 웹 배포는 아래 절차를 별도로 수행합니다.
 
-이전 형식의 Excel은 한 번만 다음 명령으로 전환합니다. 04의 status, 05의 presence_status/documentation_status, 06의 status, 07의 role/representative/display_order를 제거합니다. 다른 시트의 status는 유지합니다.
+사진 파일명에서 확인한 taxon_id가 `02_Cytotypes`에 없으면 해당 taxon_id만 있는 준비 행을 자동으로 추가합니다. cytotype_id와 나머지 값은 비워 두며, 기존 행이 있으면 중복 추가하거나 수정하지 않습니다. 사진의 cytotype_id도 자동 지정하지 않습니다. 준비 행은 웹의 cytotype 자료에 포함되지 않습니다. 생물학적 정보를 입력할 때는 고유한 cytotype_id를 함께 부여하세요. 한 분류군에 여러 cytotype을 등록할 수 있습니다.
+
+이전 형식의 Excel은 한 번만 다음 명령으로 전환합니다. 02와 04의 status, 05의 presence_status/documentation_status, 06의 status, 07의 role/representative/display_order를 제거합니다. 다른 시트의 status는 유지합니다.
 
 ```bash
 .venv/bin/python -m scripts.register_images --migrate
@@ -363,92 +406,140 @@ Vercel의 환경변수 변경은 기존 deployment를 수정하지 않습니다.
 
 ## 변경 후 업데이트와 재배포
 
-아래 작업 전 루트로 이동하고 `git status --short`를 확인합니다. 여러 명령을 한 번에 붙여넣으면 앞 명령이 실패해도 다음 명령이 실행될 수 있습니다. 각 단계 성공 후 다음으로 진행합니다. commit 직전에는 `git diff --cached --stat`로 이전에 staging한 다른 변경도 함께 포함되는지 확인합니다.
-
-### Excel 문구만 변경한 경우
+일상적인 업데이트는 아래 세 가지로 구분합니다. 모든 명령은 `FernDigitalFlora` 루트에서 실행하고, Excel은 저장하고 닫습니다. **각 명령이 성공한 뒤 다음 명령을 실행합니다.** 오류가 있으면 commit·push를 진행하지 않습니다.
 
 ```bash
-.venv/bin/python -m scripts.build_site_text
+# 현재 수정 파일과 이미 commit 대상으로 준비된 파일을 확인합니다.
+git status --short
+```
+
+로컬 데이터 생성이나 build만으로 온라인 사이트가 바뀌지는 않습니다. 아래 push 후에는 Vercel의 해당 브랜치 배포가 성공했는지 확인하고, 실제 사이트에서 변경 내용을 확인합니다. Excel, 원본 사진, 백업, 비밀 환경변수는 Git에 올리지 않습니다.
+
+### 1. 코드가 변경되었을 때
+
+화면 코드, CSS(Cascading Style Sheets), Python 스크립트, 설정, 테스트, 문서 변경에 사용합니다. **화면·스타일·테스트·문서만 바뀌었다면 첫 pipeline 명령은 생략합니다.** 데이터 생성 코드나 스키마·공개 필드 설정이 바뀌었다면 실행해야 합니다. 이미지 크기·품질 설정을 변경했다면 `--mode rebuild`로 생성하고 3번의 원격 업로드 절차도 수행합니다.
+
+```bash
+# 데이터 처리 코드나 설정이 바뀐 경우에만 공개 데이터를 다시 생성합니다.
+.venv/bin/python -m scripts.pipeline --mode normal
+
+# Python 테스트와 코드 규칙을 검사합니다.
+.venv/bin/python -m pytest -q
+.venv/bin/ruff check scripts tests
+
+# 웹 코드 규칙, 자료형, 단위 테스트를 검사합니다.
+npm --prefix web run lint
+npm --prefix web run typecheck
+npm --prefix web test
+
+# 별도 합성 데이터로 브라우저 동작을 검사합니다. 실제 Excel은 수정하지 않습니다.
+npm --prefix web run test:e2e
+
+# 배포할 데이터가 참조하는 원격 사진과 파일 해시를 확인합니다.
 npm --prefix web run check:deployment
+
+# 공개 데이터를 검증하고 로컬에서 배포용 웹사이트를 빌드합니다.
 npm --prefix web run build
-git add web/public/data
-git commit -m "Update site text"
+
+# 코드, 설정, 테스트, 문서, 생성된 공개 데이터를 함께 commit 대상으로 준비합니다.
+git add README.md config docs scripts tests web .github pyproject.toml uv.lock
+
+# 실제 포함되는 파일을 확인합니다. 위 경로 밖의 필요한 변경은 별도로 추가합니다.
+git diff --cached --stat
+
+# 로컬 Git 이력에 기록하고 원격 저장소로 전송합니다.
+git commit -m "Update website code and data"
 git push
 ```
 
-로컬 확인만 필요하면 첫 명령 후 브라우저를 새로고침하면 됩니다. 온라인 사이트는 생성된 JSON을 commit하고 push해야 Vercel이 다시 배포합니다.
+브라우저 실행 파일이 없다는 오류가 나오면 최초 한 번 `cd web` → `npx playwright install chromium` → `cd ..`를 실행한 뒤 브라우저 검사를 다시 수행합니다. 표지 이미지는 `web/public/backgrounds/coverimage.jpeg`를 수정해야 하며 루트의 표지 파일만 바꾸면 자동 복사되지 않습니다.
 
-### 분류군·형태·사진 메타데이터·참여자를 변경한 경우
+### 2. Excel 데이터만 변경되었을 때
+
+분류군, 형태, cytotype, 이명, 참여자, 사진 메타데이터, 문구 또는 테마를 수정한 경우입니다. 원본 사진 파일도 바뀌었다면 3번을 사용합니다.
 
 ```bash
+# Excel을 검증하고 공개 데이터를 갱신합니다. 원격 업로드는 하지 않습니다.
 .venv/bin/python -m scripts.pipeline --mode normal
+
+# 원격 사진의 존재와 파일 해시를 검사합니다.
 npm --prefix web run check:deployment
+
+# 갱신된 데이터로 웹사이트가 정상 빌드되는지 검사합니다.
 npm --prefix web run build
+
+# Excel 자체가 아니라 생성된 공개 데이터만 commit 대상으로 준비합니다.
 git add web/public/data
+
+# 다른 변경이 이미 준비되어 있지 않은지 확인합니다.
+git diff --cached --stat
+
+# 로컬 이력에 기록하고 온라인 배포를 위한 변경을 전송합니다.
 git commit -m "Update flora data"
 git push
 ```
 
-Excel 파일 자체는 Git에 올리지 않습니다. Vercel에 반영되는 것은 pipeline이 생성한 공개 JSON입니다.
-
-등록 이미지 목록이 늘어난 경우에는 아래 사진 업로드 절차를 수행해야 합니다. 검사에서 이미지 누락이 나오면 그대로 배포하지 않습니다.
-
-### 새 원본 사진을 추가한 경우
+**문구·테마만 수정했다면** 위 첫 pipeline 명령 대신 아래에서 해당 명령만 사용합니다. 이후 검사·build·commit·push는 동일합니다. 두 시트를 모두 바꾸었다면 두 명령을 순서대로 실행하거나 전체 pipeline을 사용합니다.
 
 ```bash
+# 10_Site_Text만 변경: 연구 자료와 사진을 다시 만들지 않고 문구만 갱신합니다.
+.venv/bin/python -m scripts.build_site_text
+
+# 11_Site_Theme만 변경: 연구 자료와 사진을 다시 만들지 않고 테마만 갱신합니다.
+.venv/bin/python -m scripts.build_site_theme
+```
+
+로컬 확인만 필요하면 데이터 생성 후 개발 서버에서 페이지를 새로고침하면 됩니다. 새 사진을 Excel에 수동 등록하여 공개 사진 목록이 늘어난 경우에도 3번의 업로드 절차가 필요합니다.
+
+### 3. 사진이 추가·교체·이름 변경·삭제되었을 때
+
+새 원본은 `taxon_id_morphology_id_구분문자.확장자` 형식을 사용합니다. 변경을 미리 확인한 뒤 Excel과 `images_web`를 함께 동기화합니다. 이 절차에서는 `register_images --apply`를 먼저 실행하지 않습니다.
+
+```bash
+# 원본과 이전 기록을 비교합니다. 보고서에서 추가·삭제·이름 변경·교체 목록을 확인합니다.
+.venv/bin/python -m scripts.sync_images
+
+# 백업 후 Excel과 웹용 사진을 동기화합니다. 02/05의 연구 기록은 유지합니다.
+.venv/bin/python -m scripts.sync_images --apply
+
+# 변경된 Excel과 웹용 사진으로 공개 데이터를 생성합니다.
 .venv/bin/python -m scripts.pipeline --mode normal
-.venv/bin/python -m scripts.upload_images --dry-run
-.venv/bin/python -m scripts.upload_images
-.venv/bin/python -m scripts.verify_storage
-npm --prefix web run check:deployment
-npm --prefix web run build
-git add web/public/data
-git commit -m "Add flora photographs"
-git push
-```
 
-Supabase 업로드를 먼저 완료하고 그 이미지들을 가리키는 JSON을 배포합니다. 이렇게 하면 Vercel 배포 직후 이미지가 없는 시간이 생기지 않습니다.
-
-### 기존 원본 사진을 교체한 경우
-
-```bash
-.venv/bin/python -m scripts.pipeline --mode rebuild --image-id IM000001
+# 업로드 대상과 교체할 파일을 미리 확인합니다. 원격 파일은 아직 변경하지 않습니다.
 .venv/bin/python -m scripts.upload_images --dry-run --replace-changed
+
+# 신규·변경 파일을 업로드합니다. 같은 내용의 파일은 건너뛰고 다른 내용은 교체합니다.
 .venv/bin/python -m scripts.upload_images --replace-changed
+
+# 원격 파일이 현재 공개 데이터와 일치하는지 검증합니다.
 .venv/bin/python -m scripts.verify_storage
 npm --prefix web run check:deployment
+
+# 배포용 웹사이트를 로컬에서 빌드하여 확인합니다.
 npm --prefix web run build
+
+# 생성된 공개 데이터를 commit 대상으로 준비하고 포함 파일을 확인합니다.
 git add web/public/data
-git commit -m "Replace flora photograph"
+git diff --cached --stat
+
+# 변경 이력을 기록하고 온라인 배포를 위한 변경을 전송합니다.
+git commit -m "Synchronize flora photographs"
 git push
 ```
 
-이 프로젝트는 업로드 시 `config/pipeline.yaml`의 `cache_control: 3600` 값을 전달합니다. 이는 Supabase 전체의 고정 기본값이라는 뜻이 아닙니다. 교체 후 이전 이미지가 보이면 cache 가능성을 확인하고 다시 검증합니다. 일정 시간이 지났다는 이유만으로 성공으로 판단하지 말고 해시 검사 결과를 확인합니다. 같은 object URL을 사용하는 기존 배포도 이미지 교체의 영향을 받습니다.
+삭제 또는 이름 변경만 있었고 `check:deployment`가 통과한다면 두 upload 명령은 생략할 수 있습니다. `--replace-changed`는 원격의 기존 사진도 교체하므로 dry-run의 대상 프로젝트·bucket·변경 내역을 확인한 뒤 사용합니다. 같은 사진 주소를 사용하는 기존 배포에도 교체가 반영될 수 있습니다.
 
-### 코드, CSS, 표지 이미지 파일만 변경한 경우
+사진 삭제 시 온라인 화면에서는 새 공개 데이터 배포 후 사라집니다. **원격 저장소의 오래된 사진 파일은 자동 삭제되지 않습니다.** 배포 확인 후 다른 사용처가 없는지 검토하여 별도로 삭제합니다. 원본 폴더가 비어 있으면 대량 삭제 보호로 동기화가 중단됩니다. 삭제한 사진을 다시 등록하거나 교체 후 먼저 등록 명령을 실행해서 오류가 난 경우에는 작업을 멈추고 보고서를 확인합니다. 동기화의 복구 자료는 `backups/sync-<run_id>/recovery.json`에 기록됩니다.
 
-웹 UI 코드나 CSS만 수정했다면 Excel pipeline은 필요하지 않습니다. 표지는 실제 웹 파일인 `web/public/backgrounds/coverimage.jpeg`를 교체합니다. 루트의 `coverimage.jpeg`를 수정하는 것만으로 자동 복사되지는 않습니다. Python 생성 코드나 `config/`를 변경했다면 해당 검사를 실행하고 공개 JSON을 다시 생성해야 하므로 아래 웹 전용 절차와 구분합니다.
-
-```bash
-npm --prefix web run lint
-npm --prefix web run typecheck
-npm --prefix web test
-npm --prefix web run build
-git add web
-git commit -m "Update website"
-git push
-```
-
-### Supabase 프로젝트나 bucket을 변경한 경우
-
-1. 새 Supabase 프로젝트에 public bucket을 만듭니다.
-2. 루트 `.env.local`의 URL, secret key, bucket을 바꿉니다.
-3. `web/.env.local`의 공개 URL과 bucket을 같은 대상으로 바꿉니다.
-4. 현재 release 이미지를 새 bucket에 업로드하고 `verify_storage`를 실행합니다.
-5. Vercel Preview와 Production의 두 공개 환경변수도 바꿉니다.
-6. 새 Vercel deployment를 실행하고 사진 URL을 확인합니다.
+**여러 종류를 함께 수정한 경우:** 사진 동기화 → 데이터 생성 → 필요한 원격 업로드 → 검사·build 순으로 실행하고, 1번의 코드·설정·공개 데이터 경로를 함께 commit합니다. 같은 단계는 반복할 필요가 없습니다.
 
 ## 문제 해결
+
+### 환경변수 또는 호스팅 설정만 변경한 경우
+
+환경변수는 Git에 commit하지 않습니다. 로컬 환경변수를 바꾸었다면 개발 서버를 재시작합니다. 온라인 환경변수 변경은 기존 배포에 자동 적용되지 않으므로 Vercel에서 새 배포를 실행하고 실제 페이지를 확인합니다.
+
+저장소 프로젝트나 bucket을 바꾼 경우에는 루트의 업로드 설정, 웹의 공개 설정, 온라인 환경변수가 같은 대상을 가리키도록 맞춥니다. 새 대상에 사진을 업로드하고 원격 검증이 통과한 뒤 배포합니다. 구체적인 초기 설정은 위 연결 안내를 참고하세요.
 
 ### 174개 업로드가 모두 실패한 경우 (2026-09-11 확인)
 

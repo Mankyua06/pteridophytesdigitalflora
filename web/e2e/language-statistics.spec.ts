@@ -34,6 +34,7 @@ test("statistics uses exact-feature coverage and works on mobile in Korean", asy
   await page.setViewportSize({width:390,height:844});
   await page.getByRole("button",{name:"Switch to Korean"}).click();
   await expect(page.getByRole("heading",{name:"통계",exact:true})).toBeVisible();
-  await expect(page.locator(".coverage-card")).toHaveCount(4);
+  await expect(page.locator(".coverage-card[data-rank]")).toHaveCount(4);
+  await expect(page.locator(".coverage-card:not([data-rank])")).toHaveCount(2);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });

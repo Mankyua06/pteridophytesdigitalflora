@@ -4,8 +4,8 @@
 
 | 시트 | 기본키 | 관계 및 역할 |
 |---|---|---|
-| 01_Taxa | taxon_id | 분류군. accepted_taxon_id 선택, 자기 참조 허용 |
-| 02_Cytotypes | cytotype_id | taxon_id → Taxa, genome_size_pg 양수 |
+| 01_Taxa | taxon_id | 분류군. GBIF status와 acceptedScientificName 유지. gbif_taxon_key/accepted_taxon_id는 사용하지 않음 |
+| 02_Cytotypes | cytotype_id (준비 행은 예외) | taxon_id → Taxa, genome_size_pg 양수. status 없음. taxon_id만 있는 준비 행은 분류군별 하나이며 공개 제외. 생물학적 정보 입력 시 cytotype_id 필수 |
 | 03_Morphology_Terms | term_id | 개념 정의. category는 general/vegetative/indumentum/reproductive |
 | 04_Morphology_Tree | morphology_id | term_id 및 선택 parent_id. parent만으로 계층 결정 |
 | 05_Taxon_Morphology | taxon_id + morphology_id | 분류군과 형태 연결, 선택 note |
