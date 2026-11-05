@@ -452,7 +452,7 @@ git commit -m "Update website code and data"
 git push
 ```
 
-브라우저 실행 파일이 없다는 오류가 나오면 최초 한 번 `cd web` → `npx playwright install chromium` → `cd ..`를 실행한 뒤 브라우저 검사를 다시 수행합니다. 표지 이미지는 `web/public/backgrounds/coverimage.jpeg`를 수정해야 하며 루트의 표지 파일만 바꾸면 자동 복사되지 않습니다.
+브라우저 실행 파일이 없다는 오류가 나오면 최초 한 번 `cd web` → `npx playwright install chromium` → `cd ..`를 실행한 뒤 브라우저 검사를 다시 수행합니다. 현재 표지 이미지는 `web/public/backgrounds/coverimage.jpg`입니다. 루트의 `coverimage.jpg`를 교체한 경우 `cp coverimage.jpg web/public/backgrounds/coverimage.jpg`로 배포 폴더에도 복사한 뒤 함께 commit합니다. 루트의 표지 파일만 바꾸면 자동 반영되지 않습니다.
 
 ### 2. Excel 데이터만 변경되었을 때
 

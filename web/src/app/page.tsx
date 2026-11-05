@@ -26,7 +26,7 @@ export default async function Home() {
         </Link>
         </div>
         <div className="hero-graphic hero-photo">
-          <Image src="/backgrounds/coverimage.jpeg" alt={ui("flora_cover_photograph")} fill sizes="(max-width: 800px) 100vw, 45vw" loading="eager" unoptimized />
+          <Image src="/backgrounds/coverimage.jpg" alt={ui("flora_cover_photograph")} fill sizes="(max-width: 800px) 100vw, 45vw" loading="eager" unoptimized />
         </div>
       </section>
       <section className="section-heading">
